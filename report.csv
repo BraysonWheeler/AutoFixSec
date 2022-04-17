@@ -1,0 +1,1773 @@
+IP,Hostname,Port,Port Protocol,CVSS,Severity,Solution Type,NVT Name,Summary,Specific Result,NVT OID,CVEs,Task ID,Task Name,Timestamp,Result ID,Impact,Solution,Affected Software/OS,Vulnerability Insight,Vulnerability Detection Method,Product Detection Result,BIDs,CERTs,Other References
+192.168.1.136,,,,10.0,High,"Mitigation","Operating System (OS) End of Life (EOL) Detection","The Operating System (OS) on the remote host has reached the End
+  of Life (EOL) and should not be used anymore.","The ""Ubuntu"" Operating System on the remote host has reached the end of life.
+
+CPE:               cpe:/o:canonical:ubuntu_linux:10.04
+Installed version,
+build or SP:       10.04
+EOL date:          2015-04-30
+EOL info:          https://wiki.ubuntu.com/Releases
+",1.3.6.1.4.1.25623.1.0.103674,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,2fac4e03-c86e-4744-a446-bf5359c58f84,"An EOL version of an OS is not receiving any security updates
+  from the vendor. Unfixed security vulnerabilities might be leveraged by an attacker to compromise
+  the security of this host.","Upgrade the OS on the remote host to a version which is still
+  supported and receiving security updates by the vendor.","","","Checks if an EOL version of an OS is present on the target
+  host.
+Details:
+Operating System (OS) End of Life (EOL) Detection
+(OID: 1.3.6.1.4.1.25623.1.0.103674)
+Version used: 2022-04-05T13:00:52Z
+","","","",""
+192.168.1.136,,443,tcp,10.0,High,"VendorFix","Tiki Wiki CMS Groupware End of Life (EOL) Detection","The Tiki Wiki CMS Groupware version on the remote host has reached
+  the End of Life (EOL) and should not be used anymore.","The ""Tiki Wiki CMS Groupware"" version on the remote host has reached the end of life.
+
+CPE:               cpe:/a:tiki:tikiwiki_cms/groupware:1.9.5
+Installed version: 1.9.5
+Location/URL:      https://owaspbwa/tikiwiki
+EOL version:       1
+EOL date:          unknown
+EOL info:          https://tiki.org/Versions#Version_Lifecycle
+",1.3.6.1.4.1.25623.1.0.108622,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,8b23ff57-3fba-4f9c-9c2c-2ca0ec94c5fc,"An EOL version of Tiki Wiki CMS Groupware is not receiving any
+  security updates from the vendor. Unfixed security vulnerabilities might be leveraged by an attacker to
+  compromise the security of this host.","Update the Tiki Wiki CMS Groupware version on the remote host to a
+  still supported version.","","","Checks if an EOL version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware End of Life (EOL) Detection
+(OID: 1.3.6.1.4.1.25623.1.0.108622)
+Version used: 2020-12-09T14:13:00Z
+","","","",""
+192.168.1.136,,80,tcp,10.0,High,"VendorFix","Tiki Wiki CMS Groupware End of Life (EOL) Detection","The Tiki Wiki CMS Groupware version on the remote host has reached
+  the End of Life (EOL) and should not be used anymore.","The ""Tiki Wiki CMS Groupware"" version on the remote host has reached the end of life.
+
+CPE:               cpe:/a:tiki:tikiwiki_cms/groupware:1.9.5
+Installed version: 1.9.5
+Location/URL:      http://owaspbwa/tikiwiki
+EOL version:       1
+EOL date:          unknown
+EOL info:          https://tiki.org/Versions#Version_Lifecycle
+",1.3.6.1.4.1.25623.1.0.108622,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,c1bd9cec-51be-420d-b313-dd9966e909dc,"An EOL version of Tiki Wiki CMS Groupware is not receiving any
+  security updates from the vendor. Unfixed security vulnerabilities might be leveraged by an attacker to
+  compromise the security of this host.","Update the Tiki Wiki CMS Groupware version on the remote host to a
+  still supported version.","","","Checks if an EOL version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware End of Life (EOL) Detection
+(OID: 1.3.6.1.4.1.25623.1.0.108622)
+Version used: 2020-12-09T14:13:00Z
+","","","",""
+192.168.1.136,,80,tcp,10.0,High,"VendorFix","Tiki Wiki CMS Groupware End of Life (EOL) Detection","The Tiki Wiki CMS Groupware version on the remote host has reached
+  the End of Life (EOL) and should not be used anymore.","The ""Tiki Wiki CMS Groupware"" version on the remote host has reached the end of life.
+
+CPE:               cpe:/a:tiki:tikiwiki_cms/groupware:1.9.5
+Installed version: 1.9.5
+Location/URL:      http://owaspbwa.lan/tikiwiki
+EOL version:       1
+EOL date:          unknown
+EOL info:          https://tiki.org/Versions#Version_Lifecycle
+",1.3.6.1.4.1.25623.1.0.108622,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,16a5cf57-9347-4b05-be91-f1345732a3cd,"An EOL version of Tiki Wiki CMS Groupware is not receiving any
+  security updates from the vendor. Unfixed security vulnerabilities might be leveraged by an attacker to
+  compromise the security of this host.","Update the Tiki Wiki CMS Groupware version on the remote host to a
+  still supported version.","","","Checks if an EOL version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware End of Life (EOL) Detection
+(OID: 1.3.6.1.4.1.25623.1.0.108622)
+Version used: 2020-12-09T14:13:00Z
+","","","",""
+192.168.1.136,,443,tcp,10.0,High,"VendorFix","Tiki Wiki CMS Groupware End of Life (EOL) Detection","The Tiki Wiki CMS Groupware version on the remote host has reached
+  the End of Life (EOL) and should not be used anymore.","The ""Tiki Wiki CMS Groupware"" version on the remote host has reached the end of life.
+
+CPE:               cpe:/a:tiki:tikiwiki_cms/groupware:1.9.5
+Installed version: 1.9.5
+Location/URL:      https://owaspbwa.lan/tikiwiki
+EOL version:       1
+EOL date:          unknown
+EOL info:          https://tiki.org/Versions#Version_Lifecycle
+",1.3.6.1.4.1.25623.1.0.108622,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,8be075fa-e323-46ff-8f7c-a0c193c6ecd4,"An EOL version of Tiki Wiki CMS Groupware is not receiving any
+  security updates from the vendor. Unfixed security vulnerabilities might be leveraged by an attacker to
+  compromise the security of this host.","Update the Tiki Wiki CMS Groupware version on the remote host to a
+  still supported version.","","","Checks if an EOL version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware End of Life (EOL) Detection
+(OID: 1.3.6.1.4.1.25623.1.0.108622)
+Version used: 2020-12-09T14:13:00Z
+","","","",""
+192.168.1.136,,80,tcp,9.8,High,"VendorFix","Joomla < 3.8.12 Multiple Vulnerabilities","Joomla is prone to multiple vulnerabilities.","Installed version: 1.5.15
+Fixed version:     3.8.12
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.112371,"CVE-2018-15880,CVE-2018-15882",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,27e1526a-c1a7-4e90-89a2-d51ab752b58c,"","Update to version 3.8.12 or later.","Joomla CMS versions 1.5.0 through 3.8.11.","The following vulnerabilities exist:
+
+  - Inadequate output filtering on the user profile page could lead to a stored XSS attack. (CVE-2018-15880)
+
+  - Inadequate checks in the InputFilter class could allow specifically prepared PHAR files to pass the upload filter. (CVE-2018-15882)","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla < 3.8.12 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.112371)
+Version used: 2021-09-29T12:07:39Z
+","","","DFN-CERT-2018-1744",""
+192.168.1.136,,80,tcp,9.8,High,"VendorFix","Joomla! Core LDAP Information Disclosure Vulnerability Nov17","Joomla is prone to an information disclosure vulnerability.","Installed version: 1.5.15
+Fixed version:     3.8.2
+
+",1.3.6.1.4.1.25623.1.0.811896,"CVE-2017-14596",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,cc89bfc8-566d-478d-8453-f6b450a4688b,"Successfully exploiting this issue allow
+  remote attackers to disclose username and password.","Upgrade to Joomla version 3.8.2 or later.","Joomla core version 1.5.0 through 3.8.1","The flaw exists due to an inadequate
+  escaping in the LDAP authentication plugin.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! Core LDAP Information Disclosure Vulnerability Nov17
+(OID: 1.3.6.1.4.1.25623.1.0.811896)
+Version used: 2022-04-14T10:40:31Z
+","","","DFN-CERT-2017-1977,DFN-CERT-2017-1663,CB-K17/1899,CB-K17/1591",""
+192.168.1.136,,443,tcp,9.8,High,"VendorFix","Joomla < 3.9.5 Multiple Vulnerabilities","Joomla! is prone to multiple vulnerabilities.","Installed version: 1.5.15
+Fixed version:     3.9.5
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.113369,"CVE-2019-10945,CVE-2019-10946,CVE-2019-11358",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,14cffe98-55f7-4876-ad55-97090c81b8bb,"Successful exploitation would allow an attacker to access sensitive information
+  or execute arbitrary commands.","Update to version 3.9.5.","Joomla! through version 3.9.4.","The following vulnerabilities exist:
+
+  - The Media Manager component does not properly sanitize the folder parameter,
+    allowing attackers to act outside the media manager root directory
+
+  - The 'refresh list of helpsites' endpoint of com_users lacks access checks,
+    allowing calls from unauthenticated users
+
+  - The $.extend method of JQuery is vulnerable to Object.prototype pollution attacks (CVE-2019-11358)","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla < 3.9.5 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.113369)
+Version used: 2021-09-02T13:01:30Z
+","","","DFN-CERT-2021-1536,DFN-CERT-2021-1503,DFN-CERT-2021-0826,DFN-CERT-2020-2423,DFN-CERT-2020-2335,DFN-CERT-2020-2286,DFN-CERT-2020-2130,DFN-CERT-2020-1812,DFN-CERT-2020-1574,DFN-CERT-2020-1537,DFN-CERT-2020-1506,DFN-CERT-2020-0772,DFN-CERT-2020-0769,DFN-CERT-2020-0721,DFN-CERT-2020-0276,DFN-CERT-2020-0102,DFN-CERT-2020-0100,DFN-CERT-2019-2169,DFN-CERT-2019-2158,DFN-CERT-2019-2156,DFN-CERT-2019-2126,DFN-CERT-2019-1861,DFN-CERT-2019-1663,DFN-CERT-2019-1460,DFN-CERT-2019-1182,DFN-CERT-2019-1153,DFN-CERT-2019-1118,DFN-CERT-2019-1033,DFN-CERT-2019-0914,DFN-CERT-2019-0899,DFN-CERT-2019-0805,DFN-CERT-2019-0723,CB-K22/0045,CB-K21/1083,CB-K20/1049,CB-K20/1030,CB-K20/0800,CB-K20/0710,CB-K20/0324,CB-K20/0314,CB-K20/0309,CB-K20/0106,CB-K20/0041,CB-K20/0037,CB-K20/0034,CB-K19/0921,CB-K19/0920,CB-K19/0916,CB-K19/0911,CB-K19/0909,CB-K19/0619,CB-K19/0504,CB-K19/0329,CB-K19/0287",""
+192.168.1.136,,80,tcp,9.8,High,"VendorFix","Joomla < 3.9.5 Multiple Vulnerabilities","Joomla! is prone to multiple vulnerabilities.","Installed version: 1.5.15
+Fixed version:     3.9.5
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.113369,"CVE-2019-10945,CVE-2019-10946,CVE-2019-11358",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,a41b32d2-a4a1-4182-b4e5-f9c8deef07f0,"Successful exploitation would allow an attacker to access sensitive information
+  or execute arbitrary commands.","Update to version 3.9.5.","Joomla! through version 3.9.4.","The following vulnerabilities exist:
+
+  - The Media Manager component does not properly sanitize the folder parameter,
+    allowing attackers to act outside the media manager root directory
+
+  - The 'refresh list of helpsites' endpoint of com_users lacks access checks,
+    allowing calls from unauthenticated users
+
+  - The $.extend method of JQuery is vulnerable to Object.prototype pollution attacks (CVE-2019-11358)","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla < 3.9.5 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.113369)
+Version used: 2021-09-02T13:01:30Z
+","","","DFN-CERT-2021-1536,DFN-CERT-2021-1503,DFN-CERT-2021-0826,DFN-CERT-2020-2423,DFN-CERT-2020-2335,DFN-CERT-2020-2286,DFN-CERT-2020-2130,DFN-CERT-2020-1812,DFN-CERT-2020-1574,DFN-CERT-2020-1537,DFN-CERT-2020-1506,DFN-CERT-2020-0772,DFN-CERT-2020-0769,DFN-CERT-2020-0721,DFN-CERT-2020-0276,DFN-CERT-2020-0102,DFN-CERT-2020-0100,DFN-CERT-2019-2169,DFN-CERT-2019-2158,DFN-CERT-2019-2156,DFN-CERT-2019-2126,DFN-CERT-2019-1861,DFN-CERT-2019-1663,DFN-CERT-2019-1460,DFN-CERT-2019-1182,DFN-CERT-2019-1153,DFN-CERT-2019-1118,DFN-CERT-2019-1033,DFN-CERT-2019-0914,DFN-CERT-2019-0899,DFN-CERT-2019-0805,DFN-CERT-2019-0723,CB-K22/0045,CB-K21/1083,CB-K20/1049,CB-K20/1030,CB-K20/0800,CB-K20/0710,CB-K20/0324,CB-K20/0314,CB-K20/0309,CB-K20/0106,CB-K20/0041,CB-K20/0037,CB-K20/0034,CB-K19/0921,CB-K19/0920,CB-K19/0916,CB-K19/0911,CB-K19/0909,CB-K19/0619,CB-K19/0504,CB-K19/0329,CB-K19/0287",""
+192.168.1.136,,80,tcp,9.8,High,"VendorFix","Joomla! < 3.9.7 Multiple Vulnerabilities","Joomla! is prone to multiple vulnerabilities.","Installed version: 1.5.15
+Fixed version:     3.9.7
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.113390,"CVE-2019-12764,CVE-2019-12765,CVE-2019-12766",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,dcbd7e14-11d0-4de8-b2da-4a69a13bbefd,"Successful exploitation can have effects ranging from disclosure of sensitive information
+  to executing arbitrary code on the target machine.","Update to version 3.9.7.","Joomla! through version 3.9.6.","The following vulnerabilities exist:
+
+  - The update server URL of com_joomlaupdate can be manipulated by non Super-Admin users.
+
+  - The subform fieldtype does not sufficiently filter or validate input of subfields.
+    This leads to XSS attack vectors.
+
+  - The CSV export of com_actionslogs is vulnerable to CSV injection.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! < 3.9.7 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.113390)
+Version used: 2022-04-14T10:40:31Z
+","","","DFN-CERT-2019-1179,CB-K19/0495",""
+192.168.1.136,,443,tcp,9.8,High,"VendorFix","Joomla! < 3.9.7 Multiple Vulnerabilities","Joomla! is prone to multiple vulnerabilities.","Installed version: 1.5.15
+Fixed version:     3.9.7
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.113390,"CVE-2019-12764,CVE-2019-12765,CVE-2019-12766",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,cb42beaf-d601-4f69-a40f-9af885b62eec,"Successful exploitation can have effects ranging from disclosure of sensitive information
+  to executing arbitrary code on the target machine.","Update to version 3.9.7.","Joomla! through version 3.9.6.","The following vulnerabilities exist:
+
+  - The update server URL of com_joomlaupdate can be manipulated by non Super-Admin users.
+
+  - The subform fieldtype does not sufficiently filter or validate input of subfields.
+    This leads to XSS attack vectors.
+
+  - The CSV export of com_actionslogs is vulnerable to CSV injection.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! < 3.9.7 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.113390)
+Version used: 2022-04-14T10:40:31Z
+","","","DFN-CERT-2019-1179,CB-K19/0495",""
+192.168.1.136,,443,tcp,9.8,High,"VendorFix","Joomla! Core LDAP Information Disclosure Vulnerability Nov17","Joomla is prone to an information disclosure vulnerability.","Installed version: 1.5.15
+Fixed version:     3.8.2
+
+",1.3.6.1.4.1.25623.1.0.811896,"CVE-2017-14596",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,9e76b400-6536-44c5-b9ea-1c4515c30eac,"Successfully exploiting this issue allow
+  remote attackers to disclose username and password.","Upgrade to Joomla version 3.8.2 or later.","Joomla core version 1.5.0 through 3.8.1","The flaw exists due to an inadequate
+  escaping in the LDAP authentication plugin.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! Core LDAP Information Disclosure Vulnerability Nov17
+(OID: 1.3.6.1.4.1.25623.1.0.811896)
+Version used: 2022-04-14T10:40:31Z
+","","","DFN-CERT-2017-1977,DFN-CERT-2017-1663,CB-K17/1899,CB-K17/1591",""
+192.168.1.136,,443,tcp,9.8,High,"VendorFix","Joomla! < 3.8.0 LDAP Information Disclosure Vulnerability","Joomla is prone to an information disclosure vulnerability.","Installed version: 1.5.15
+Fixed version:     3.8.0
+
+",1.3.6.1.4.1.25623.1.0.112049,"CVE-2017-14596",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,e3f002ed-01d8-42d9-b03e-0e85c89ff8a7,"Successfully exploiting these issues will allow
+  remote attackers to gain access to potentially sensitive information.","Upgrade to Joomla version 3.8.0 or later.","Joomla! versions 1.5.0 through 3.7.5","Joomla is prone to the following information disclosure vulnerability:
+
+  - Inadequate escaping in the LDAP authentication plugin can result into a disclosure of username and password.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! < 3.8.0 LDAP Information Disclosure Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.112049)
+Version used: 2021-09-30T08:43:52Z
+","","","DFN-CERT-2017-1977,DFN-CERT-2017-1663,CB-K17/1899,CB-K17/1591",""
+192.168.1.136,,80,tcp,9.8,High,"VendorFix","Joomla! < 3.8.0 LDAP Information Disclosure Vulnerability","Joomla is prone to an information disclosure vulnerability.","Installed version: 1.5.15
+Fixed version:     3.8.0
+
+",1.3.6.1.4.1.25623.1.0.112049,"CVE-2017-14596",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,4ef3b24e-1ce8-4525-9b79-0dab4316fa7a,"Successfully exploiting these issues will allow
+  remote attackers to gain access to potentially sensitive information.","Upgrade to Joomla version 3.8.0 or later.","Joomla! versions 1.5.0 through 3.7.5","Joomla is prone to the following information disclosure vulnerability:
+
+  - Inadequate escaping in the LDAP authentication plugin can result into a disclosure of username and password.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! < 3.8.0 LDAP Information Disclosure Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.112049)
+Version used: 2021-09-30T08:43:52Z
+","","","DFN-CERT-2017-1977,DFN-CERT-2017-1663,CB-K17/1899,CB-K17/1591",""
+192.168.1.136,,443,tcp,9.8,High,"VendorFix","Joomla < 3.8.12 Multiple Vulnerabilities","Joomla is prone to multiple vulnerabilities.","Installed version: 1.5.15
+Fixed version:     3.8.12
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.112371,"CVE-2018-15880,CVE-2018-15882",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,026ca19c-59d8-46d8-b378-a2ff169504c1,"","Update to version 3.8.12 or later.","Joomla CMS versions 1.5.0 through 3.8.11.","The following vulnerabilities exist:
+
+  - Inadequate output filtering on the user profile page could lead to a stored XSS attack. (CVE-2018-15880)
+
+  - Inadequate checks in the InputFilter class could allow specifically prepared PHAR files to pass the upload filter. (CVE-2018-15882)","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla < 3.8.12 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.112371)
+Version used: 2021-09-29T12:07:39Z
+","","","DFN-CERT-2018-1744",""
+192.168.1.136,,80,tcp,8.8,High,"VendorFix","Joomla! < 3.8.13 ACL Violation Vulnerability","If an attacker gets access to the mail account of an user who can approve
+admin verifications in the registration process, he can activate himself.","Installed version: 1.5.15
+Fixed version:     3.8.13
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.141580,"CVE-2018-17855",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,0ab707f9-e4d6-4ee4-b714-f70c5d180f8c,"","Update to version 3.8.13 or later.","Joomla! CMS versions 1.5.0 through 3.8.12.","","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! < 3.8.13 ACL Violation Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141580)
+Version used: 2021-06-15T02:54:56Z
+","","","DFN-CERT-2018-2061",""
+192.168.1.136,,80,tcp,8.8,High,"VendorFix","Joomla! < 3.9.13 Multiple Vulnerabilities","Joomla! is prone to multiple vulnerabilities.","Installed version: 1.5.15
+Fixed version:     3.9.13
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.113556,"CVE-2019-18650,CVE-2019-18674",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,d382dd19-6dce-4ce0-8a48-8f6e22e63395,"Successful exploitation would allow an attacker to
+  access sensitive information or perform actions
+  in the context of another user.","Update to version 3.9.13.","Joomla! through version 3.9.12.","The following vulnerabilities exist:
+
+  - A missing check in com_template causes a CSRF vulnerability.
+
+  - A missing access check in the phputf8 mapping files could lead to a path disclosure.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! < 3.9.13 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.113556)
+Version used: 2021-09-02T13:01:30Z
+","","","DFN-CERT-2019-2299,CB-K19/0960",""
+192.168.1.136,,80,tcp,8.8,High,"VendorFix","Tiki Wiki CMS Groupware < 17.2 SQL Injection Vulnerability","In Tiki the user task component is vulnerable to a SQL Injection via the
+tiki-user_tasks.php show_history parameter.","Installed version: 1.9.5
+Fixed version:     17.2
+
+",1.3.6.1.4.1.25623.1.0.141885,"CVE-2018-20719",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,1c8f8fcd-f10d-4d29-9432-678818cf70d9,"","Upgrade to version 17.2 or later.","Tiki Wiki CMS Groupware prior to version 17.2.","","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware < 17.2 SQL Injection Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141885)
+Version used: 2021-08-27T13:01:16Z
+","","","",""
+192.168.1.136,,80,tcp,8.8,High,"VendorFix","Tiki Wiki < 22 Multiple Vulnerabilities","Tiki Wiki is prone to multiple vulnerabilities.","Installed version: 1.9.5
+Fixed version:     22
+Installation
+path / port:       /tikiwiki
+
+",1.3.6.1.4.1.25623.1.0.144911,"CVE-2020-29254",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,7ad577c9-6ef6-4d76-be7f-06d3ffb19ee8,"'- Local (php) File Inclusion: The config file displays TikiWikis database
+  credentials in cleartext.
+
+  - Cross-Side-Request-Forgery (CSRF): A successful exploit could allow the
+  attacker to perform arbitrary actions on an affected system with the privileges of the user. These action
+  include allowing attackers to submit their own code through an authenticated user resulting in local file
+  Inclusion. If an authenticated user who is able to edit Tiki Wiki templates visits an malicious website,
+  template code can be edited.
+
+  - Information Exposure: The User can authenticate against it and simply give itself admin privileges or
+  compromise the administrator account.","Update to version 22 which disables and hides the risky
+  preferences by default.","Tiki Wiki through version 21.2 and probably prior.","The following flaws exist:
+
+  - Local (php) File Inclusion: In TikiWiki, an user can be given the permission to edit .tpl templates.
+  This feature can be abused to escalate the users privileges by inserting the following pieceof smarty
+  code: {include file='../db/local.php'}. The code snippet includes Tiki Wikis database configuration
+  file and displays it in the pages source code. Any other www-data readable file like '/etc/passwd' can
+  be included as well.
+
+  - Cross-Side-Request-Forgery (CSRF): Tiki Wiki allows templates to be edited without CSRF protection.
+  This could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack
+  and perform arbitrary actions on an affected system. The vulnerability is due to insufficient CSRF protections
+  for the web-based management interface of the affected system. An attacker could exploit this vulnerability
+  by persuading a user of the interface to follow a maliciously crafted link. (CVE-2020-29254)
+
+  - Information Exposure: An user who is able to edit template files can use smarty code to include Files like
+  the database configuration file which allows access to TikiWikis Database.","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki < 22 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.144911)
+Version used: 2021-07-08T10:18:29Z
+","","","",""
+192.168.1.136,,443,tcp,8.8,High,"VendorFix","Tiki Wiki CMS Groupware < 17.2 SQL Injection Vulnerability","In Tiki the user task component is vulnerable to a SQL Injection via the
+tiki-user_tasks.php show_history parameter.","Installed version: 1.9.5
+Fixed version:     17.2
+
+",1.3.6.1.4.1.25623.1.0.141885,"CVE-2018-20719",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,910cefd5-c4d8-40ed-b131-8d59bf172745,"","Upgrade to version 17.2 or later.","Tiki Wiki CMS Groupware prior to version 17.2.","","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware < 17.2 SQL Injection Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141885)
+Version used: 2021-08-27T13:01:16Z
+","","","",""
+192.168.1.136,,443,tcp,8.8,High,"VendorFix","Tiki Wiki < 22 Multiple Vulnerabilities","Tiki Wiki is prone to multiple vulnerabilities.","Installed version: 1.9.5
+Fixed version:     22
+Installation
+path / port:       /tikiwiki
+
+",1.3.6.1.4.1.25623.1.0.144911,"CVE-2020-29254",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,67db9bd3-5a7d-4aae-9564-f59f0480a692,"'- Local (php) File Inclusion: The config file displays TikiWikis database
+  credentials in cleartext.
+
+  - Cross-Side-Request-Forgery (CSRF): A successful exploit could allow the
+  attacker to perform arbitrary actions on an affected system with the privileges of the user. These action
+  include allowing attackers to submit their own code through an authenticated user resulting in local file
+  Inclusion. If an authenticated user who is able to edit Tiki Wiki templates visits an malicious website,
+  template code can be edited.
+
+  - Information Exposure: The User can authenticate against it and simply give itself admin privileges or
+  compromise the administrator account.","Update to version 22 which disables and hides the risky
+  preferences by default.","Tiki Wiki through version 21.2 and probably prior.","The following flaws exist:
+
+  - Local (php) File Inclusion: In TikiWiki, an user can be given the permission to edit .tpl templates.
+  This feature can be abused to escalate the users privileges by inserting the following pieceof smarty
+  code: {include file='../db/local.php'}. The code snippet includes Tiki Wikis database configuration
+  file and displays it in the pages source code. Any other www-data readable file like '/etc/passwd' can
+  be included as well.
+
+  - Cross-Side-Request-Forgery (CSRF): Tiki Wiki allows templates to be edited without CSRF protection.
+  This could allow an unauthenticated, remote attacker to conduct a cross-site request forgery (CSRF) attack
+  and perform arbitrary actions on an affected system. The vulnerability is due to insufficient CSRF protections
+  for the web-based management interface of the affected system. An attacker could exploit this vulnerability
+  by persuading a user of the interface to follow a maliciously crafted link. (CVE-2020-29254)
+
+  - Information Exposure: An user who is able to edit template files can use smarty code to include Files like
+  the database configuration file which allows access to TikiWikis Database.","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki < 22 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.144911)
+Version used: 2021-07-08T10:18:29Z
+","","","",""
+192.168.1.136,,443,tcp,8.8,High,"VendorFix","Joomla! < 3.8.13 ACL Violation Vulnerability","If an attacker gets access to the mail account of an user who can approve
+admin verifications in the registration process, he can activate himself.","Installed version: 1.5.15
+Fixed version:     3.8.13
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.141580,"CVE-2018-17855",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,0b82e47b-2337-4b3a-9a2f-f3e44e739f78,"","Update to version 3.8.13 or later.","Joomla! CMS versions 1.5.0 through 3.8.12.","","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! < 3.8.13 ACL Violation Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141580)
+Version used: 2021-06-15T02:54:56Z
+","","","DFN-CERT-2018-2061",""
+192.168.1.136,,443,tcp,8.8,High,"VendorFix","Joomla! < 3.9.13 Multiple Vulnerabilities","Joomla! is prone to multiple vulnerabilities.","Installed version: 1.5.15
+Fixed version:     3.9.13
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.113556,"CVE-2019-18650,CVE-2019-18674",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,199ef644-39fe-4533-8b09-5fa0de37dfa5,"Successful exploitation would allow an attacker to
+  access sensitive information or perform actions
+  in the context of another user.","Update to version 3.9.13.","Joomla! through version 3.9.12.","The following vulnerabilities exist:
+
+  - A missing check in com_template causes a CSRF vulnerability.
+
+  - A missing access check in the phputf8 mapping files could lead to a path disclosure.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! < 3.9.13 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.113556)
+Version used: 2021-09-02T13:01:30Z
+","","","DFN-CERT-2019-2299,CB-K19/0960",""
+192.168.1.136,,80,tcp,7.5,High,"VendorFix","Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities","Tiki Wiki CMS Groupware is prone to multiple unspecified vulnerabilities, including:
+
+  - An unspecified SQL-injection vulnerability
+
+  - An unspecified authentication-bypass vulnerability
+
+  - An unspecified vulnerability","Installed version: 1.9.5
+Fixed version:     4.2
+
+",1.3.6.1.4.1.25623.1.0.100537,"CVE-2010-1135,CVE-2010-1134,CVE-2010-1133,CVE-2010-1136",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,2d392d30-b68a-448d-a1b8-4ffe85b18fa9,"Exploiting these issues could allow an attacker to compromise the
+  application, access or modify data, exploit latent vulnerabilities in
+  the underlying database, and gain unauthorized access to the affected
+  application. Other attacks are also possible.","The vendor has released an advisory and fixes. Please see the
+  references for details.","Versions prior to Tiki Wiki CMS Groupware 4.2 are vulnerable.","","
+Details:
+Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.100537)
+Version used: 2019-03-01T13:18:27Z
+","","38608","",""
+192.168.1.136,,443,tcp,7.5,High,"Workaround","phpinfo() output Reporting","Many PHP installation tutorials instruct the user to create
+  a file called phpinfo.php or similar containing the phpinfo() statement. Such a file is often
+  left back in the webserver directory.","The following files are calling the function phpinfo() which disclose potentially sensitive information:
+
+https://owaspbwa/bWAPP/phpinfo.php
+https://owaspbwa/mutillidae/phpinfo.php
+https://owaspbwa/vicnum/test.php
+https://owaspbwa/vicnum/test.php?mode=phpinfo
+",1.3.6.1.4.1.25623.1.0.11229,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,160d07d6-3f97-49a2-b840-09266ebd4525,"Some of the information that can be gathered from this file includes:
+
+  The username of the user running the PHP process, if it is a sudo user, the IP address of the host, the web server
+  version, the system version (Unix, Linux, Windows, ...), and the root directory of the web server.","Delete the listed files or restrict access to them.","","","
+Details:
+phpinfo() output Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.11229)
+Version used: 2020-08-24T15:18:35Z
+","","","",""
+192.168.1.136,,443,tcp,7.5,High,"Mitigation","SSL/TLS: Report Vulnerable Cipher Suites for HTTPS","This routine reports all SSL/TLS cipher suites accepted by a service
+  where attack vectors exists only on HTTPS services.","'Vulnerable' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (SWEET32)
+TLS_RSA_WITH_3DES_EDE_CBC_SHA (SWEET32)
+
+'Vulnerable' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (SWEET32)
+TLS_RSA_WITH_3DES_EDE_CBC_SHA (SWEET32)
+
+
+",1.3.6.1.4.1.25623.1.0.108031,"CVE-2016-2183,CVE-2016-6329,CVE-2020-12872",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,a94550c4-0aaa-4422-81cd-9e68849aac82,"","The configuration of this services should be changed so
+  that it does not accept the listed cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.","Services accepting vulnerable SSL/TLS cipher suites via HTTPS.","These rules are applied for the evaluation of the vulnerable cipher suites:
+
+  - 64-bit block cipher 3DES vulnerable to the SWEET32 attack (CVE-2016-2183).","
+Details:
+SSL/TLS: Report Vulnerable Cipher Suites for HTTPS
+(OID: 1.3.6.1.4.1.25623.1.0.108031)
+Version used: 2021-09-20T09:01:50Z
+","","","DFN-CERT-2021-1618,DFN-CERT-2021-0775,DFN-CERT-2021-0770,DFN-CERT-2021-0274,DFN-CERT-2020-2141,DFN-CERT-2020-0368,DFN-CERT-2019-1455,DFN-CERT-2019-0068,DFN-CERT-2018-1296,DFN-CERT-2018-0323,DFN-CERT-2017-2070,DFN-CERT-2017-1954,DFN-CERT-2017-1885,DFN-CERT-2017-1831,DFN-CERT-2017-1821,DFN-CERT-2017-1785,DFN-CERT-2017-1626,DFN-CERT-2017-1326,DFN-CERT-2017-1239,DFN-CERT-2017-1238,DFN-CERT-2017-1090,DFN-CERT-2017-1060,DFN-CERT-2017-0968,DFN-CERT-2017-0947,DFN-CERT-2017-0946,DFN-CERT-2017-0904,DFN-CERT-2017-0816,DFN-CERT-2017-0746,DFN-CERT-2017-0677,DFN-CERT-2017-0675,DFN-CERT-2017-0611,DFN-CERT-2017-0609,DFN-CERT-2017-0522,DFN-CERT-2017-0519,DFN-CERT-2017-0482,DFN-CERT-2017-0351,DFN-CERT-2017-0090,DFN-CERT-2017-0089,DFN-CERT-2017-0088,DFN-CERT-2017-0086,DFN-CERT-2016-1943,DFN-CERT-2016-1937,DFN-CERT-2016-1732,DFN-CERT-2016-1726,DFN-CERT-2016-1715,DFN-CERT-2016-1714,DFN-CERT-2016-1588,DFN-CERT-2016-1555,DFN-CERT-2016-1391,DFN-CERT-2016-1378,CB-K21/1094,CB-K20/1023,CB-K20/0321,CB-K20/0314,CB-K20/0157,CB-K19/0618,CB-K19/0615,CB-K18/0296,CB-K17/1980,CB-K17/1871,CB-K17/1803,CB-K17/1753,CB-K17/1750,CB-K17/1709,CB-K17/1558,CB-K17/1273,CB-K17/1202,CB-K17/1196,CB-K17/1055,CB-K17/1026,CB-K17/0939,CB-K17/0917,CB-K17/0915,CB-K17/0877,CB-K17/0796,CB-K17/0724,CB-K17/0661,CB-K17/0657,CB-K17/0582,CB-K17/0581,CB-K17/0506,CB-K17/0504,CB-K17/0467,CB-K17/0345,CB-K17/0098,CB-K17/0089,CB-K17/0086,CB-K17/0082,CB-K16/1837,CB-K16/1830,CB-K16/1635,CB-K16/1630,CB-K16/1624,CB-K16/1622,CB-K16/1500,CB-K16/1465,CB-K16/1307,CB-K16/1296",""
+192.168.1.136,,443,tcp,7.5,High,"Mitigation","SSL/TLS: Report Vulnerable Cipher Suites for HTTPS","This routine reports all SSL/TLS cipher suites accepted by a service
+  where attack vectors exists only on HTTPS services.","'Vulnerable' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (SWEET32)
+TLS_RSA_WITH_3DES_EDE_CBC_SHA (SWEET32)
+
+'Vulnerable' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA (SWEET32)
+TLS_RSA_WITH_3DES_EDE_CBC_SHA (SWEET32)
+
+
+",1.3.6.1.4.1.25623.1.0.108031,"CVE-2016-2183,CVE-2016-6329,CVE-2020-12872",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,b96d2a5b-3b66-40ab-9fe3-facf38188efb,"","The configuration of this services should be changed so
+  that it does not accept the listed cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.","Services accepting vulnerable SSL/TLS cipher suites via HTTPS.","These rules are applied for the evaluation of the vulnerable cipher suites:
+
+  - 64-bit block cipher 3DES vulnerable to the SWEET32 attack (CVE-2016-2183).","
+Details:
+SSL/TLS: Report Vulnerable Cipher Suites for HTTPS
+(OID: 1.3.6.1.4.1.25623.1.0.108031)
+Version used: 2021-09-20T09:01:50Z
+","","","DFN-CERT-2021-1618,DFN-CERT-2021-0775,DFN-CERT-2021-0770,DFN-CERT-2021-0274,DFN-CERT-2020-2141,DFN-CERT-2020-0368,DFN-CERT-2019-1455,DFN-CERT-2019-0068,DFN-CERT-2018-1296,DFN-CERT-2018-0323,DFN-CERT-2017-2070,DFN-CERT-2017-1954,DFN-CERT-2017-1885,DFN-CERT-2017-1831,DFN-CERT-2017-1821,DFN-CERT-2017-1785,DFN-CERT-2017-1626,DFN-CERT-2017-1326,DFN-CERT-2017-1239,DFN-CERT-2017-1238,DFN-CERT-2017-1090,DFN-CERT-2017-1060,DFN-CERT-2017-0968,DFN-CERT-2017-0947,DFN-CERT-2017-0946,DFN-CERT-2017-0904,DFN-CERT-2017-0816,DFN-CERT-2017-0746,DFN-CERT-2017-0677,DFN-CERT-2017-0675,DFN-CERT-2017-0611,DFN-CERT-2017-0609,DFN-CERT-2017-0522,DFN-CERT-2017-0519,DFN-CERT-2017-0482,DFN-CERT-2017-0351,DFN-CERT-2017-0090,DFN-CERT-2017-0089,DFN-CERT-2017-0088,DFN-CERT-2017-0086,DFN-CERT-2016-1943,DFN-CERT-2016-1937,DFN-CERT-2016-1732,DFN-CERT-2016-1726,DFN-CERT-2016-1715,DFN-CERT-2016-1714,DFN-CERT-2016-1588,DFN-CERT-2016-1555,DFN-CERT-2016-1391,DFN-CERT-2016-1378,CB-K21/1094,CB-K20/1023,CB-K20/0321,CB-K20/0314,CB-K20/0157,CB-K19/0618,CB-K19/0615,CB-K18/0296,CB-K17/1980,CB-K17/1871,CB-K17/1803,CB-K17/1753,CB-K17/1750,CB-K17/1709,CB-K17/1558,CB-K17/1273,CB-K17/1202,CB-K17/1196,CB-K17/1055,CB-K17/1026,CB-K17/0939,CB-K17/0917,CB-K17/0915,CB-K17/0877,CB-K17/0796,CB-K17/0724,CB-K17/0661,CB-K17/0657,CB-K17/0582,CB-K17/0581,CB-K17/0506,CB-K17/0504,CB-K17/0467,CB-K17/0345,CB-K17/0098,CB-K17/0089,CB-K17/0086,CB-K17/0082,CB-K16/1837,CB-K16/1830,CB-K16/1635,CB-K16/1630,CB-K16/1624,CB-K16/1622,CB-K16/1500,CB-K16/1465,CB-K16/1307,CB-K16/1296",""
+192.168.1.136,,443,tcp,7.5,High,"Workaround","phpinfo() output Reporting","Many PHP installation tutorials instruct the user to create
+  a file called phpinfo.php or similar containing the phpinfo() statement. Such a file is often
+  left back in the webserver directory.","The following files are calling the function phpinfo() which disclose potentially sensitive information:
+
+https://owaspbwa.lan/bWAPP/phpinfo.php
+https://owaspbwa.lan/mutillidae/phpinfo.php
+https://owaspbwa.lan/vicnum/test.php
+https://owaspbwa.lan/vicnum/test.php?mode=phpinfo
+",1.3.6.1.4.1.25623.1.0.11229,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,b11475ee-dd22-4320-8a9a-5de3b109d1f2,"Some of the information that can be gathered from this file includes:
+
+  The username of the user running the PHP process, if it is a sudo user, the IP address of the host, the web server
+  version, the system version (Unix, Linux, Windows, ...), and the root directory of the web server.","Delete the listed files or restrict access to them.","","","
+Details:
+phpinfo() output Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.11229)
+Version used: 2020-08-24T15:18:35Z
+","","","",""
+192.168.1.136,,80,tcp,7.5,High,"Workaround","phpinfo() output Reporting","Many PHP installation tutorials instruct the user to create
+  a file called phpinfo.php or similar containing the phpinfo() statement. Such a file is often
+  left back in the webserver directory.","The following files are calling the function phpinfo() which disclose potentially sensitive information:
+
+http://owaspbwa/bWAPP/phpinfo.php
+http://owaspbwa/mutillidae/phpinfo.php
+http://owaspbwa/vicnum/test.php
+http://owaspbwa/vicnum/test.php?mode=phpinfo
+",1.3.6.1.4.1.25623.1.0.11229,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,7b9aeda1-8427-4fa0-8cb8-6afdc0b080f5,"Some of the information that can be gathered from this file includes:
+
+  The username of the user running the PHP process, if it is a sudo user, the IP address of the host, the web server
+  version, the system version (Unix, Linux, Windows, ...), and the root directory of the web server.","Delete the listed files or restrict access to them.","","","
+Details:
+phpinfo() output Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.11229)
+Version used: 2020-08-24T15:18:35Z
+","","","",""
+192.168.1.136,,80,tcp,7.5,High,"Workaround","phpinfo() output Reporting","Many PHP installation tutorials instruct the user to create
+  a file called phpinfo.php or similar containing the phpinfo() statement. Such a file is often
+  left back in the webserver directory.","The following files are calling the function phpinfo() which disclose potentially sensitive information:
+
+http://owaspbwa.lan/bWAPP/phpinfo.php
+http://owaspbwa.lan/mutillidae/phpinfo.php
+http://owaspbwa.lan/vicnum/test.php
+http://owaspbwa.lan/vicnum/test.php?mode=phpinfo
+",1.3.6.1.4.1.25623.1.0.11229,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,6b6107a7-6a08-484f-80d6-f0bc1b787ef5,"Some of the information that can be gathered from this file includes:
+
+  The username of the user running the PHP process, if it is a sudo user, the IP address of the host, the web server
+  version, the system version (Unix, Linux, Windows, ...), and the root directory of the web server.","Delete the listed files or restrict access to them.","","","
+Details:
+phpinfo() output Reporting
+(OID: 1.3.6.1.4.1.25623.1.0.11229)
+Version used: 2020-08-24T15:18:35Z
+","","","",""
+192.168.1.136,,443,tcp,7.5,High,"VendorFix","Tiki Wiki CMS Groupware fixedURLData Local File Inclusion Vulnerability","Tiki Wiki CMS Groupware is prone to a local file inclusion vulnerability.","Installed version: 1.9.5
+Fixed version:     12.11
+
+",1.3.6.1.4.1.25623.1.0.108064,"CVE-2016-10143",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,299bf011-629f-4d21-9bc4-0af3d87e7dc0,"Successful exploitation will allow an user having access to the
+  admin backend to gain access to arbitrary files and to compromise the application.","Upgrade to Tiki Wiki CMS Groupware version 12.11 LTS, 15.4 or
+  later.","Tiki Wiki CMS Groupware versions:
+
+  - below 12.11 LTS
+
+  - 13.x, 14.x and 15.x below 15.4","The Flaw is due to improper sanitization
+  of input passed to the 'fixedURLData' parameter of the 'display_banner.php' script.","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware 'fixedURLData' Local File Inclusion Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.108064)
+Version used: 2021-10-12T09:28:32Z
+","","","",""
+192.168.1.136,,80,tcp,7.5,High,"VendorFix","Joomla! Prior to 1.6.1 Multiple Security Vulnerabilities","Joomla! is prone to multiple security vulnerabilities including:
+
+  - An SQL-injection issue
+
+  - A path-disclosure vulnerability
+
+  - Multiple cross-site scripting issues
+
+  - Multiple information-disclosure vulnerabilities
+
+  - A URI-redirection vulnerability
+
+  - A security-bypass vulnerability
+
+  - A cross-site request-forgery vulnerability
+
+  - A denial-of-service vulnerability","Installed version: 1.5.15
+Fixed version:     1.6.1
+
+",1.3.6.1.4.1.25623.1.0.103114,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,57094c17-4c59-4f4c-8f14-5b1eb9a22a2d,"An attacker can exploit these vulnerabilities to execute arbitrary script code
+in the browser of an unsuspecting user in the context of the affected site, steal cookie-based authentication
+credentials, disclose or modify sensitive information, exploit latent vulnerabilities in the underlying database,
+deny service to legitimate users, redirect a victim to a potentially malicious site, or perform unauthorized
+actions. Other attacks are also possible.","The vendor released a patch. Please see the references for more
+information.","Versions prior to Joomla! 1.6.1 are vulnerable.","","
+Details:
+Joomla! Prior to 1.6.1 Multiple Security Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.103114)
+Version used: 2022-04-12T08:46:17Z
+","","46787","",""
+192.168.1.136,,443,tcp,7.5,High,"VendorFix","Joomla! Prior to 1.6.1 Multiple Security Vulnerabilities","Joomla! is prone to multiple security vulnerabilities including:
+
+  - An SQL-injection issue
+
+  - A path-disclosure vulnerability
+
+  - Multiple cross-site scripting issues
+
+  - Multiple information-disclosure vulnerabilities
+
+  - A URI-redirection vulnerability
+
+  - A security-bypass vulnerability
+
+  - A cross-site request-forgery vulnerability
+
+  - A denial-of-service vulnerability","Installed version: 1.5.15
+Fixed version:     1.6.1
+
+",1.3.6.1.4.1.25623.1.0.103114,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,dcb9e300-d83f-4ad8-97f6-2526241626b2,"An attacker can exploit these vulnerabilities to execute arbitrary script code
+in the browser of an unsuspecting user in the context of the affected site, steal cookie-based authentication
+credentials, disclose or modify sensitive information, exploit latent vulnerabilities in the underlying database,
+deny service to legitimate users, redirect a victim to a potentially malicious site, or perform unauthorized
+actions. Other attacks are also possible.","The vendor released a patch. Please see the references for more
+information.","Versions prior to Joomla! 1.6.1 are vulnerable.","","
+Details:
+Joomla! Prior to 1.6.1 Multiple Security Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.103114)
+Version used: 2022-04-12T08:46:17Z
+","","46787","",""
+192.168.1.136,,443,tcp,7.5,High,"VendorFix","Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities","Tiki Wiki CMS Groupware is prone to multiple unspecified vulnerabilities, including:
+
+  - An unspecified SQL-injection vulnerability
+
+  - An unspecified authentication-bypass vulnerability
+
+  - An unspecified vulnerability","Installed version: 1.9.5
+Fixed version:     4.2
+
+",1.3.6.1.4.1.25623.1.0.100537,"CVE-2010-1135,CVE-2010-1134,CVE-2010-1133,CVE-2010-1136",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,55c74002-00b1-42cb-9eec-7a189d931436,"Exploiting these issues could allow an attacker to compromise the
+  application, access or modify data, exploit latent vulnerabilities in
+  the underlying database, and gain unauthorized access to the affected
+  application. Other attacks are also possible.","The vendor has released an advisory and fixes. Please see the
+  references for details.","Versions prior to Tiki Wiki CMS Groupware 4.2 are vulnerable.","","
+Details:
+Tiki Wiki CMS Groupware < 4.2 Multiple Unspecified Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.100537)
+Version used: 2019-03-01T13:18:27Z
+","","38608","",""
+192.168.1.136,,80,tcp,7.5,High,"VendorFix","Tiki Wiki CMS Groupware fixedURLData Local File Inclusion Vulnerability","Tiki Wiki CMS Groupware is prone to a local file inclusion vulnerability.","Installed version: 1.9.5
+Fixed version:     12.11
+
+",1.3.6.1.4.1.25623.1.0.108064,"CVE-2016-10143",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,19eb19a4-4925-4c36-a5e5-69ce5f9e7d8b,"Successful exploitation will allow an user having access to the
+  admin backend to gain access to arbitrary files and to compromise the application.","Upgrade to Tiki Wiki CMS Groupware version 12.11 LTS, 15.4 or
+  later.","Tiki Wiki CMS Groupware versions:
+
+  - below 12.11 LTS
+
+  - 13.x, 14.x and 15.x below 15.4","The Flaw is due to improper sanitization
+  of input passed to the 'fixedURLData' parameter of the 'display_banner.php' script.","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware 'fixedURLData' Local File Inclusion Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.108064)
+Version used: 2021-10-12T09:28:32Z
+","","","",""
+192.168.1.136,,80,tcp,6.8,Medium,"VendorFix","WebCalendar Multiple CSS and CSRF Vulnerabilities","WebCalendar is prone to multiple CSS and CSRF Vulnerabilities.","Installed version: 1.0.3
+Vulnerable range:  Less than or equal to 1.2.0
+
+",1.3.6.1.4.1.25623.1.0.800472,"CVE-2010-0636,CVE-2010-0637,CVE-2010-0638",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,c70d4bdc-b071-4f16-ba90-0e90ed167354,"Successful exploitation could allow attackers to conduct cross-site scripting
+  and request forgery attacks.","Upgrade to WebCalendar version 1.2.1 or later.","WebCalendar version 1.2.0 and prior.","'- Input passed to the 'tab' parameter in 'users.php' is not properly
+  sanitised before being returned to the user.
+
+  - Input appended to the URL after 'day.php', 'month.php', and 'week.php'
+  is not properly sanitised before being returned to the user.
+
+  - The application allows users to perform certain actions via HTTP requests
+  without performing any validity checks to verify the requests. This can be
+  exploited to delete an event, ban an IP address from posting, or change the
+  administrative password if a logged-in administrative user visits a malicious web site.","
+Details:
+WebCalendar Multiple CSS and CSRF Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.800472)
+Version used: 2022-02-18T13:05:59Z
+","","38053","",""
+192.168.1.136,,80,tcp,6.8,Medium,"VendorFix","WebCalendar Multiple CSS and CSRF Vulnerabilities","WebCalendar is prone to multiple CSS and CSRF Vulnerabilities.","Installed version: 1.0.3
+Vulnerable range:  Less than or equal to 1.2.0
+
+",1.3.6.1.4.1.25623.1.0.800472,"CVE-2010-0636,CVE-2010-0637,CVE-2010-0638",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,8f94d68d-e6f2-45b8-90bb-2150b7244970,"Successful exploitation could allow attackers to conduct cross-site scripting
+  and request forgery attacks.","Upgrade to WebCalendar version 1.2.1 or later.","WebCalendar version 1.2.0 and prior.","'- Input passed to the 'tab' parameter in 'users.php' is not properly
+  sanitised before being returned to the user.
+
+  - Input appended to the URL after 'day.php', 'month.php', and 'week.php'
+  is not properly sanitised before being returned to the user.
+
+  - The application allows users to perform certain actions via HTTP requests
+  without performing any validity checks to verify the requests. This can be
+  exploited to delete an event, ban an IP address from posting, or change the
+  administrative password if a logged-in administrative user visits a malicious web site.","
+Details:
+WebCalendar Multiple CSS and CSRF Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.800472)
+Version used: 2022-02-18T13:05:59Z
+","","38053","",""
+192.168.1.136,,80,tcp,6.4,Medium,"VendorFix","AWStats Unspecified LoadPlugin Directory Traversal Vulnerability","AWStats is prone to an unspecified directory-traversal vulnerability because
+it fails to sufficiently sanitize user-supplied input data.","Installed version: 6.4
+Fixed version:     7.0
+
+",1.3.6.1.4.1.25623.1.0.103041,"CVE-2010-4369",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,8824ea64-f8e2-4b78-b8f7-d74275c99984,"","Updates are available. Please see the references for more information.","Versions prior to AWStats 7.0 are vulnerable.","","
+Details:
+AWStats Unspecified 'LoadPlugin' Directory Traversal Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.103041)
+Version used: 2022-04-12T08:46:17Z
+","","45210","DFN-CERT-2011-0243",""
+192.168.1.136,,443,tcp,6.3,Medium,"VendorFix","Joomla! <= 3.9.19 Multiple Vulnerabilities","Joomla! is prone to multiple vulnerabilities.","Installed version: 1.5.15
+Fixed version:     3.9.20
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.113726,"CVE-2020-15695,CVE-2020-15696,CVE-2020-15697,CVE-2020-15698,CVE-2020-15699,CVE-2020-15700",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,f0ec572f-4eed-444f-a4b0-9a2ea5024f18,"Successful exploitation would allow an attacker to
+  read sensitive information, inject arbitrary HTML and JavaScript into the site
+  or perform actions in the context of another use.","Update to version 3.9.20.","Joomla! through version 3.9.19.","The following vulnerabilities exist:
+
+  - A missing token check in the remove request section of com_privacy causes a CSRF vulnerability. (CVE-2020-15695)
+
+  - Lack of input filtering and escaping allows XSS attacks in mod_random_image. (CVE-2020-15696)
+
+  - Internal read-only fields in the User table class could be modified by users. (CVE-2020-15697)
+
+  - Inadequate filtering on the system information screen could expose Redis or proxy credentials. (CVE-2020-15698)
+
+  - Missing validation checks on the usergroups table object can result in a broken site configuration. (CVE-2020-15699)
+
+  - A missing token check in the ajax_install endpoint of com_installer causes a CSRF vulnerability. (CVE-2020-15700)","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! <= 3.9.19 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.113726)
+Version used: 2021-07-22T11:01:40Z
+","","","DFN-CERT-2020-1517,CB-K20/0716",""
+192.168.1.136,,80,tcp,6.3,Medium,"VendorFix","Joomla! <= 3.9.19 Multiple Vulnerabilities","Joomla! is prone to multiple vulnerabilities.","Installed version: 1.5.15
+Fixed version:     3.9.20
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.113726,"CVE-2020-15695,CVE-2020-15696,CVE-2020-15697,CVE-2020-15698,CVE-2020-15699,CVE-2020-15700",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,c719651f-7b20-4d3f-8e52-897ca97b39be,"Successful exploitation would allow an attacker to
+  read sensitive information, inject arbitrary HTML and JavaScript into the site
+  or perform actions in the context of another use.","Update to version 3.9.20.","Joomla! through version 3.9.19.","The following vulnerabilities exist:
+
+  - A missing token check in the remove request section of com_privacy causes a CSRF vulnerability. (CVE-2020-15695)
+
+  - Lack of input filtering and escaping allows XSS attacks in mod_random_image. (CVE-2020-15696)
+
+  - Internal read-only fields in the User table class could be modified by users. (CVE-2020-15697)
+
+  - Inadequate filtering on the system information screen could expose Redis or proxy credentials. (CVE-2020-15698)
+
+  - Missing validation checks on the usergroups table object can result in a broken site configuration. (CVE-2020-15699)
+
+  - A missing token check in the ajax_install endpoint of com_installer causes a CSRF vulnerability. (CVE-2020-15700)","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! <= 3.9.19 Multiple Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.113726)
+Version used: 2021-07-22T11:01:40Z
+","","","DFN-CERT-2020-1517,CB-K20/0716",""
+192.168.1.136,,443,tcp,6.1,Medium,"VendorFix","Joomla Media Manager XSS Vulnerability (20180509)","Joomla is prone to a cross-site scripting (XSS) vulnerability.","Installed version: 1.5.15
+Fixed version:     3.8.8
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.813406,"CVE-2018-6378",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,edc4a766-4158-4ffe-8bb5-f8bec78bcb09,"Successful exploitation will allow remote
+  attackers to conduct XSS attack.","Update to version 3.8.8 or later. Please see the references for more information.","Joomla versions 1.5.0 through 3.8.7","The flaw exists due to inadequate filtering
+  of file and folder names in media manager.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla 'Media Manager' XSS Vulnerability (20180509)
+(OID: 1.3.6.1.4.1.25623.1.0.813406)
+Version used: 2021-09-29T12:07:39Z
+","","","DFN-CERT-2018-0979",""
+192.168.1.136,,80,tcp,6.1,Medium,"VendorFix","Joomla! Core Cross-Site Scripting Vulnerability - July17","Joomla is prone to a cross-site scripting (XSS) vulnerability.","Installed version: 1.5.15
+Fixed version:     3.7.4
+
+",1.3.6.1.4.1.25623.1.0.811257,"CVE-2017-11612",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,f962a74b-bb44-45b4-ac33-e18b642c1b74,"Successfully exploiting this issue will allow
+  remote attacker to conduct cross-site scripting attacks.","Upgrade to Joomla version 3.7.4 or later.","Joomla core versions 1.5.0 through 3.7.3.","The flaw exists due to Inadequate filtering
+  of potentially malicious HTML tags in various components of the application.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! Core Cross-Site Scripting Vulnerability - July17
+(OID: 1.3.6.1.4.1.25623.1.0.811257)
+Version used: 2021-09-30T08:43:52Z
+","","","DFN-CERT-2017-1286,CB-K17/1245",""
+192.168.1.136,,443,tcp,6.1,Medium,"VendorFix","Tiki Wiki < 21.2 XSS Vulnerability","Tiki Wiki is prone to a cross-site scripting (XSS) vulnerability.","Installed version: 1.9.5
+Fixed version:     21.2
+Installation
+path / port:       /tikiwiki
+
+",1.3.6.1.4.1.25623.1.0.113737,"CVE-2020-16131",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,db2bc2d3-cb6d-4b99-91a8-7c07f0d5a7eb,"Successful exploitation would allow an attacker
+  to inject arbitrary HTML and JavaScript into the site.","Update to version 21.2.","Tiki Wiki through version 21.1.","The vulnerability exists because some patterns
+  are not properly considered in lib/core/TikiFilter/PreventXss.php.","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki < 21.2 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.113737)
+Version used: 2021-07-05T11:01:33Z
+","","","",""
+192.168.1.136,,443,tcp,6.1,Medium,"VendorFix","Joomla! Core Cross-Site Scripting Vulnerability - July17","Joomla is prone to a cross-site scripting (XSS) vulnerability.","Installed version: 1.5.15
+Fixed version:     3.7.4
+
+",1.3.6.1.4.1.25623.1.0.811257,"CVE-2017-11612",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,344b0ad1-4f4d-46ee-bff5-afcdf030f083,"Successfully exploiting this issue will allow
+  remote attacker to conduct cross-site scripting attacks.","Upgrade to Joomla version 3.7.4 or later.","Joomla core versions 1.5.0 through 3.7.3.","The flaw exists due to Inadequate filtering
+  of potentially malicious HTML tags in various components of the application.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! Core Cross-Site Scripting Vulnerability - July17
+(OID: 1.3.6.1.4.1.25623.1.0.811257)
+Version used: 2021-09-30T08:43:52Z
+","","","DFN-CERT-2017-1286,CB-K17/1245",""
+192.168.1.136,,80,tcp,6.1,Medium,"VendorFix","Joomla Media Manager XSS Vulnerability (20180509)","Joomla is prone to a cross-site scripting (XSS) vulnerability.","Installed version: 1.5.15
+Fixed version:     3.8.8
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.813406,"CVE-2018-6378",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,02bbdb5e-4463-4919-a3df-3c8d8fddc1a8,"Successful exploitation will allow remote
+  attackers to conduct XSS attack.","Update to version 3.8.8 or later. Please see the references for more information.","Joomla versions 1.5.0 through 3.8.7","The flaw exists due to inadequate filtering
+  of file and folder names in media manager.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla 'Media Manager' XSS Vulnerability (20180509)
+(OID: 1.3.6.1.4.1.25623.1.0.813406)
+Version used: 2021-09-29T12:07:39Z
+","","","DFN-CERT-2018-0979",""
+192.168.1.136,,443,tcp,6.1,Medium,"VendorFix","Joomla Uri class XSS Vulnerability","Joomla is prone to a cross-site scripting (XSS) vulnerability.","Installed version: 1.5.15
+Fixed version:     3.8.4
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.812681,"CVE-2018-6379",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,38b27d52-6a83-4e24-b768-f006d6434f9f,"Successfully exploiting this issue will allow remote attackers to execute
+arbitrary javascript code in the context of current user.","Update to version 3.8.4 or later.","Joomla version 1.5.0 through 3.8.3.","The flaw exists due to inadequate input filtering in the Uri class (formerly
+JUri).","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla 'Uri' class XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.812681)
+Version used: 2021-09-29T12:07:39Z
+","","","DFN-CERT-2018-0214,CB-K18/0197",""
+192.168.1.136,,80,tcp,6.1,Medium,"VendorFix","Joomla Uri class XSS Vulnerability","Joomla is prone to a cross-site scripting (XSS) vulnerability.","Installed version: 1.5.15
+Fixed version:     3.8.4
+Installation
+path / port:       /joomla
+
+",1.3.6.1.4.1.25623.1.0.812681,"CVE-2018-6379",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,6d1b7461-fdf0-495c-a378-9dc9b239cd17,"Successfully exploiting this issue will allow remote attackers to execute
+arbitrary javascript code in the context of current user.","Update to version 3.8.4 or later.","Joomla version 1.5.0 through 3.8.3.","The flaw exists due to inadequate input filtering in the Uri class (formerly
+JUri).","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla 'Uri' class XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.812681)
+Version used: 2021-09-29T12:07:39Z
+","","","DFN-CERT-2018-0214,CB-K18/0197",""
+192.168.1.136,,80,tcp,6.1,Medium,"VendorFix","Tiki Wiki < 21.2 XSS Vulnerability","Tiki Wiki is prone to a cross-site scripting (XSS) vulnerability.","Installed version: 1.9.5
+Fixed version:     21.2
+Installation
+path / port:       /tikiwiki
+
+",1.3.6.1.4.1.25623.1.0.113737,"CVE-2020-16131",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,e4a78333-5ca4-437d-8c7e-82b88494c2a9,"Successful exploitation would allow an attacker
+  to inject arbitrary HTML and JavaScript into the site.","Update to version 21.2.","Tiki Wiki through version 21.1.","The vulnerability exists because some patterns
+  are not properly considered in lib/core/TikiFilter/PreventXss.php.","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki < 21.2 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.113737)
+Version used: 2021-07-05T11:01:33Z
+","","","",""
+192.168.1.136,,443,tcp,6.1,Medium,"VendorFix","Tiki Wiki CMS Groupware < 21.0 XSS Vulnerability","Tiki Wiki is prone to a cross-site scripting vulnerability.","Installed version: 1.9.5
+Fixed version:     21.0
+Installation
+path / port:       /tikiwiki
+
+",1.3.6.1.4.1.25623.1.0.112721,"CVE-2020-8966",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,4b360ea9-8f6a-4ce1-ab56-6c9a940d692d,"","Update to version 21.0.","Tiki Wiki CMS Groupware version 20.0 and prior.","Some php pages receive input from an upstream component, but do not
+  neutralize or incorrectly neutralize special characters such as '<', '>', and '&'. These characters
+  could be interpreted as web-scripting elements when they are sent to a downstream component that processes web pages.","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware < 21.0 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.112721)
+Version used: 2021-07-05T11:01:33Z
+","","","",""
+192.168.1.136,,80,tcp,6.1,Medium,"VendorFix","Tiki Wiki CMS Groupware < 21.0 XSS Vulnerability","Tiki Wiki is prone to a cross-site scripting vulnerability.","Installed version: 1.9.5
+Fixed version:     21.0
+Installation
+path / port:       /tikiwiki
+
+",1.3.6.1.4.1.25623.1.0.112721,"CVE-2020-8966",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,72e42f3f-f4d9-4f40-89f6-4f0d536774a9,"","Update to version 21.0.","Tiki Wiki CMS Groupware version 20.0 and prior.","Some php pages receive input from an upstream component, but do not
+  neutralize or incorrectly neutralize special characters such as '<', '>', and '&'. These characters
+  could be interpreted as web-scripting elements when they are sent to a downstream component that processes web pages.","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware < 21.0 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.112721)
+Version used: 2021-07-05T11:01:33Z
+","","","",""
+192.168.1.136,,8081,tcp,6.1,Medium,"VendorFix","jQuery < 1.9.0 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.7.2
+Fixed version:     1.9.0
+Installation
+path / port:       /admin/../js
+
+",1.3.6.1.4.1.25623.1.0.141636,"CVE-2012-6708",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,395e2265-aed2-4e95-af82-7f366398e401,"","Update to version 1.9.0 or later.","jQuery prior to version 1.9.0.","The jQuery(strInput) function does not differentiate selectors
+  from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was
+  HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility
+  when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input
+  to be HTML if it explicitly starts with the '<' character, limiting exploitability only to
+  attackers who can control the beginning of a string, which is far less common.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.9.0 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141636)
+Version used: 2021-06-11T08:43:18Z
+","","","DFN-CERT-2020-0590,CB-K22/0045,CB-K18/1131",""
+192.168.1.136,,80,tcp,6.1,Medium,"VendorFix","jQuery < 1.9.0 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.8.2
+Fixed version:     1.9.0
+Installation
+path / port:       /owaspbricks/javascripts
+
+",1.3.6.1.4.1.25623.1.0.141636,"CVE-2012-6708",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,c8bc6aa4-a33b-4059-bfc8-bd34ec536719,"","Update to version 1.9.0 or later.","jQuery prior to version 1.9.0.","The jQuery(strInput) function does not differentiate selectors
+  from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was
+  HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility
+  when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input
+  to be HTML if it explicitly starts with the '<' character, limiting exploitability only to
+  attackers who can control the beginning of a string, which is far less common.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.9.0 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141636)
+Version used: 2021-06-11T08:43:18Z
+","","","DFN-CERT-2020-0590,CB-K22/0045,CB-K18/1131",""
+192.168.1.136,,80,tcp,6.1,Medium,"VendorFix","jQuery < 1.9.0 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.8.2
+Fixed version:     1.9.0
+Installation
+path / port:       /owaspbricks/config/../javascripts
+
+",1.3.6.1.4.1.25623.1.0.141636,"CVE-2012-6708",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,e55b2308-e287-4dae-8100-8af8cc28f73d,"","Update to version 1.9.0 or later.","jQuery prior to version 1.9.0.","The jQuery(strInput) function does not differentiate selectors
+  from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was
+  HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility
+  when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input
+  to be HTML if it explicitly starts with the '<' character, limiting exploitability only to
+  attackers who can control the beginning of a string, which is far less common.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.9.0 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141636)
+Version used: 2021-06-11T08:43:18Z
+","","","DFN-CERT-2020-0590,CB-K22/0045,CB-K18/1131",""
+192.168.1.136,,80,tcp,6.1,Medium,"VendorFix","jQuery < 1.9.0 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.3.2
+Fixed version:     1.9.0
+Installation
+path / port:       /mutillidae/javascript/ddsmoothmenu
+
+",1.3.6.1.4.1.25623.1.0.141636,"CVE-2012-6708",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,e98638de-b8b1-4f55-af99-e7347b1aa85b,"","Update to version 1.9.0 or later.","jQuery prior to version 1.9.0.","The jQuery(strInput) function does not differentiate selectors
+  from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was
+  HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility
+  when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input
+  to be HTML if it explicitly starts with the '<' character, limiting exploitability only to
+  attackers who can control the beginning of a string, which is far less common.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.9.0 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141636)
+Version used: 2021-06-11T08:43:18Z
+","","","DFN-CERT-2020-0590,CB-K22/0045,CB-K18/1131",""
+192.168.1.136,,80,tcp,6.1,Medium,"VendorFix","jQuery < 1.9.0 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.8.0
+Fixed version:     1.9.0
+Installation
+path / port:       /cyclone/assets
+
+",1.3.6.1.4.1.25623.1.0.141636,"CVE-2012-6708",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,101142e6-148f-4258-8c95-09709706874b,"","Update to version 1.9.0 or later.","jQuery prior to version 1.9.0.","The jQuery(strInput) function does not differentiate selectors
+  from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was
+  HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility
+  when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input
+  to be HTML if it explicitly starts with the '<' character, limiting exploitability only to
+  attackers who can control the beginning of a string, which is far less common.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.9.0 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141636)
+Version used: 2021-06-11T08:43:18Z
+","","","DFN-CERT-2020-0590,CB-K22/0045,CB-K18/1131",""
+192.168.1.136,,80,tcp,6.1,Medium,"VendorFix","jQuery < 1.9.0 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.3.2
+Fixed version:     1.9.0
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.141636,"CVE-2012-6708",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,5f4e5ea2-50bb-4ac8-8cbb-945f1bf23318,"","Update to version 1.9.0 or later.","jQuery prior to version 1.9.0.","The jQuery(strInput) function does not differentiate selectors
+  from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was
+  HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility
+  when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input
+  to be HTML if it explicitly starts with the '<' character, limiting exploitability only to
+  attackers who can control the beginning of a string, which is far less common.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.9.0 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141636)
+Version used: 2021-06-11T08:43:18Z
+","","","DFN-CERT-2020-0590,CB-K22/0045,CB-K18/1131",""
+192.168.1.136,,443,tcp,6.1,Medium,"VendorFix","jQuery < 1.9.0 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.8.2
+Fixed version:     1.9.0
+Installation
+path / port:       /owaspbricks/javascripts
+
+",1.3.6.1.4.1.25623.1.0.141636,"CVE-2012-6708",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,915833fe-2fcb-4feb-a507-fceb3345b222,"","Update to version 1.9.0 or later.","jQuery prior to version 1.9.0.","The jQuery(strInput) function does not differentiate selectors
+  from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was
+  HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility
+  when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input
+  to be HTML if it explicitly starts with the '<' character, limiting exploitability only to
+  attackers who can control the beginning of a string, which is far less common.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.9.0 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141636)
+Version used: 2021-06-11T08:43:18Z
+","","","DFN-CERT-2020-0590,CB-K22/0045,CB-K18/1131",""
+192.168.1.136,,443,tcp,6.1,Medium,"VendorFix","jQuery < 1.9.0 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.3.2
+Fixed version:     1.9.0
+Installation
+path / port:       /mutillidae/javascript/ddsmoothmenu
+
+",1.3.6.1.4.1.25623.1.0.141636,"CVE-2012-6708",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,08ec781b-84db-4a1d-a7ce-06300808760e,"","Update to version 1.9.0 or later.","jQuery prior to version 1.9.0.","The jQuery(strInput) function does not differentiate selectors
+  from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was
+  HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility
+  when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input
+  to be HTML if it explicitly starts with the '<' character, limiting exploitability only to
+  attackers who can control the beginning of a string, which is far less common.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.9.0 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141636)
+Version used: 2021-06-11T08:43:18Z
+","","","DFN-CERT-2020-0590,CB-K22/0045,CB-K18/1131",""
+192.168.1.136,,443,tcp,6.1,Medium,"VendorFix","jQuery < 1.9.0 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.3.2
+Fixed version:     1.9.0
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.141636,"CVE-2012-6708",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,c4f0ac1b-1942-481e-89f5-548ec621ca12,"","Update to version 1.9.0 or later.","jQuery prior to version 1.9.0.","The jQuery(strInput) function does not differentiate selectors
+  from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was
+  HTML by looking for the '<' character anywhere in the string, giving attackers more flexibility
+  when attempting to construct a malicious payload. In fixed versions, jQuery only deems the input
+  to be HTML if it explicitly starts with the '<' character, limiting exploitability only to
+  attackers who can control the beginning of a string, which is far less common.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.9.0 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141636)
+Version used: 2021-06-11T08:43:18Z
+","","","DFN-CERT-2020-0590,CB-K22/0045,CB-K18/1131",""
+192.168.1.136,,443,tcp,5.9,Medium,"Mitigation","SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection","It was possible to detect the usage of the deprecated SSLv2
+  and/or SSLv3 protocol on this system.","In addition to TLSv1.0+ the service is also providing the deprecated SSLv3 protocol and supports one or more ciphers. Those supported ciphers can be found in the 'SSL/TLS: Report Supported Cipher Suites' (OID: 1.3.6.1.4.1.25623.1.0.802067) VT.
+",1.3.6.1.4.1.25623.1.0.111012,"CVE-2016-0800,CVE-2014-3566",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,06f99971-6e49-4507-a43b-49cfb98126d3,"An attacker might be able to use the known cryptographic flaws to
+  eavesdrop the connection between clients and the service to get access to sensitive data
+  transferred within the secured connection.
+
+  Furthermore newly uncovered vulnerabilities in this protocols won't receive security updates
+  anymore.","It is recommended to disable the deprecated SSLv2 and/or SSLv3
+  protocols in favor of the TLSv1.2+ protocols. Please see the references for more information.","All services providing an encrypted communication using the
+  SSLv2 and/or SSLv3 protocols.","The SSLv2 and SSLv3 protocols contain known cryptographic
+  flaws like:
+
+  - CVE-2014-3566: Padding Oracle On Downgraded Legacy Encryption (POODLE)
+
+  - CVE-2016-0800: Decrypting RSA with Obsolete and Weakened eNcryption (DROWN)","Check the used SSL protocols of the services provided by this
+  system.
+Details:
+SSL/TLS: Deprecated SSLv2 and SSLv3 Protocol Detection
+(OID: 1.3.6.1.4.1.25623.1.0.111012)
+Version used: 2021-10-15T12:51:02Z
+","","","DFN-CERT-2018-0096,DFN-CERT-2017-1238,DFN-CERT-2017-1236,DFN-CERT-2016-1929,DFN-CERT-2016-1527,DFN-CERT-2016-1468,DFN-CERT-2016-1216,DFN-CERT-2016-1174,DFN-CERT-2016-1168,DFN-CERT-2016-0884,DFN-CERT-2016-0841,DFN-CERT-2016-0644,DFN-CERT-2016-0642,DFN-CERT-2016-0496,DFN-CERT-2016-0495,DFN-CERT-2016-0465,DFN-CERT-2016-0459,DFN-CERT-2016-0453,DFN-CERT-2016-0451,DFN-CERT-2016-0415,DFN-CERT-2016-0403,DFN-CERT-2016-0388,DFN-CERT-2016-0360,DFN-CERT-2016-0359,DFN-CERT-2016-0357,DFN-CERT-2016-0171,DFN-CERT-2015-1431,DFN-CERT-2015-1075,DFN-CERT-2015-1026,DFN-CERT-2015-0664,DFN-CERT-2015-0548,DFN-CERT-2015-0404,DFN-CERT-2015-0396,DFN-CERT-2015-0259,DFN-CERT-2015-0254,DFN-CERT-2015-0245,DFN-CERT-2015-0118,DFN-CERT-2015-0114,DFN-CERT-2015-0083,DFN-CERT-2015-0082,DFN-CERT-2015-0081,DFN-CERT-2015-0076,DFN-CERT-2014-1717,DFN-CERT-2014-1680,DFN-CERT-2014-1632,DFN-CERT-2014-1564,DFN-CERT-2014-1542,DFN-CERT-2014-1414,DFN-CERT-2014-1366,DFN-CERT-2014-1354,CB-K18/0094,CB-K17/1198,CB-K17/1196,CB-K16/1828,CB-K16/1438,CB-K16/1384,CB-K16/1141,CB-K16/1107,CB-K16/1102,CB-K16/0792,CB-K16/0599,CB-K16/0597,CB-K16/0459,CB-K16/0456,CB-K16/0433,CB-K16/0424,CB-K16/0415,CB-K16/0413,CB-K16/0374,CB-K16/0367,CB-K16/0331,CB-K16/0329,CB-K16/0328,CB-K16/0156,CB-K15/1514,CB-K15/1358,CB-K15/1021,CB-K15/0972,CB-K15/0637,CB-K15/0590,CB-K15/0525,CB-K15/0393,CB-K15/0384,CB-K15/0287,CB-K15/0252,CB-K15/0246,CB-K15/0237,CB-K15/0118,CB-K15/0110,CB-K15/0108,CB-K15/0080,CB-K15/0078,CB-K15/0077,CB-K15/0075,CB-K14/1617,CB-K14/1581,CB-K14/1537,CB-K14/1479,CB-K14/1458,CB-K14/1342,CB-K14/1314,CB-K14/1313,CB-K14/1311,CB-K14/1304,CB-K14/1296",""
+192.168.1.136,,80,tcp,5.4,Medium,"VendorFix","Tiki Wiki CMS Groupware XSS Vulnerability","An XSS vulnerability (via an SVG image) in Tiki allows an authenticated user
+to gain administrator privileges if an administrator opens a wiki page with a malicious SVG image, related to
+lib/filegals/filegallib.php.","Installed version: 1.9.5
+Fixed version:     18.0
+
+",1.3.6.1.4.1.25623.1.0.140797,"CVE-2018-7188",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,43def0aa-874c-404f-9cde-2480d00fda1c,"","Upgrade to version 18.0 or later.","Tiki Wiki CMS Groupware prior to version 18.0.","","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.140797)
+Version used: 2021-05-21T08:07:35Z
+","","","",""
+192.168.1.136,,443,tcp,5.4,Medium,"VendorFix","Tiki Wiki CMS Groupware XSS Vulnerability","An XSS vulnerability (via an SVG image) in Tiki allows an authenticated user
+to gain administrator privileges if an administrator opens a wiki page with a malicious SVG image, related to
+lib/filegals/filegallib.php.","Installed version: 1.9.5
+Fixed version:     18.0
+
+",1.3.6.1.4.1.25623.1.0.140797,"CVE-2018-7188",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,bc15da38-b9ba-4fe3-b5fc-f2a101615ff5,"","Upgrade to version 18.0 or later.","Tiki Wiki CMS Groupware prior to version 18.0.","","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.140797)
+Version used: 2021-05-21T08:07:35Z
+","","","",""
+192.168.1.136,,80,tcp,5.4,Medium,"WillNotFix","Tiki Wiki CMS Groupware 18.4 XSS Vulnerability","Tiki Wiki is prone to a cross-site scripting vulnerability.","Installed version: 1.9.5
+Fixed version:     None
+Installation
+path / port:       /tikiwiki
+
+",1.3.6.1.4.1.25623.1.0.142795,"CVE-2019-15314",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,f1ebe5eb-9315-4103-aa90-37920559114a,"","No known solution was made available for at least one year since the disclosure
+  of this vulnerability. Likely none will be provided anymore. General solution options are to upgrade to a newer
+  release, disable respective features, remove the product or replace the product by another one.","Tiki Wiki CMS Groupware version 18.4 and probably prior.","tiki/tiki-upload_file.php allows remote attackers to upload JavaScript code
+  that is executed upon visiting a tiki/tiki-download_file.php?display&fileId= URI.","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware 18.4 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.142795)
+Version used: 2021-08-27T13:01:16Z
+","","","",""
+192.168.1.136,,443,tcp,5.4,Medium,"WillNotFix","Tiki Wiki CMS Groupware 18.4 XSS Vulnerability","Tiki Wiki is prone to a cross-site scripting vulnerability.","Installed version: 1.9.5
+Fixed version:     None
+Installation
+path / port:       /tikiwiki
+
+",1.3.6.1.4.1.25623.1.0.142795,"CVE-2019-15314",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,4d5c9eba-7608-4b20-bb27-aacfbefaa472,"","No known solution was made available for at least one year since the disclosure
+  of this vulnerability. Likely none will be provided anymore. General solution options are to upgrade to a newer
+  release, disable respective features, remove the product or replace the product by another one.","Tiki Wiki CMS Groupware version 18.4 and probably prior.","tiki/tiki-upload_file.php allows remote attackers to upload JavaScript code
+  that is executed upon visiting a tiki/tiki-download_file.php?display&fileId= URI.","Checks if a vulnerable version is present on the target host.
+Details:
+Tiki Wiki CMS Groupware 18.4 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.142795)
+Version used: 2021-08-27T13:01:16Z
+","","","",""
+192.168.1.136,,443,tcp,5.3,Medium,"Mitigation","SSL/TLS: Server Certificate / Certificate in Chain with RSA keys less than 2048 bits","The remote SSL/TLS server certificate and/or any of the
+  certificates in the certificate chain is using a RSA key with less than 2048 bits.","The remote SSL/TLS server is using the following certificate(s) with a RSA key with less than 2048 bits (public-key-size:public-key-algorithm:serial:issuer):
+
+1024:RSA:00E6870DDD72C2B9E7:CN=owaspbwa (Server certificate)
+",1.3.6.1.4.1.25623.1.0.150710,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,cc0346ce-062c-4f73-a2bb-ff91ebbe97fb,"Using certificates with weak RSA key size can lead to
+  unauthorized exposure of sensitive information.","Replace the certificate with a stronger key and reissue the
+  certificates it signed.","","SSL/TLS certificates using RSA keys with less than 2048 bits are
+  considered unsafe.","Checks the RSA keys size of the server certificate and all
+  certificates in chain for a size < 2048 bit.
+Details:
+SSL/TLS: Server Certificate / Certificate in Chain with RSA keys less than 2...
+(OID: 1.3.6.1.4.1.25623.1.0.150710)
+Version used: 2021-12-10T12:48:00Z
+","","","",""
+192.168.1.136,,443,tcp,5.3,Medium,"Workaround","MacOS X Finder .DS_Store Information Disclosure","MacOS X creates a hidden file '.DS_Store', in each directory that has been viewed
+  with the 'Finder'. This file contains a list of the contents of the directory, giving an attacker
+  information on the structure and contents of your website.","The following files were identified:
+
+https://owaspbwa/cyclone/.DS_Store
+https://owaspbwa/cyclone/uploads/.DS_Store
+",1.3.6.1.4.1.25623.1.0.10756,"CVE-2016-1776,CVE-2018-6470",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,dbee4529-2b7a-4a76-a86f-8aa38bc266ac,"","Block access to hidden files (starting with a dot) within your webservers
+  configuration","","","
+Details:
+MacOS X Finder '.DS_Store' Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.10756)
+Version used: 2022-04-12T08:46:17Z
+","","3316,3324,85054","DFN-CERT-2016-0489,CB-K16/0450",""
+192.168.1.136,,22,tcp,5.3,Medium,"Mitigation","Weak Key Exchange (KEX) Algorithm(s) Supported (SSH)","The remote SSH server is configured to allow / support weak key
+  exchange (KEX) algorithm(s).","The remote SSH server supports the following weak KEX algorithm(s):
+
+KEX algorithm                      | Reason
+-------------------------------------------------------------------------------------------
+diffie-hellman-group-exchange-sha1 | Using SHA-1
+diffie-hellman-group1-sha1         | Using Oakley Group 2 (a 1024-bit MODP group) and SHA-1
+",1.3.6.1.4.1.25623.1.0.150713,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,61cc98db-341a-43c3-a27c-c417ee73c40c,"An attacker can quickly break individual connections.","Disable the reported weak KEX algorithm(s)
+
+  - 1024-bit MODP group / prime KEX algorithms:
+
+  Alternatively use elliptic-curve Diffie-Hellmann in general, e.g. Curve 25519.","","'- 1024-bit MODP group / prime KEX algorithms:
+
+  Millions of HTTPS, SSH, and VPN servers all use the same prime numbers for Diffie-Hellman key
+  exchange. Practitioners believed this was safe as long as new key exchange messages were generated
+  for every connection. However, the first step in the number field sieve-the most efficient
+  algorithm for breaking a Diffie-Hellman connection-is dependent only on this prime.
+
+  A nation-state can break a 1024-bit prime.","Checks the supported KEX algorithms of the remote SSH server.
+
+  Currently weak KEX algorithms are defined as the following:
+
+  - non-elliptic-curve Diffie-Hellmann (DH) KEX algorithms with 1024-bit MODP group / prime
+
+  - ephemerally generated key exchange groups uses SHA-1
+
+  - using RSA 1024-bit modulus key
+Details:
+Weak Key Exchange (KEX) Algorithm(s) Supported (SSH)
+(OID: 1.3.6.1.4.1.25623.1.0.150713)
+Version used: 2021-11-24T06:31:19Z
+","","","",""
+192.168.1.136,,22,tcp,5.3,Medium,"Mitigation","Weak Host Key Algorithm(s) (SSH)","The remote SSH server is configured to allow / support weak host
+  key algorithm(s).","The remote SSH server supports the following weak host key algorithm(s):
+
+host key algorithm | Description
+-----------------------------------------------------------------------------------------
+ssh-dss            | Digital Signature Algorithm (DSA) / Digital Signature Standard (DSS)
+",1.3.6.1.4.1.25623.1.0.117687,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,0eb443f4-fd20-4bd1-ab77-4097473a4143,"","Disable the reported weak host key algorithm(s).","","","Checks the supported host key algorithms of the remote SSH
+  server.
+
+  Currently weak host key algorithms are defined as the following:
+
+  - ssh-dss: Digital Signature Algorithm (DSA) / Digital Signature Standard (DSS)
+Details:
+Weak Host Key Algorithm(s) (SSH)
+(OID: 1.3.6.1.4.1.25623.1.0.117687)
+Version used: 2021-11-24T06:31:19Z
+","","","",""
+192.168.1.136,,443,tcp,5.3,Medium,"Workaround","MacOS X Finder .DS_Store Information Disclosure","MacOS X creates a hidden file '.DS_Store', in each directory that has been viewed
+  with the 'Finder'. This file contains a list of the contents of the directory, giving an attacker
+  information on the structure and contents of your website.","The following files were identified:
+
+https://owaspbwa.lan/cyclone/.DS_Store
+https://owaspbwa.lan/cyclone/uploads/.DS_Store
+",1.3.6.1.4.1.25623.1.0.10756,"CVE-2016-1776,CVE-2018-6470",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,827c5cae-8a74-4912-b067-cc5b391c4df6,"","Block access to hidden files (starting with a dot) within your webservers
+  configuration","","","
+Details:
+MacOS X Finder '.DS_Store' Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.10756)
+Version used: 2022-04-12T08:46:17Z
+","","3316,3324,85054","DFN-CERT-2016-0489,CB-K16/0450",""
+192.168.1.136,,80,tcp,5.3,Medium,"Workaround","MacOS X Finder .DS_Store Information Disclosure","MacOS X creates a hidden file '.DS_Store', in each directory that has been viewed
+  with the 'Finder'. This file contains a list of the contents of the directory, giving an attacker
+  information on the structure and contents of your website.","The following files were identified:
+
+http://owaspbwa/cyclone/.DS_Store
+",1.3.6.1.4.1.25623.1.0.10756,"CVE-2016-1776,CVE-2018-6470",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,d593b1b9-3c5b-4495-a6f3-fe41be3280a7,"","Block access to hidden files (starting with a dot) within your webservers
+  configuration","","","
+Details:
+MacOS X Finder '.DS_Store' Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.10756)
+Version used: 2022-04-12T08:46:17Z
+","","3316,3324,85054","DFN-CERT-2016-0489,CB-K16/0450",""
+192.168.1.136,,443,tcp,5.3,Medium,"VendorFix","Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities","Joomla is prone to information disclosure and cross-site scripting vulnerabilities.","Installed version: 1.5.15
+Fixed version:     3.7.0
+
+",1.3.6.1.4.1.25623.1.0.811042,"CVE-2017-7983,CVE-2017-7986,CVE-2017-7985",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,fbbd4469-da55-43a1-9cef-1266cd5c627c,"Successfully exploiting these issues allow
+  remote attackers to gain access to potentially sensitive information and
+  conduct cross-site scripting attacks.","Upgrade to Joomla version 3.7.0 or later.","Joomla core versions 1.5.0 through 3.6.5","Multiple flaws are due to:
+
+  - Mail sent using the JMail API leaked the used PHPMailer version in the mail
+    headers.
+
+  - Inadequate filtering of specific HTML attributes.
+
+  - Inadequate filtering of multibyte characters.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.811042)
+Version used: 2022-04-14T10:40:31Z
+","","","DFN-CERT-2017-1151,DFN-CERT-2017-0720,CB-K17/1113,CB-K17/0698",""
+192.168.1.136,,80,tcp,5.3,Medium,"VendorFix","Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities","Joomla is prone to information disclosure and cross-site scripting vulnerabilities.","Installed version: 1.5.15
+Fixed version:     3.7.0
+
+",1.3.6.1.4.1.25623.1.0.811042,"CVE-2017-7983,CVE-2017-7986,CVE-2017-7985",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,f58dedc7-19bd-47f7-b30d-8a43a1bd4005,"Successfully exploiting these issues allow
+  remote attackers to gain access to potentially sensitive information and
+  conduct cross-site scripting attacks.","Upgrade to Joomla version 3.7.0 or later.","Joomla core versions 1.5.0 through 3.6.5","Multiple flaws are due to:
+
+  - Mail sent using the JMail API leaked the used PHPMailer version in the mail
+    headers.
+
+  - Inadequate filtering of specific HTML attributes.
+
+  - Inadequate filtering of multibyte characters.","Checks if a vulnerable version is present on the target host.
+Details:
+Joomla! Information Disclosure and Cross-Site Scripting Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.811042)
+Version used: 2022-04-14T10:40:31Z
+","","","DFN-CERT-2017-1151,DFN-CERT-2017-0720,CB-K17/1113,CB-K17/0698",""
+192.168.1.136,,80,tcp,5.3,Medium,"Workaround","MacOS X Finder .DS_Store Information Disclosure","MacOS X creates a hidden file '.DS_Store', in each directory that has been viewed
+  with the 'Finder'. This file contains a list of the contents of the directory, giving an attacker
+  information on the structure and contents of your website.","The following files were identified:
+
+http://owaspbwa.lan/cyclone/.DS_Store
+",1.3.6.1.4.1.25623.1.0.10756,"CVE-2016-1776,CVE-2018-6470",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,599930e5-c46b-48ca-b29a-00b69f4dfb96,"","Block access to hidden files (starting with a dot) within your webservers
+  configuration","","","
+Details:
+MacOS X Finder '.DS_Store' Information Disclosure
+(OID: 1.3.6.1.4.1.25623.1.0.10756)
+Version used: 2022-04-12T08:46:17Z
+","","3316,3324,85054","DFN-CERT-2016-0489,CB-K16/0450",""
+192.168.1.136,,80,tcp,5.0,Medium,"VendorFix","Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability","Tiki Wiki CMS Groupware is prone to an input sanitation weakness vulnerability.","Installed version: 1.9.5
+Fixed version:     2.2
+
+",1.3.6.1.4.1.25623.1.0.800315,"CVE-2008-5318,CVE-2008-5319",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,5171f353-c4f7-4a83-b18f-1efdc8ddfc16,"Successful exploitation could allow arbitrary code execution in the context
+  of an affected site.","Upgrade to version 2.2 or later.","Tiki Wiki CMS Groupware version prior to 2.2 on all running platform","The vulnerability is due to input validation error in tiki-error.php
+  which fails to sanitise before being returned to the user.","
+Details:
+Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.800315)
+Version used: 2022-02-21T14:02:33Z
+","","","",""
+192.168.1.136,,443,tcp,5.0,Medium,"VendorFix","Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability","Tiki Wiki CMS Groupware is prone to an input sanitation weakness vulnerability.","Installed version: 1.9.5
+Fixed version:     2.2
+
+",1.3.6.1.4.1.25623.1.0.800315,"CVE-2008-5318,CVE-2008-5319",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,ca8a6de9-7d74-4f89-a25f-9581651a88ce,"Successful exploitation could allow arbitrary code execution in the context
+  of an affected site.","Upgrade to version 2.2 or later.","Tiki Wiki CMS Groupware version prior to 2.2 on all running platform","The vulnerability is due to input validation error in tiki-error.php
+  which fails to sanitise before being returned to the user.","
+Details:
+Tiki Wiki CMS Groupware Input Sanitation Weakness Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.800315)
+Version used: 2022-02-21T14:02:33Z
+","","","",""
+192.168.1.136,,80,tcp,5.0,Medium,"VendorFix","AWStats awstats.pl Multiple Path Disclosure Vulnerability","AWStats is prone to a path-disclosure vulnerability.","Vulnerable URL: http://owaspbwa.lan/awstats/awstats.pl?config=VT-Test
+",1.3.6.1.4.1.25623.1.0.100070,"CVE-2006-3682",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,808d72bc-0f04-48c6-966d-b7f961ab7292,"Exploiting this issue can allow an attacker to access sensitive data that may
+  be used to launch further attacks against a vulnerable computer.","Please update to AWStats 6.6 or later.","AWStats 6.5 (build 1.857) and prior WebGUI Runtime Environment 0.8.x and
+  prior","","
+Details:
+AWStats 'awstats.pl' Multiple Path Disclosure Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.100070)
+Version used: 2020-05-08T08:34:44Z
+","","34159","",""
+192.168.1.136,,80,tcp,5.0,Medium,"VendorFix","WebCalendar User Account Enumeration Disclosure Issue","The version of WebCalendar on the remote host is prone to a user
+  account enumeration weakness in that in response to login attempts it returns different error messages
+  depending on whether the user exists or the password is invalid.","Vulnerable URL: http://owaspbwa/webcal/login.php
+",1.3.6.1.4.1.25623.1.0.80021,"CVE-2006-2247",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,cbb7589e-067d-4045-9b2a-905eb803437c,"","Upgrade to WebCalendar 1.0.4 or later.","","","
+Details:
+WebCalendar User Account Enumeration Disclosure Issue
+(OID: 1.3.6.1.4.1.25623.1.0.80021)
+Version used: 2020-08-24T15:18:35Z
+","","17853","",""
+192.168.1.136,,443,tcp,5.0,Medium,"Mitigation","SSL/TLS: Report Weak Cipher Suites","This routine reports all Weak SSL/TLS cipher suites accepted
+  by a service.
+
+  NOTE: No severity for SMTP services with 'Opportunistic TLS' and weak cipher suites on port
+  25/tcp is reported. If too strong cipher suites are configured for this service the alternative
+  would be to fall back to an even more insecure cleartext communication.","'Weak' cipher suites accepted by this service via the SSLv3 protocol:
+
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+
+'Weak' cipher suites accepted by this service via the TLSv1.0 protocol:
+
+TLS_RSA_WITH_RC4_128_MD5
+TLS_RSA_WITH_RC4_128_SHA
+
+
+",1.3.6.1.4.1.25623.1.0.103440,"CVE-2013-2566,CVE-2015-2808,CVE-2015-4000",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,22c96fea-e0c1-4312-af8f-d93ce0bf433f,"","The configuration of this services should be changed so
+  that it does not accept the listed weak cipher suites anymore.
+
+  Please see the references for more resources supporting you with this task.","","These rules are applied for the evaluation of the cryptographic
+  strength:
+
+  - RC4 is considered to be weak (CVE-2013-2566, CVE-2015-2808)
+
+  - Ciphers using 64 bit or less are considered to be vulnerable to brute force methods
+  and therefore considered as weak (CVE-2015-4000)
+
+  - 1024 bit RSA authentication is considered to be insecure and therefore as weak
+
+  - Any cipher considered to be secure for only the next 10 years is considered as medium
+
+  - Any other cipher is considered as strong","
+Details:
+SSL/TLS: Report Weak Cipher Suites
+(OID: 1.3.6.1.4.1.25623.1.0.103440)
+Version used: 2021-12-01T13:10:37Z
+","","","DFN-CERT-2021-0775,DFN-CERT-2020-1561,DFN-CERT-2020-1276,DFN-CERT-2017-1821,DFN-CERT-2016-1692,DFN-CERT-2016-1648,DFN-CERT-2016-1168,DFN-CERT-2016-0665,DFN-CERT-2016-0642,DFN-CERT-2016-0184,DFN-CERT-2016-0135,DFN-CERT-2016-0101,DFN-CERT-2016-0035,DFN-CERT-2015-1853,DFN-CERT-2015-1679,DFN-CERT-2015-1632,DFN-CERT-2015-1608,DFN-CERT-2015-1542,DFN-CERT-2015-1518,DFN-CERT-2015-1406,DFN-CERT-2015-1341,DFN-CERT-2015-1194,DFN-CERT-2015-1144,DFN-CERT-2015-1113,DFN-CERT-2015-1078,DFN-CERT-2015-1067,DFN-CERT-2015-1038,DFN-CERT-2015-1016,DFN-CERT-2015-1012,DFN-CERT-2015-0980,DFN-CERT-2015-0977,DFN-CERT-2015-0976,DFN-CERT-2015-0960,DFN-CERT-2015-0956,DFN-CERT-2015-0944,DFN-CERT-2015-0937,DFN-CERT-2015-0925,DFN-CERT-2015-0884,DFN-CERT-2015-0881,DFN-CERT-2015-0879,DFN-CERT-2015-0866,DFN-CERT-2015-0844,DFN-CERT-2015-0800,DFN-CERT-2015-0737,DFN-CERT-2015-0696,DFN-CERT-2014-0977,CB-K21/0067,CB-K19/0812,CB-K17/1750,CB-K16/1593,CB-K16/1552,CB-K16/1102,CB-K16/0617,CB-K16/0599,CB-K16/0168,CB-K16/0121,CB-K16/0090,CB-K16/0030,CB-K15/1751,CB-K15/1591,CB-K15/1550,CB-K15/1517,CB-K15/1514,CB-K15/1464,CB-K15/1442,CB-K15/1334,CB-K15/1269,CB-K15/1136,CB-K15/1090,CB-K15/1059,CB-K15/1022,CB-K15/1015,CB-K15/0986,CB-K15/0964,CB-K15/0962,CB-K15/0932,CB-K15/0927,CB-K15/0926,CB-K15/0907,CB-K15/0901,CB-K15/0896,CB-K15/0889,CB-K15/0877,CB-K15/0850,CB-K15/0849,CB-K15/0834,CB-K15/0827,CB-K15/0802,CB-K15/0764,CB-K15/0733,CB-K15/0667,CB-K14/0935,CB-K13/0942",""
+192.168.1.136,,80,tcp,5.0,Medium,"VendorFix","AWStats Multiple Unspecified Security Vulnerabilities","AWStats is prone to multiple security vulnerabilities.","Installed version: 6.4
+Fixed version:     6.95
+
+",1.3.6.1.4.1.25623.1.0.100380,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,42f9a572-fbbe-44db-b89a-fe623a3bd979,"","Updates are available. Please see the references for details.","","","
+Details:
+AWStats Multiple Unspecified Security Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.100380)
+Version used: 2020-10-20T15:03:35Z
+","","37157","",""
+192.168.1.136,,80,tcp,5.0,Medium,"VendorFix","AWStats awstats.pl Multiple Path Disclosure Vulnerability","AWStats is prone to a path-disclosure vulnerability.","Vulnerable URL: http://owaspbwa/awstats/awstats.pl?config=VT-Test
+",1.3.6.1.4.1.25623.1.0.100070,"CVE-2006-3682",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,83b9cdd0-09b7-439e-8590-fe8346986eb7,"Exploiting this issue can allow an attacker to access sensitive data that may
+  be used to launch further attacks against a vulnerable computer.","Please update to AWStats 6.6 or later.","AWStats 6.5 (build 1.857) and prior WebGUI Runtime Environment 0.8.x and
+  prior","","
+Details:
+AWStats 'awstats.pl' Multiple Path Disclosure Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.100070)
+Version used: 2020-05-08T08:34:44Z
+","","34159","",""
+192.168.1.136,,80,tcp,5.0,Medium,"VendorFix","WebCalendar User Account Enumeration Disclosure Issue","The version of WebCalendar on the remote host is prone to a user
+  account enumeration weakness in that in response to login attempts it returns different error messages
+  depending on whether the user exists or the password is invalid.","Vulnerable URL: http://owaspbwa.lan/webcal/login.php
+",1.3.6.1.4.1.25623.1.0.80021,"CVE-2006-2247",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,a58ba998-7459-4a56-aac5-97c975c18448,"","Upgrade to WebCalendar 1.0.4 or later.","","","
+Details:
+WebCalendar User Account Enumeration Disclosure Issue
+(OID: 1.3.6.1.4.1.25623.1.0.80021)
+Version used: 2020-08-24T15:18:35Z
+","","17853","",""
+192.168.1.136,,8080,tcp,4.8,Medium,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following URLs requires Basic Authentication (URL:realm name):
+
+http://owaspbwa.lan:8080/host-manager/html:""Tomcat Host Manager Application""
+http://owaspbwa.lan:8080/manager/html:""Tomcat Manager Application""
+http://owaspbwa.lan:8080/manager/status:""Tomcat Manager Application""
+",1.3.6.1.4.1.25623.1.0.108440,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,b9b4745b-e44a-4538-8f0d-52f3ccbf286f,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2020-08-24T15:18:35Z
+","","","",""
+192.168.1.136,,8080,tcp,4.8,Medium,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following URLs requires Basic Authentication (URL:realm name):
+
+http://owaspbwa:8080/host-manager/html:""Tomcat Host Manager Application""
+http://owaspbwa:8080/manager/html:""Tomcat Manager Application""
+http://owaspbwa:8080/manager/status:""Tomcat Manager Application""
+",1.3.6.1.4.1.25623.1.0.108440,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,9b549432-b981-4d68-933d-3a6808f86139,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2020-08-24T15:18:35Z
+","","","",""
+192.168.1.136,,80,tcp,4.8,Medium,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following URLs requires Basic Authentication (URL:realm name):
+
+http://owaspbwa/WebGoat/attack:""WebGoat Application""
+",1.3.6.1.4.1.25623.1.0.108440,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,2df356bf-b58a-43d2-bc89-fa07c5670b80,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2020-08-24T15:18:35Z
+","","","",""
+192.168.1.136,,80,tcp,4.8,Medium,"Workaround","Cleartext Transmission of Sensitive Information via HTTP","The host / application transmits sensitive information (username, passwords) in
+  cleartext via HTTP.","The following URLs requires Basic Authentication (URL:realm name):
+
+http://owaspbwa.lan/WebGoat/attack:""WebGoat Application""
+",1.3.6.1.4.1.25623.1.0.108440,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,515ac4d7-fd22-4ecc-ab1e-c8439fce6d57,"An attacker could use this situation to compromise or eavesdrop on the
+  HTTP communication between the client and the server using a man-in-the-middle attack to get access to
+  sensitive data like usernames or passwords.","Enforce the transmission of sensitive data via an encrypted SSL/TLS connection.
+  Additionally make sure the host / application is redirecting all users to the secured SSL/TLS connection before
+  allowing to input sensitive data into the mentioned functions.","Hosts / applications which doesn't enforce the transmission of sensitive data via an
+  encrypted SSL/TLS connection.","","Evaluate previous collected information and check if the host / application is not
+  enforcing the transmission of sensitive data via an encrypted SSL/TLS connection.
+
+  The script is currently checking the following:
+
+  - HTTP Basic Authentication (Basic Auth)
+
+  - HTTP Forms (e.g. Login) with input field of type 'password'
+Details:
+Cleartext Transmission of Sensitive Information via HTTP
+(OID: 1.3.6.1.4.1.25623.1.0.108440)
+Version used: 2020-08-24T15:18:35Z
+","","","",""
+192.168.1.136,,80,tcp,4.3,Medium,"VendorFix","WebCalendar Multiple Cross Site Scripting Vulnerabilities","WebCalendar is prone to multiple cross site scripting vulnerabilities.","Installed version: 1.0.3
+Vulnerable range:  Less than or equal to 1.2.3
+
+",1.3.6.1.4.1.25623.1.0.802305,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,e988d780-bd33-407c-82ee-e2a77484d43a,"Successful exploitation could allow remote attackers to execute
+  arbitrary HTML and script code in a user's browser session in context of an affected site.","Upgrade to WebCalendar versions 1.2.4 or later.","WebCalendar versions 1.2.3 and prior.","The flaws are caused by improper validation of user-supplied
+  input in various scripts, which allows attackers to execute arbitrary HTML and
+  script code on the web server.","
+Details:
+WebCalendar Multiple Cross Site Scripting Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.802305)
+Version used: 2022-02-17T14:14:34Z
+","","","",""
+192.168.1.136,,443,tcp,4.3,Medium,"VendorFix","Joomla! Multiple Cross-site Scripting Vulnerabilities","Joomla is prone to multiple Cross-site scripting vulnerabilities.","Installed version: 1.5.15
+Fixed version:     1.5.21
+
+",1.3.6.1.4.1.25623.1.0.901168,"CVE-2010-3712",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,04152783-03a3-4ab7-89fe-c9eed39f05e9,"Successful exploitation will allow attackers to inject arbitrary web script
+or HTML via vectors involving 'multiple encoded entities'.","Upgrade to Joomla! 1.5.21 or later.","Joomla! versions 1.5.x before 1.5.21","The flaws are due to inadequate filtering of multiple encoded entities, which
+could be exploited by attackers to cause arbitrary scripting code to be executed by the user's browser in the
+security context of an affected Web site.","
+Details:
+Joomla! Multiple Cross-site Scripting Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.901168)
+Version used: 2022-02-18T13:05:59Z
+","","","",""
+192.168.1.136,,443,tcp,4.3,Medium,"VendorFix","jQuery < 1.6.3 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.3.2
+Fixed version:     1.6.3
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.141637,"CVE-2011-4969",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,328c86f3-3a87-4955-995d-0fd9840cd0cd,"","Update to version 1.6.3 or later or apply the patch.","jQuery prior to version 1.6.3.","Cross-site scripting (XSS) vulnerability in jQuery before 1.6.3,
+  when using location.hash to select elements, allows remote attackers to inject arbitrary web
+  script or HTML via a crafted tag.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.6.3 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141637)
+Version used: 2021-06-11T09:02:34Z
+","","","DFN-CERT-2017-0199,DFN-CERT-2016-0890,CB-K17/0195",""
+192.168.1.136,,80,tcp,4.3,Medium,"VendorFix","AWStats awstats.pl XSS Vulnerability - Dec08","AWStats is prone to a cross-site scripting (XSS) vulnerability.","Installed version: 6.4
+Fixed version:     See advisory
+
+",1.3.6.1.4.1.25623.1.0.800151,"CVE-2008-5080",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,908a8a76-ef63-47fd-8052-63dab8a406c1,"Successful attack could lead to execution of arbitrary HTML and script code
+  in the context of an affected site.","Update to the latest version.","AWStats 6.8 and earlier.","The flaw is due to query_string parameter in awstats.pl which is not
+  properly sanitized before being returned to the user.","
+Details:
+AWStats awstats.pl XSS Vulnerability - Dec08
+(OID: 1.3.6.1.4.1.25623.1.0.800151)
+Version used: 2022-02-21T14:27:31Z
+","","","DFN-CERT-2009-1420",""
+192.168.1.136,,443,tcp,4.3,Medium,"VendorFix","jQuery < 1.6.3 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.3.2
+Fixed version:     1.6.3
+Installation
+path / port:       /mutillidae/javascript/ddsmoothmenu
+
+",1.3.6.1.4.1.25623.1.0.141637,"CVE-2011-4969",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,18209702-1aba-42ff-9da6-d3a4177c7611,"","Update to version 1.6.3 or later or apply the patch.","jQuery prior to version 1.6.3.","Cross-site scripting (XSS) vulnerability in jQuery before 1.6.3,
+  when using location.hash to select elements, allows remote attackers to inject arbitrary web
+  script or HTML via a crafted tag.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.6.3 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141637)
+Version used: 2021-06-11T09:02:34Z
+","","","DFN-CERT-2017-0199,DFN-CERT-2016-0890,CB-K17/0195",""
+192.168.1.136,,80,tcp,4.3,Medium,"VendorFix","jQuery < 1.6.3 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.3.2
+Fixed version:     1.6.3
+Installation
+path / port:       /
+
+",1.3.6.1.4.1.25623.1.0.141637,"CVE-2011-4969",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,4d295aac-de27-42a7-b65a-f470100c388f,"","Update to version 1.6.3 or later or apply the patch.","jQuery prior to version 1.6.3.","Cross-site scripting (XSS) vulnerability in jQuery before 1.6.3,
+  when using location.hash to select elements, allows remote attackers to inject arbitrary web
+  script or HTML via a crafted tag.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.6.3 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141637)
+Version used: 2021-06-11T09:02:34Z
+","","","DFN-CERT-2017-0199,DFN-CERT-2016-0890,CB-K17/0195",""
+192.168.1.136,,80,tcp,4.3,Medium,"VendorFix","jQuery < 1.6.3 XSS Vulnerability","jQuery is vulnerable to Cross-site Scripting (XSS) attacks.","Installed version: 1.3.2
+Fixed version:     1.6.3
+Installation
+path / port:       /mutillidae/javascript/ddsmoothmenu
+
+",1.3.6.1.4.1.25623.1.0.141637,"CVE-2011-4969",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,dafd55d0-ba26-4feb-810e-bde19fc67f11,"","Update to version 1.6.3 or later or apply the patch.","jQuery prior to version 1.6.3.","Cross-site scripting (XSS) vulnerability in jQuery before 1.6.3,
+  when using location.hash to select elements, allows remote attackers to inject arbitrary web
+  script or HTML via a crafted tag.","Checks if a vulnerable version is present on the target host.
+Details:
+jQuery < 1.6.3 XSS Vulnerability
+(OID: 1.3.6.1.4.1.25623.1.0.141637)
+Version used: 2021-06-11T09:02:34Z
+","","","DFN-CERT-2017-0199,DFN-CERT-2016-0890,CB-K17/0195",""
+192.168.1.136,,443,tcp,4.3,Medium,"Mitigation","SSL/TLS: Deprecated TLSv1.0 and TLSv1.1 Protocol Detection","It was possible to detect the usage of the deprecated TLSv1.0
+  and/or TLSv1.1 protocol on this system.","The service is only providing the deprecated TLSv1.0 protocol and supports one or more ciphers. Those supported ciphers can be found in the 'SSL/TLS: Report Supported Cipher Suites' (OID: 1.3.6.1.4.1.25623.1.0.802067) VT.
+",1.3.6.1.4.1.25623.1.0.117274,"CVE-2011-3389,CVE-2015-0204",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,29fe24d2-79f5-4ffb-97b4-c3f8704f12ba,"An attacker might be able to use the known cryptographic flaws
+  to eavesdrop the connection between clients and the service to get access to sensitive data
+  transferred within the secured connection.
+
+  Furthermore newly uncovered vulnerabilities in this protocols won't receive security updates
+  anymore.","It is recommended to disable the deprecated TLSv1.0 and/or
+  TLSv1.1 protocols in favor of the TLSv1.2+ protocols. Please see the references for more
+  information.","All services providing an encrypted communication using the
+  TLSv1.0 and/or TLSv1.1 protocols.","The TLSv1.0 and TLSv1.1 protocols contain known cryptographic
+  flaws like:
+
+  - CVE-2011-3389: Browser Exploit Against SSL/TLS (BEAST)
+
+  - CVE-2015-0204: Factoring Attack on RSA-EXPORT Keys Padding Oracle On Downgraded Legacy
+  Encryption (FREAK)","Check the used TLS protocols of the services provided by this
+  system.
+Details:
+SSL/TLS: Deprecated TLSv1.0 and TLSv1.1 Protocol Detection
+(OID: 1.3.6.1.4.1.25623.1.0.117274)
+Version used: 2021-07-19T08:11:48Z
+","","","DFN-CERT-2020-0177,DFN-CERT-2020-0111,DFN-CERT-2019-0068,DFN-CERT-2018-1441,DFN-CERT-2018-1408,DFN-CERT-2016-1372,DFN-CERT-2016-1164,DFN-CERT-2016-0388,DFN-CERT-2015-1853,DFN-CERT-2015-1332,DFN-CERT-2015-0884,DFN-CERT-2015-0800,DFN-CERT-2015-0758,DFN-CERT-2015-0567,DFN-CERT-2015-0544,DFN-CERT-2015-0530,DFN-CERT-2015-0396,DFN-CERT-2015-0375,DFN-CERT-2015-0374,DFN-CERT-2015-0305,DFN-CERT-2015-0199,DFN-CERT-2015-0079,DFN-CERT-2015-0021,DFN-CERT-2014-1414,DFN-CERT-2013-1847,DFN-CERT-2013-1792,DFN-CERT-2012-1979,DFN-CERT-2012-1829,DFN-CERT-2012-1530,DFN-CERT-2012-1380,DFN-CERT-2012-1377,DFN-CERT-2012-1292,DFN-CERT-2012-1214,DFN-CERT-2012-1213,DFN-CERT-2012-1180,DFN-CERT-2012-1156,DFN-CERT-2012-1155,DFN-CERT-2012-1039,DFN-CERT-2012-0956,DFN-CERT-2012-0908,DFN-CERT-2012-0868,DFN-CERT-2012-0867,DFN-CERT-2012-0848,DFN-CERT-2012-0838,DFN-CERT-2012-0776,DFN-CERT-2012-0722,DFN-CERT-2012-0638,DFN-CERT-2012-0627,DFN-CERT-2012-0451,DFN-CERT-2012-0418,DFN-CERT-2012-0354,DFN-CERT-2012-0234,DFN-CERT-2012-0221,DFN-CERT-2012-0177,DFN-CERT-2012-0170,DFN-CERT-2012-0146,DFN-CERT-2012-0142,DFN-CERT-2012-0126,DFN-CERT-2012-0123,DFN-CERT-2012-0095,DFN-CERT-2012-0051,DFN-CERT-2012-0047,DFN-CERT-2012-0021,DFN-CERT-2011-1953,DFN-CERT-2011-1946,DFN-CERT-2011-1844,DFN-CERT-2011-1826,DFN-CERT-2011-1774,DFN-CERT-2011-1743,DFN-CERT-2011-1738,DFN-CERT-2011-1706,DFN-CERT-2011-1628,DFN-CERT-2011-1627,DFN-CERT-2011-1619,DFN-CERT-2011-1482,CB-K18/0799,CB-K16/1289,CB-K16/1096,CB-K15/1751,CB-K15/1266,CB-K15/0850,CB-K15/0764,CB-K15/0720,CB-K15/0548,CB-K15/0526,CB-K15/0509,CB-K15/0493,CB-K15/0384,CB-K15/0365,CB-K15/0364,CB-K15/0302,CB-K15/0192,CB-K15/0079,CB-K15/0016,CB-K14/1342,CB-K14/0231,CB-K13/0845,CB-K13/0796,CB-K13/0790",""
+192.168.1.136,,22,tcp,4.3,Medium,"Mitigation","Weak Encryption Algorithm(s) Supported (SSH)","The remote SSH server is configured to allow / support weak
+  encryption algorithm(s).","The remote SSH server supports the following weak client-to-server encryption algorithm(s):
+
+3des-cbc
+aes128-cbc
+aes192-cbc
+aes256-cbc
+arcfour
+arcfour128
+arcfour256
+blowfish-cbc
+cast128-cbc
+rijndael-cbc@lysator.liu.se
+
+
+The remote SSH server supports the following weak server-to-client encryption algorithm(s):
+
+3des-cbc
+aes128-cbc
+aes192-cbc
+aes256-cbc
+arcfour
+arcfour128
+arcfour256
+blowfish-cbc
+cast128-cbc
+rijndael-cbc@lysator.liu.se
+",1.3.6.1.4.1.25623.1.0.105611,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,3376e6b1-6bdb-4bc6-ace1-74dd65381e4d,"","Disable the reported weak encryption algorithm(s).","","'- The 'arcfour' cipher is the Arcfour stream cipher with 128-bit
+  keys. The Arcfour cipher is believed to be compatible with the RC4 cipher [SCHNEIER]. Arcfour
+  (and RC4) has problems with weak keys, and should not be used anymore.
+
+  - The 'none' algorithm specifies that no encryption is to be done. Note that this method provides
+  no confidentiality protection, and it is NOT RECOMMENDED to use it.
+
+  - A vulnerability exists in SSH messages that employ CBC mode that may allow an attacker to
+  recover plaintext from a block of ciphertext.","Checks the supported encryption algorithms (client-to-server
+  and server-to-client) of the remote SSH server.
+
+  Currently weak encryption algorithms are defined as the following:
+
+  - Arcfour (RC4) cipher based algorithms
+
+  - none algorithm
+
+  - CBC mode cipher based algorithms
+Details:
+Weak Encryption Algorithm(s) Supported (SSH)
+(OID: 1.3.6.1.4.1.25623.1.0.105611)
+Version used: 2021-09-20T08:25:27Z
+","","","",""
+192.168.1.136,,80,tcp,4.3,Medium,"VendorFix","WebCalendar Multiple Cross Site Scripting Vulnerabilities","WebCalendar is prone to multiple cross site scripting vulnerabilities.","Installed version: 1.0.3
+Vulnerable range:  Less than or equal to 1.2.3
+
+",1.3.6.1.4.1.25623.1.0.802305,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,763f6d3d-a929-4734-9c0f-4605631fb06b,"Successful exploitation could allow remote attackers to execute
+  arbitrary HTML and script code in a user's browser session in context of an affected site.","Upgrade to WebCalendar versions 1.2.4 or later.","WebCalendar versions 1.2.3 and prior.","The flaws are caused by improper validation of user-supplied
+  input in various scripts, which allows attackers to execute arbitrary HTML and
+  script code on the web server.","
+Details:
+WebCalendar Multiple Cross Site Scripting Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.802305)
+Version used: 2022-02-17T14:14:34Z
+","","","",""
+192.168.1.136,,80,tcp,4.3,Medium,"VendorFix","Joomla! Multiple Cross-site Scripting Vulnerabilities","Joomla is prone to multiple Cross-site scripting vulnerabilities.","Installed version: 1.5.15
+Fixed version:     1.5.21
+
+",1.3.6.1.4.1.25623.1.0.901168,"CVE-2010-3712",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,6b60db60-7d17-4f43-a6b6-f2650e80a780,"Successful exploitation will allow attackers to inject arbitrary web script
+or HTML via vectors involving 'multiple encoded entities'.","Upgrade to Joomla! 1.5.21 or later.","Joomla! versions 1.5.x before 1.5.21","The flaws are due to inadequate filtering of multiple encoded entities, which
+could be exploited by attackers to cause arbitrary scripting code to be executed by the user's browser in the
+security context of an affected Web site.","
+Details:
+Joomla! Multiple Cross-site Scripting Vulnerabilities
+(OID: 1.3.6.1.4.1.25623.1.0.901168)
+Version used: 2022-02-18T13:05:59Z
+","","","",""
+192.168.1.136,,443,tcp,4.0,Medium,"Workaround","SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability","The SSL/TLS service uses Diffie-Hellman groups with insufficient strength
+  (key size < 2048).","Server Temporary Key Size: 1024 bits
+
+",1.3.6.1.4.1.25623.1.0.106223,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,3c4e4cbe-7c81-48e2-b7e8-eab22d3eac7a,"An attacker might be able to decrypt the SSL/TLS communication offline.","Deploy (Ephemeral) Elliptic-Curve Diffie-Hellman (ECDHE) or use
+  a 2048-bit or stronger Diffie-Hellman group (see the references).
+
+  For Apache Web Servers:
+  Beginning with version 2.4.7, mod_ssl will use DH parameters which include primes with lengths of more than 1024 bits.","","The Diffie-Hellman group are some big numbers that are used as base for
+  the DH computations. They can be, and often are, fixed. The security of the final secret depends on the size
+  of these parameters. It was found that 512 and 768 bits to be weak, 1024 bits to be breakable by really
+  powerful attackers like governments.","Checks the DHE temporary public key size.
+Details:
+SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerab...
+(OID: 1.3.6.1.4.1.25623.1.0.106223)
+Version used: 2021-02-12T06:42:15Z
+","","","",""
+192.168.1.136,,443,tcp,4.0,Medium,"Mitigation","SSL/TLS: Certificate Signed Using A Weak Signature Algorithm","The remote service is using a SSL/TLS certificate in the certificate chain that has been signed using a
+  cryptographically weak hashing algorithm.","The following certificates are part of the certificate chain but using insecure signature algorithms:
+
+Subject:              CN=owaspbwa
+Signature Algorithm:  sha1WithRSAEncryption
+
+
+",1.3.6.1.4.1.25623.1.0.105880,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,02d497ad-7dc0-4e53-a46f-397c2e7597dc,"","Servers that use SSL/TLS certificates signed with a weak SHA-1, MD5, MD4 or MD2 hashing algorithm will need to obtain new
+  SHA-2 signed SSL/TLS certificates to avoid web browser SSL/TLS certificate warnings.","","The following hashing algorithms used for signing SSL/TLS certificates are considered cryptographically weak
+  and not secure enough for ongoing use:
+
+  - Secure Hash Algorithm 1 (SHA-1)
+
+  - Message Digest 5 (MD5)
+
+  - Message Digest 4 (MD4)
+
+  - Message Digest 2 (MD2)
+
+  Beginning as late as January 2017 and as early as June 2016, browser developers such as Microsoft and Google will begin warning users when visiting
+  web sites that use SHA-1 signed Secure Socket Layer (SSL) certificates.
+
+  NOTE: The script preference allows to set one or more custom SHA-1 fingerprints of CA certificates which are trusted by this routine. The fingerprints
+  needs to be passed comma-separated and case-insensitive:
+
+  Fingerprint1
+
+  or
+
+  fingerprint1, Fingerprint2","Check which hashing algorithm was used to sign the remote SSL/TLS certificate.
+Details:
+SSL/TLS: Certificate Signed Using A Weak Signature Algorithm
+(OID: 1.3.6.1.4.1.25623.1.0.105880)
+Version used: 2021-10-15T11:13:32Z
+","","","",""
+192.168.1.136,,443,tcp,4.0,Medium,"Workaround","SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerability","The SSL/TLS service uses Diffie-Hellman groups with insufficient strength
+  (key size < 2048).","Server Temporary Key Size: 1024 bits
+
+",1.3.6.1.4.1.25623.1.0.106223,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,c3c5c967-13d1-4c6d-9dc6-b2cb6f28f155,"An attacker might be able to decrypt the SSL/TLS communication offline.","Deploy (Ephemeral) Elliptic-Curve Diffie-Hellman (ECDHE) or use
+  a 2048-bit or stronger Diffie-Hellman group (see the references).
+
+  For Apache Web Servers:
+  Beginning with version 2.4.7, mod_ssl will use DH parameters which include primes with lengths of more than 1024 bits.","","The Diffie-Hellman group are some big numbers that are used as base for
+  the DH computations. They can be, and often are, fixed. The security of the final secret depends on the size
+  of these parameters. It was found that 512 and 768 bits to be weak, 1024 bits to be breakable by really
+  powerful attackers like governments.","Checks the DHE temporary public key size.
+Details:
+SSL/TLS: Diffie-Hellman Key Exchange Insufficient DH Group Strength Vulnerab...
+(OID: 1.3.6.1.4.1.25623.1.0.106223)
+Version used: 2021-02-12T06:42:15Z
+","","","",""
+192.168.1.136,,443,tcp,3.4,Low,"Mitigation","SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerability (POODLE)","This host is prone to an information disclosure vulnerability.","Vulnerability was detected according to the Vulnerability Detection Method.",1.3.6.1.4.1.25623.1.0.802087,"CVE-2014-3566",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,0c1463f0-fff4-41be-a8d7-504145f97c9c,"Successful exploitation will allow a  man-in-the-middle attackers gain access to the plain text data stream.","Possible Mitigations are:
+
+  - Disable SSLv3
+
+  - Disable cipher suites supporting CBC cipher modes
+
+  - Enable TLS_FALLBACK_SCSV if the service is providing TLSv1.0+","","The flaw is due to the block cipher padding not being deterministic and not covered by the Message Authentication Code","Evaluate previous collected information about this service.
+Details:
+SSL/TLS: SSLv3 Protocol CBC Cipher Suites Information Disclosure Vulnerabili...
+(OID: 1.3.6.1.4.1.25623.1.0.802087)
+Version used: 2021-10-15T11:02:56Z
+","","70574","DFN-CERT-2017-1238,DFN-CERT-2017-1236,DFN-CERT-2016-1929,DFN-CERT-2016-1527,DFN-CERT-2016-1468,DFN-CERT-2016-1168,DFN-CERT-2016-0884,DFN-CERT-2016-0642,DFN-CERT-2016-0388,DFN-CERT-2016-0171,DFN-CERT-2015-1431,DFN-CERT-2015-1075,DFN-CERT-2015-1026,DFN-CERT-2015-0664,DFN-CERT-2015-0548,DFN-CERT-2015-0404,DFN-CERT-2015-0396,DFN-CERT-2015-0259,DFN-CERT-2015-0254,DFN-CERT-2015-0245,DFN-CERT-2015-0118,DFN-CERT-2015-0114,DFN-CERT-2015-0083,DFN-CERT-2015-0082,DFN-CERT-2015-0081,DFN-CERT-2015-0076,DFN-CERT-2014-1717,DFN-CERT-2014-1680,DFN-CERT-2014-1632,DFN-CERT-2014-1564,DFN-CERT-2014-1542,DFN-CERT-2014-1414,DFN-CERT-2014-1366,DFN-CERT-2014-1354,CB-K17/1198,CB-K17/1196,CB-K16/1828,CB-K16/1438,CB-K16/1384,CB-K16/1102,CB-K16/0599,CB-K16/0156,CB-K15/1514,CB-K15/1358,CB-K15/1021,CB-K15/0972,CB-K15/0637,CB-K15/0590,CB-K15/0525,CB-K15/0393,CB-K15/0384,CB-K15/0287,CB-K15/0252,CB-K15/0246,CB-K15/0237,CB-K15/0118,CB-K15/0110,CB-K15/0108,CB-K15/0080,CB-K15/0078,CB-K15/0077,CB-K15/0075,CB-K14/1617,CB-K14/1581,CB-K14/1537,CB-K14/1479,CB-K14/1458,CB-K14/1342,CB-K14/1314,CB-K14/1313,CB-K14/1311,CB-K14/1304,CB-K14/1296",""
+192.168.1.136,,,,2.6,Low,"Mitigation","TCP timestamps","The remote host implements TCP timestamps and therefore allows to compute
+  the uptime.","It was detected that the host implements RFC1323/RFC7323.
+
+The following timestamps were retrieved with a delay of 1 seconds in-between:
+Packet 1: 320077
+Packet 2: 320340
+",1.3.6.1.4.1.25623.1.0.80091,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,aba037df-63ac-437c-b2d5-0d7574dfd198,"A side effect of this feature is that the uptime of the remote
+  host can sometimes be computed.","To disable TCP timestamps on linux add the line 'net.ipv4.tcp_timestamps = 0' to
+  /etc/sysctl.conf. Execute 'sysctl -p' to apply the settings at runtime.
+
+  To disable TCP timestamps on Windows execute 'netsh int tcp set global timestamps=disabled'
+
+  Starting with Windows Server 2008 and Vista, the timestamp can not be completely disabled.
+
+  The default behavior of the TCP/IP stack on this Systems is to not use the
+  Timestamp options when initiating TCP connections, but use them if the TCP peer
+  that is initiating communication includes them in their synchronize (SYN) segment.
+
+  See the references for more information.","TCP implementations that implement RFC1323/RFC7323.","The remote host implements TCP timestamps, as defined by RFC1323/RFC7323.","Special IP packets are forged and sent with a little delay in between to the
+  target IP. The responses are searched for a timestamps. If found, the timestamps are reported.
+Details:
+TCP timestamps
+(OID: 1.3.6.1.4.1.25623.1.0.80091)
+Version used: 2020-08-24T08:40:10Z
+","","","",""
+192.168.1.136,,22,tcp,2.6,Low,"Mitigation","Weak MAC Algorithm(s) Supported (SSH)","The remote SSH server is configured to allow / support weak MAC
+  algorithm(s).","The remote SSH server supports the following weak client-to-server MAC algorithm(s):
+
+hmac-md5
+hmac-md5-96
+hmac-sha1-96
+
+
+The remote SSH server supports the following weak server-to-client MAC algorithm(s):
+
+hmac-md5
+hmac-md5-96
+hmac-sha1-96
+",1.3.6.1.4.1.25623.1.0.105610,"",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,68d2fecc-3b0c-48e7-9432-e8d6b5a3a5c5,"","Disable the reported weak MAC algorithm(s).","","","Checks the supported MAC algorithms (client-to-server and
+  server-to-client) of the remote SSH server.
+
+  Currently weak MAC algorithms are defined as the following:
+
+  - MD5 based algorithms
+
+  - 96-bit based algorithms
+
+  - none algorithm
+Details:
+Weak MAC Algorithm(s) Supported (SSH)
+(OID: 1.3.6.1.4.1.25623.1.0.105610)
+Version used: 2021-09-20T11:05:40Z
+","","","",""
+192.168.1.136,,443,tcp,2.6,Low,"Mitigation","SSL/TLS: TLS/SPDY Protocol Information Disclosure Vulnerability (CRIME)","The TLS/SPDY protocols are prone to an information-disclosure vulnerability.","The remote service might be vulnerable to the ""CRIME"" attack because it provides the following TLS compression methods:
+
+Protocol:Compression Method
+TLSv1.0:DEFLATE
+SSLv3:DEFLATE
+
+",1.3.6.1.4.1.25623.1.0.108094,"CVE-2012-4929,CVE-2012-4930",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,d7b0de38-ba09-4cf1-bd2a-ef044ebfb772,"A man-in-the-middle attacker can exploit this issue to gain access to
+  sensitive information that may aid in further attacks.","Disable TLS compression in the configuration of this services. If SPDY below 4 is used upgrade
+  the webserver to a version which supports the successor protocol SPDY/4 or HTTP/2.
+
+  Please see the references for more resources supporting you with this task.","Services enabling TLS compression or supporting the SPDY protocol below SPDY/4 via HTTPS.","","
+Details:
+SSL/TLS: TLS/SPDY Protocol Information Disclosure Vulnerability (CRIME)
+(OID: 1.3.6.1.4.1.25623.1.0.108094)
+Version used: 2022-04-14T10:40:31Z
+","","","DFN-CERT-2017-0519,DFN-CERT-2015-0664,DFN-CERT-2014-1414,DFN-CERT-2014-0483,DFN-CERT-2013-1893,DFN-CERT-2013-0672,DFN-CERT-2013-0631,DFN-CERT-2013-0469,DFN-CERT-2013-0324,DFN-CERT-2013-0321,DFN-CERT-2013-0112,DFN-CERT-2012-2191,DFN-CERT-2012-2062,DFN-CERT-2012-1973,DFN-CERT-2012-1966,CB-K17/0504,CB-K15/0637,CB-K14/1342,CB-K14/0458,CB-K13/0882",""
+192.168.1.136,,443,tcp,2.6,Low,"Mitigation","SSL/TLS: TLS/SPDY Protocol Information Disclosure Vulnerability (CRIME)","The TLS/SPDY protocols are prone to an information-disclosure vulnerability.","The remote service might be vulnerable to the ""CRIME"" attack because it provides the following TLS compression methods:
+
+Protocol:Compression Method
+TLSv1.0:DEFLATE
+SSLv3:DEFLATE
+
+",1.3.6.1.4.1.25623.1.0.108094,"CVE-2012-4929,CVE-2012-4930",6d5239fe-2274-4d1d-a0a5-de625fc13464,"owasp",2022-04-17T18:14:15Z,1471029e-362f-4a24-8cd8-833c4c73bb15,"A man-in-the-middle attacker can exploit this issue to gain access to
+  sensitive information that may aid in further attacks.","Disable TLS compression in the configuration of this services. If SPDY below 4 is used upgrade
+  the webserver to a version which supports the successor protocol SPDY/4 or HTTP/2.
+
+  Please see the references for more resources supporting you with this task.","Services enabling TLS compression or supporting the SPDY protocol below SPDY/4 via HTTPS.","","
+Details:
+SSL/TLS: TLS/SPDY Protocol Information Disclosure Vulnerability (CRIME)
+(OID: 1.3.6.1.4.1.25623.1.0.108094)
+Version used: 2022-04-14T10:40:31Z
+","","","DFN-CERT-2017-0519,DFN-CERT-2015-0664,DFN-CERT-2014-1414,DFN-CERT-2014-0483,DFN-CERT-2013-1893,DFN-CERT-2013-0672,DFN-CERT-2013-0631,DFN-CERT-2013-0469,DFN-CERT-2013-0324,DFN-CERT-2013-0321,DFN-CERT-2013-0112,DFN-CERT-2012-2191,DFN-CERT-2012-2062,DFN-CERT-2012-1973,DFN-CERT-2012-1966,CB-K17/0504,CB-K15/0637,CB-K14/1342,CB-K14/0458,CB-K13/0882",""

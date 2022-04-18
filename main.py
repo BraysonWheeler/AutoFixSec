@@ -1,30 +1,7 @@
 import pandas as pd
 import twitterapi
-import gvmtools
 
-import sys
-from gvm.connections import UnixSocketConnection
-from gvm.errors import GvmError
-from gvm.protocols.gmp import Gmp
-from gvm.transforms import EtreeCheckCommandTransform
-
-
-username = 'admin'
-password = '02169f70-676c-4789-8bad-8242fe85bd33'
-
-connection = UnixSocketConnection(path=None)
-transform = EtreeCheckCommandTransform()
-try:
-    with Gmp(connection=connection, transform=transform) as gmp:
-        gmp.authenticate(username, password)
-
-        tasks = gmp.get_tasks(filter_string='owasp')
-
-        for task in tasks.xpath('task'):
-            print(task.find('name').text)
-
-except GvmError as e:
-    print('An error occurred', e)
+#> gvm-cli socket --xml "<start_task task_id=\"7249a07c-03e1-4197-99e4-a3a9ab5b7c3b\"/>
 
 
 df = pd.read_csv('./report.csv',encoding='latin-1')

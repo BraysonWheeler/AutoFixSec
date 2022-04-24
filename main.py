@@ -1,9 +1,6 @@
 import pandas as pd
 import twitterapi
 
-#> gvm-cli socket --xml "<start_task task_id=\"7249a07c-03e1-4197-99e4-a3a9ab5b7c3b\"/>
-
-
 df = pd.read_csv('./report.csv',encoding='latin-1')
 
 
@@ -41,5 +38,5 @@ for index,row in df.iterrows():
 
 
 #score = twitterapi.score('CVE-2022-22965')
-#print(score)
+print(lst[1])
 

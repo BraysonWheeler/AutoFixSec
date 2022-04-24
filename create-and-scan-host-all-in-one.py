@@ -17,10 +17,10 @@ with Gmp(connection, transform=transform) as gmp:
     gmp.authenticate('admin', '02169f70-676c-4789-8bad-8242fe85bd33')
 
     #Create target to scan
-    name = f"Suspect acutal Host 192.168.1.136" 
+    name = f"Suspect acutal Host 192.168.1.238" 
     #port_list = "4a4717fe-57d2-11e1-9a26-406186ea4fc5" #Default port list ID provided by openvas (generated when installing)
     port_list = "730ef368-57e2-11e1-a90f-406186ea4fc5"
-    host_list=["192.168.1.136"] #Must be a list of strings
+    host_list=["192.168.1.238"] #Must be a list of strings
     
 
     response = gmp.create_target(name=name, hosts=host_list, port_list_id=port_list)

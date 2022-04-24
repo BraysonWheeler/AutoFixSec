@@ -15,8 +15,9 @@ def start_task(task_id):
     with Gmp(connection, transform=transform) as gmp:
         gmp.authenticate('admin', '02169f70-676c-4789-8bad-8242fe85bd33')
         response = gmp.start_task(task_id)
+        
     print(etree.tostring(response))
-
+    report_id =response.get('report_id') 
 
 
 start_task("b194139a-7465-40ee-b880-64742ebfb8df")

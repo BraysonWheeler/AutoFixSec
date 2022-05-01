@@ -1,7 +1,7 @@
 import pandas as pd
 #import twitterapi #TODO Import files from other files
 
-df = pd.read_csv('./report.csv',encoding='latin-1')
+df = pd.read_csv('./Automated_export.csv',encoding='latin-1')
 
 
 lst = []
@@ -38,5 +38,5 @@ for index,row in df.iterrows():
 
 
 #score = twitterapi.score('CVE-2022-22965')
-print(lst[1])
+print(lst[15])
 

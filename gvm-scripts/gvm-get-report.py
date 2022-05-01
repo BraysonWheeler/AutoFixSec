@@ -16,13 +16,13 @@ transform = EtreeTransform()
 
 def get_report():
     with Gmp(connection, transform=transform) as gmp:
-        pdf_report_format_id = "c402cc3e-b531-11e1-9163-406186ea4fc5"
+        pdf_report_format_id = "c1645568-627a-11e3-a660-406186ea4fc5"
 
         gmp.authenticate('admin', '02169f70-676c-4789-8bad-8242fe85bd33')
 
 
         response = gmp.get_report(
-            report_id="e0a06336-764f-42d3-85c6-609d911c1d4c", report_format_id=pdf_report_format_id
+            report_id="cbbbec11-8144-404c-bdd7-b8a267440272", report_format_id=pdf_report_format_id
         )
 
         report_element = response.find("report")
@@ -45,7 +45,7 @@ def get_report():
         binary_pdf = b64decode(binary_base64_encoded_pdf)
 
         # write to file and support ~ in filename path
-        pdf_path = Path("Automated_export.pdf").expanduser()
+        pdf_path = Path("Automated_export.csv").expanduser()
 
         pdf_path.write_bytes(binary_pdf)
 

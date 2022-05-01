@@ -259,4 +259,306 @@ expect -exact "\[4mi\[24m\[24m \[39m \[39m \[39m \[39m \[39m \[39m \
 send -- ""
 expect -exact "\[4m/\[4mb\[24m\[24m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[59D\[38;2;153;153;153min/python3.10 /home/logan/Desktop/project/test-linux-cli.py\[39m\[59D"
 send -- ""
-expect -exact "\[4m/\[24m\[24m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m 
+expect -exact "\[4m/\[24m\[24m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[60D\[4m/\[24m\[38;2;153;153;153mbin/python3.10 /home/logan/Desktop/project/test-linux-cli.py\[39m\[60D"
+send -- ""
+expect -exact "\[24m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[61D"
+send -- "#"
+expect -exact "\[1m\[30m#\[0m\[39m\[1m\[30m#\[0m\[39m\[38;2;153;153;153m wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb\[39m\[79D"
+send -- ""
+expect -exact "\[0m\[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[80D"
+send -- "g"
+expect -exact "\[4mg\[24m\[4mg\[24m\[38;2;153;153;153mit add -A\[39m\[9D"
+send -- "v"
+expect -exact "\[4mg\[39m\[4mv\[24m\[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[8D\[38;2;153;153;153mm-start\[39m"
+send -- "m"
+expect -exact "\[4mg\[4mv\[39m\[4mm\[24m"
+send -- "-"
+expect -exact "\[4mm\[39m\[4m-\[24m"
+send -- "s"
+expect -exact "\[4m-\[39m\[4ms\[24m"
+send -- "t"
+expect -exact "\[24m\[1m\[31mg\[24m\[1m\[31mv\[24m\[1m\[31mm\[24m\[1m\[31m-\[24m\[1m\[31ms\[1m\[31mt\[0m\[39m"
+send -- "a"
+expect -exact "\[1m\[31mt\[1m\[31ma\[0m\[39m"
+send -- ""
+expect -exact "\[1m\[31mt\[0m\[39m\[0m\[39m \[39m \[39m \[38;2;153;153;153mart\[39m"
+send -- "a"
+expect -exact "\[1m\[31mt\[1m\[31ma\[0m\[39m"
+send -- "r"
+expect -exact "\[1m\[31ma\[1m\[31mr\[0m\[39m"
+send -- "t"
+expect -exact "\[8D\[0m\[32mg\[0m\[32mv\[0m\[32mm\[0m\[32m-\[0m\[32ms\[0m\[32mt\[0m\[32ma\[0m\[32mr\[32mt\[39m"
+send -- "\r"
+expect -exact "\[?1l>\[?2004l\r\r
+\[01;31m\[-\]\[00m Error: /usr/bin/gvm-start must be run as root\r
+                                                                                                                                                        \r\r\]0;logan@2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2: ~/Desktop/project\r
+\r\[0m\[27m\[24m\[J\[32m┌──(\[1m\[32m\[34mlogan㉿2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2\[0m\[34m\[32m)-\[\[1m\[32m\[39m~/Desktop/project\[0m\[32m\]\r
+└─\[1m\[32m\[34m\$\[0m\[34m\[39m \[K\[143C 1 \[31m\[1m\[31m⨯\[0m\[31m\[39m\[147D\[?1h=\[?2004h"
+send -- "s"
+expect -exact "\[4ms\[24m\[4ms\[24m\[38;2;153;153;153msh -oHostKeyAlgorithms=+ssh-dss root@192.168.1.136 -y\[39m\[53D"
+send -- "u"
+expect -exact "\[24m\[32ms\[32mu\[39m\[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[52D\[38;2;153;153;153mdo python3 ./create-and-scan-host-all-in-one.py\[39m\[47D"
+send -- "d"
+expect -exact "\[1m\[31ms\[1m\[31mu\[1m\[31md\[0m\[39m"
+send -- "o"
+expect -exact "\[0m\[4m\[32ms\[0m\[4m\[32mu\[0m\[4m\[32md\[4m\[32mo\[24m\[39m"
+send -- " "
+expect -exact "\[39m "
+send -- "g"
+expect -exact "\[39m\[4mg\[24m\[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[43D\[38;2;153;153;153mvm-start\[39m\[8D"
+send -- "v"
+expect -exact "\[4mg\[39m\[4mv\[24m"
+send -- "m"
+expect -exact "\[4mv\[39m\[4mm\[24m"
+send -- "-"
+expect -exact "\[4mm\[39m\[4m-\[24m"
+send -- "s"
+expect -exact "\[4m-\[39m\[4ms\[24m"
+send -- "t"
+expect -exact "\[24m\[1m\[31mg\[24m\[1m\[31mv\[24m\[1m\[31mm\[24m\[1m\[31m-\[24m\[1m\[31ms\[1m\[31mt\[0m\[39m"
+send -- "a"
+expect -exact "\[1m\[31mt\[1m\[31ma\[0m\[39m"
+send -- "r"
+expect -exact "\[1m\[31ma\[1m\[31mr\[0m\[39m"
+send -- "t"
+expect -exact "\[8D\[0m\[32mg\[0m\[32mv\[0m\[32mm\[0m\[32m-\[0m\[32ms\[0m\[32mt\[0m\[32ma\[0m\[32mr\[32mt\[39m"
+send -- "\r"
+expect -exact "\[?1l>\[?2004l\r\r
+\[sudo\] password for logan: "
+send -- "test123\r"
+expect -exact "\r
+\[01;32m\[>\]\[00m Please wait for the GVM services to start.\r
+\[01;32m\[>\]\[00m\r
+\[01;32m\[>\]\[00m You might need to refresh your browser once it opens.\r
+\[01;32m\[>\]\[00m\r
+\[01;32m\[>\]\[00m  Web UI (Greenbone Security Assistant): https://127.0.0.1:9392\r
+\r
+\[0;1;32m●\[0m gsad.service - Greenbone Security Assistant daemon (gsad)\r
+     Loaded: loaded (/lib/systemd/system/gsad.service; disabled; vendor preset: disabled)\r
+     Active: \[0;1;32mactive (running)\[0m since Sun 2022-05-01 01:24:09 CDT; 26ms ago\r
+       Docs: man:gsad(8)\r
+             https://www.greenbone.net\r
+    Process: 16616 ExecStart=/usr/sbin/gsad --listen 127.0.0.1 --port 9392 (code=exited, status=0/SUCCESS)\r
+   Main PID: 16618 (gsad)\r
+      Tasks: 3 (limit: 9429)\r
+     Memory: 2.8M\r
+        CPU: 31ms\r
+     CGroup: /system.slice/gsad.service\r
+             ├─\[0;38;5;245m16617 /usr/sbin/gsad --listen 127.0.0.1 --port 9392\[0m\r
+             └─\[0;38;5;245m16618 /usr/sbin/gsad --listen 127.0.0.1 --port 9392\[0m\r
+\r
+May 01 01:24:09 2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2 systemd\[1\]: Starting Greenbone Security Assistant daemon (gsad)...\r
+May 01 01:24:09 2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2 gsad\[16616\]: Oops, secure memory pool already initialized\r
+May 01 01:24:09 2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2 systemd\[1\]: \[0;1;38;5;185m\[0;1;39m\[0;1;38;5;185mgsad.service: Supervising process 16618 which is not our child. We'll most likely not notice when it exits.\[0m\r
+May 01 01:24:09 2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2 systemd\[1\]: Started Greenbone Security Assistant daemon (gsad).\r
+\r
+\[0;1;32m●\[0m gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)\r
+     Loaded: loaded (/lib/systemd/system/gvmd.service; disabled; vendor preset: disabled)\r
+     Active: \[0;1;32mactive (running)\[0m since Sun 2022-05-01 01:24:04 CDT; 5s ago\r
+       Docs: man:gvmd(8)\r
+    Process: 16587 ExecStart=/usr/sbin/gvmd --osp-vt-update=/run/ospd/ospd.sock --listen-group=_gvm (code=exited, status=0/SUCCESS)\r
+   Main PID: 16588 (gvmd)\r
+      Tasks: 1 (limit: 9429)\r
+     Memory: 126.7M\r
+        CPU: 1.293s\r
+     CGroup: /system.slice/gvmd.service\r
+             └─\[0;38;5;245m16588 \"gvmd: Waiting for incoming connections\"\[0m\r
+\r
+May 01 01:24:00 2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2 systemd\[1\]: Starting Greenbone Vulnerability Manager daemon (gvmd)...\r
+May 01 01:24:00 2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2 systemd\[1\]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: Operation not permitted\r
+May 01 01:24:04 2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2 systemd\[1\]: Started Greenbone Vulnerability Manager daemon (gvmd).\r
+\r
+\[0;1;32m●\[0m ospd-openvas.service - OSPd Wrapper for the OpenVAS Scanner (ospd-openvas)\r
+     Loaded: loaded (/lib/systemd/system/ospd-openvas.service; disabled; vendor preset: disabled)\r
+     Active: \[0;1;32mactive (running)\[0m since Sun 2022-05-01 01:23:58 CDT; 11s ago\r
+       Docs: man:ospd-openvas(8)\r
+             man:openvas(8)\r
+    Process: 16535 ExecStart=/usr/bin/ospd-openvas --config /etc/gvm/ospd-openvas.conf --log-config /etc/gvm/ospd-logging.conf --pid-file /run/ospd/ospd-openvas.pid --log-file /var/log/gvm/ospd-openvas.log --lock-file-dir /var/lib/openvas (code=exited, status=0/SUCCESS)\r
+   Main PID: 16547 (ospd-openvas)\r
+      Tasks: 6 (limit: 9429)\r
+     Memory: 128.0M\r
+        CPU: 1.273s\r
+     CGroup: /system.slice/ospd-openvas.service\r
+             ├─\[0;38;5;245m16547 /usr/bin/python3 /usr/bin/ospd-openvas --config /etc/gvm/ospd-openvas.conf --log-config /etc/gvm/ospd-logging.conf --pid-file /run/ospd/ospd-openvas.pid --log-file /var/log/gvm/ospd-openvas.log --lock-file-dir /var/lib/openvas\[0m\r
+             ├─\[0;38;5;245m16549 /usr/bin/python3 /usr/bin/ospd-openvas --config /etc/gvm/ospd-openvas.conf --log-config /etc/gvm/ospd-logging.conf --pid-file /run/ospd/ospd-openvas.pid --log-file /var/log/gvm/ospd-openvas.log --lock-file-dir /var/lib/openvas\[0m\r
+             ├─\[0;38;5;245m16612 openvas --update-vt-info\[0m\r
+             └─\[0;38;5;245m16613 openvas --update-vt-info\[0m\r
+\r
+May 01 01:23:57 2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2 systemd\[1\]: Starting OSPd Wrapper for the OpenVAS Scanner (ospd-openvas)...\r
+May 01 01:23:58 2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2 systemd\[1\]: Started OSPd Wrapper for the OpenVAS Scanner (ospd-openvas).\r
+\r
+\[01;32m\[>\]\[00m Opening Web UI (https://127.0.0.1:9392) in: 5... 4... 3... 2... 1... \r
+                                                                                                                                                        \r\r\]0;logan@2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2: ~/Desktop/project\r
+\r\[0m\[27m\[24m\[J\[32m┌──(\[1m\[32m\[34mlogan㉿2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2\[0m\[34m\[32m)-\[\[1m\[32m\[39m~/Desktop/project\[0m\[32m\]\r
+└─\[1m\[32m\[34m\$\[0m\[34m\[39m \[K\[?1h=\[?2004h"
+send -- "\[200~gvm-cli --gmp-username admin --gmp-password 02169f70-676c-4789-8bad-8242fe85bd33 \[--host <gvmd>\] --protocol gmp tls '--xml=<get_report_formats/>'\[201~"
+expect -exact "\[7m\[32mgvm-cli\[39m\[7m \[7m\[35m--gmp-username\[39m\[7m admin \[7m\[35m--gmp-password\[39m\[7m 02169f70-676c-4789-8bad-8242fe85bd33 \[1m\[7m\[34m\[\[0m\[39m\[7m--host \[1m\[7m\[34m<\[0m\[39m\[7mgvmd\[1m\[7m\[34m>\[0m\[39m\[1m\[7m\[34m\]\[0m\[39m\[7m \[7m\[35m--protocol\[39m\[7m gmp tls \[7m\[33m'--xml=<get_report_formats/>'\[27m\[39m"
+send -- "\r"
+expect -exact "\[145D\[27m\[32mg\[27m\[32mv\[27m\[32mm\[27m\[32m-\[27m\[32mc\[27m\[32ml\[27m\[32mi\[39m\[27m \[27m\[35m-\[27m\[35m-\[27m\[35mg\[27m\[35mm\[27m\[35mp\[27m\[35m-\[27m\[35mu\[27m\[35ms\[27m\[35me\[27m\[35mr\[27m\[35mn\[27m\[35ma\[27m\[35mm\[27m\[35me\[39m\[27m \[27ma\[27md\[27mm\[27mi\[27mn\[27m \[27m\[35m-\[27m\[35m-\[27m\[35mg\[27m\[35mm\[27m\[35mp\[27m\[35m-\[27m\[35mp\[27m\[35ma\[27m\[35ms\[27m\[35ms\[27m\[35mw\[27m\[35mo\[27m\[35mr\[27m\[35md\[39m\[27m \[27m0\[27m2\[27m1\[27m6\[27m9\[27mf\[27m7\[27m0\[27m-\[27m6\[27m7\[27m6\[27mc\[27m-\[27m4\[27m7\[27m8\[27m9\[27m-\[27m8\[27mb\[27ma\[27md\[27m-\[27m8\[27m2\[27m4\[27m2\[27mf\[27me\[27m8\[27m5\[27mb\[27md\[27m3\[27m3\[27m \[27m\[1m\[34m\[\[0m\[39m\[27m-\[27m-\[27mh\[27mo\[27ms\[27mt\[27m \[27m\[1m\[34m<\[0m\[39m\[27mg\[27mv\[27mm\[27md\[27m\[1m\[34m>\[0m\[39m\[27m\[1m\[34m\]\[0m\[39m\[27m \[27m\[35m-\[27m\[35m-\[27m\[35mp\[27m\[35mr\[27m\[35mo\[27m\[35mt\[27m\[35mo\[27m\[35mc\[27m\[35mo\[27m\[35ml\[39m\[27m \[27mg\[27mm\[27mp\[27m \[27mt\[27ml\[27ms\[27m \[27m\[33m'\[27m\[33m-\[27m\[33m-\[27m\[33mx\[27m\[33mm\[27m\[33ml\[27m\[33m=\[27m\[33m<\[27m\[33mg\[27m\[33me\[27m\[33mt\[27m\[33m_\[27m\[33mr\[27m\[33me\[27m\[33mp\[27m\[33mo\[27m\[33mr\[27m\[33mt\[27m\[33m_\[27m\[33mf\[27m\[33mo\[27m\[33mr\[27m\[33mm\[27m\[33ma\[27m\[33mt\[27m\[33ms\[27m\[33m/\[27m\[33m>\[27m\[33m'\[39m\[?1l>\[?2004l\r\r
+zsh: bad pattern: \[--host\r
+                                                                                                                                                        \r\r\]0;logan@2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2: ~/Desktop/project\r
+\r\[0m\[27m\[24m\[J\[32m┌──(\[1m\[32m\[34mlogan㉿2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2\[0m\[34m\[32m)-\[\[1m\[32m\[39m~/Desktop/project\[0m\[32m\]\r
+└─\[1m\[32m\[34m\$\[0m\[34m\[39m \[K\[143C 1 \[31m\[1m\[31m⨯\[0m\[31m\[39m\[147D\[?1h=\[?2004h"
+send -- "OA"
+expect -exact "\[32mgvm-cli\[39m \[35m--gmp-username\[39m admin \[35m--gmp-password\[39m 02169f70-676c-4789-8bad-8242fe85bd33 \[1m\[34m\[\[0m\[39m--host \[1m\[34m<\[0m\[39mgvmd\[1m\[34m>\[0m\[39m\[1m\[34m\]\[0m\[39m \[35m--protocol\[39m gmp tls \[33m'--xml=<get_report_formats/>'\[39m\[K"
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact ""
+send -- "OD"
+expect -exact "\[15D\[1m\[7m\[34m\[\[0m\[27m\[39m\[13C"
+send -- ""
+expect -exact "\[P\[50C \[51D"
+send -- ""
+expect -exact "\[P\[50C \[51D"
+send -- ""
+expect -exact "\[P\[50C\[K\[1C 1 \[31m\[1m\[31m⨯\[0m\[31m\[39m\[55D"
+send -- ""
+expect -exact "\[1m\[34m\]\[0m\[39m\[0m\[39m \[35m-\[35m-\[35mp\[35mr\[35mo\[35mt\[35mo\[35mc\[35mo\[35ml\[39m\[39m gmp tls \[33m'\[33m-\[33m-\[33mx\[33mm\[33ml\[33m=\[33m<\[33mg\[33me\[33mt\[33m_\[33mr\[33me\[33mp\[33mo\[33mr\[33mt\[33m_\[33mf\[33mo\[33mr\[33mm\[33ma\[33mt\[33ms\[33m/\[33m>\[33m'\[39m\[39m \[51D"
+send -- ""
+expect -exact "\[1m\[34m\]\[0m\[39m\[0m\[39m \[35m-\[35m-\[35mp\[35mr\[35mo\[35mt\[35mo\[35mc\[35mo\[35ml\[39m\[39m gmp tls \[33m'\[33m-\[33m-\[33mx\[33mm\[33ml\[33m=\[33m<\[33mg\[33me\[33mt\[33m_\[33mr\[33me\[33mp\[33mo\[33mr\[33mt\[33m_\[33mf\[33mo\[33mr\[33mm\[33ma\[33mt\[33ms\[33m/\[33m>\[33m'\[39m\[39m \[51D"
+send -- ""
+expect -exact "\[1m\[34m\]\[0m\[39m\[0m\[39m \[35m-\[35m-\[35mp\[35mr\[35mo\[35mt\[35mo\[35mc\[35mo\[35ml\[39m\[39m gmp tls \[33m'\[33m-\[33m-\[33mx\[33mm\[33ml\[33m=\[33m<\[33mg\[33me\[33mt\[33m_\[33mr\[33me\[33mp\[33mo\[33mr\[33mt\[33m_\[33mf\[33mo\[33mr\[33mm\[33ma\[33mt\[33ms\[33m/\[33m>\[33m'\[39m\[39m \[51D"
+send -- ""
+expect -exact "\[8D\[27m\[1m\[34m\[\[0m\[39m\[82D"
+send -- "\r"
+expect -exact "\[?1l>\[?2004l\r\r
+zsh: bad pattern: \[--host\r
+                                                                                                                                                        \r\r\]0;logan@2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2: ~/Desktop/project\r
+\r\[0m\[27m\[24m\[J\[32m┌──(\[1m\[32m\[34mlogan㉿2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2\[0m\[34m\[32m)-\[\[1m\[32m\[39m~/Desktop/project\[0m\[32m\]\r
+└─\[1m\[32m\[34m\$\[0m\[34m\[39m \[K\[143C 1 \[31m\[1m\[31m⨯\[0m\[31m\[39m\[147D\[?1h=\[?2004h"
+send -- "\[200~gvm-cli --gmp-username admin --gmp-password 02169f70-676c-4789-8bad-8242fe85bd33 \[--host 127.0.0.1:9392\] --protocol gmp tls '--xml=<get_report_formats/>'\[201~"
+expect -exact "\[7m\[32mgvm-cli\[39m\[7m \[7m\[35m--gmp-username\[39m\[7m admin \[7m\[35m--gmp-password\[39m\[7m 02169f70-676c-4789-8bad-8242fe85bd33 \[1m\[7m\[34m\[\[0m\[39m\[7m--host 127.0.0.1:9392\[1m\[7m\[34m\]\[0m\[39m\[7m \[7m\[35m--protocol\[39m\[7m gmp tls \[7m\[33m'--xml=<get_report_forma\[7m\[33mt\[7m\[33ms/>'\[27m\[39m\[K"
+send -- "\r"
+expect -exact "\[A\[27m\[32mg\[27m\[32mv\[27m\[32mm\[27m\[32m-\[27m\[32mc\[27m\[32ml\[27m\[32mi\[39m\[27m \[27m\[35m-\[27m\[35m-\[27m\[35mg\[27m\[35mm\[27m\[35mp\[27m\[35m-\[27m\[35mu\[27m\[35ms\[27m\[35me\[27m\[35mr\[27m\[35mn\[27m\[35ma\[27m\[35mm\[27m\[35me\[39m\[27m \[27ma\[27md\[27mm\[27mi\[27mn\[27m \[27m\[35m-\[27m\[35m-\[27m\[35mg\[27m\[35mm\[27m\[35mp\[27m\[35m-\[27m\[35mp\[27m\[35ma\[27m\[35ms\[27m\[35ms\[27m\[35mw\[27m\[35mo\[27m\[35mr\[27m\[35md\[39m\[27m \[27m0\[27m2\[27m1\[27m6\[27m9\[27mf\[27m7\[27m0\[27m-\[27m6\[27m7\[27m6\[27mc\[27m-\[27m4\[27m7\[27m8\[27m9\[27m-\[27m8\[27mb\[27ma\[27md\[27m-\[27m8\[27m2\[27m4\[27m2\[27mf\[27me\[27m8\[27m5\[27mb\[27md\[27m3\[27m3\[27m \[27m\[1m\[34m\[\[0m\[39m\[27m-\[27m-\[27mh\[27mo\[27ms\[27mt\[27m \[27m1\[27m2\[27m7\[27m.\[27m0\[27m.\[27m0\[27m.\[27m1\[27m:\[27m9\[27m3\[27m9\[27m2\[27m\[1m\[34m\]\[0m\[39m\[27m \[27m\[35m-\[27m\[35m-\[27m\[35mp\[27m\[35mr\[27m\[35mo\[27m\[35mt\[27m\[35mo\[27m\[35mc\[27m\[35mo\[27m\[35ml\[39m\[27m \[27mg\[27mm\[27mp\[27m \[27mt\[27ml\[27ms\[27m \[27m\[33m'\[27m\[33m-\[27m\[33m-\[27m\[33mx\[27m\[33mm\[27m\[33ml\[27m\[33m=\[27m\[33m<\[27m\[33mg\[27m\[33me\[27m\[33mt\[27m\[33m_\[27m\[33mr\[27m\[33me\[27m\[33mp\[27m\[33mo\[27m\[33mr\[27m\[33mt\[27m\[33m_\[27m\[33mf\[27m\[33mo\[27m\[33mr\[27m\[33mm\[27m\[33ma\[33mt\[27m\[33ms\[27m\[33m/\[27m\[33m>\[27m\[33m'\[39m\[?1l>\[?2004l\r\r
+zsh: bad pattern: \[--host\r
+                                                                                                                                                        \r\r\]0;logan@2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2: ~/Desktop/project\r
+\r\[0m\[27m\[24m\[J\[32m┌──(\[1m\[32m\[34mlogan㉿2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2\[0m\[34m\[32m)-\[\[1m\[32m\[39m~/Desktop/project\[0m\[32m\]\r
+└─\[1m\[32m\[34m\$\[0m\[34m\[39m \[K\[143C 1 \[31m\[1m\[31m⨯\[0m\[31m\[39m\[147D\[?1h=\[?2004h"
+send -- "\[200~gvm-cli --gmp-username admin --gmp-password 02169f70-676c-4789-8bad-8242fe85bd33 --host 127.0.0.1:9392 --protocol gmp tls '--xml=<get_report_formats/>'\[201~"
+expect -exact "\[7m\[32mgvm-cli\[39m\[7m \[7m\[35m--gmp-username\[39m\[7m admin \[7m\[35m--gmp-password\[39m\[7m 02169f70-676c-4789-8bad-8242fe85bd33 \[7m\[35m--host\[39m\[7m 127.0.0.1:9392 \[7m\[35m--protocol\[39m\[7m gmp tls \[7m\[33m'--xml=<get_report_formats\[7m\[33m/\[7m\[33m>'\[27m\[39m\[K"
+send -- "\r"
+expect -exact "\[A\[1C\[27m\[32mg\[27m\[32mv\[27m\[32mm\[27m\[32m-\[27m\[32mc\[27m\[32ml\[27m\[32mi\[39m\[27m \[27m\[35m-\[27m\[35m-\[27m\[35mg\[27m\[35mm\[27m\[35mp\[27m\[35m-\[27m\[35mu\[27m\[35ms\[27m\[35me\[27m\[35mr\[27m\[35mn\[27m\[35ma\[27m\[35mm\[27m\[35me\[39m\[27m \[27ma\[27md\[27mm\[27mi\[27mn\[27m \[27m\[35m-\[27m\[35m-\[27m\[35mg\[27m\[35mm\[27m\[35mp\[27m\[35m-\[27m\[35mp\[27m\[35ma\[27m\[35ms\[27m\[35ms\[27m\[35mw\[27m\[35mo\[27m\[35mr\[27m\[35md\[39m\[27m \[27m0\[27m2\[27m1\[27m6\[27m9\[27mf\[27m7\[27m0\[27m-\[27m6\[27m7\[27m6\[27mc\[27m-\[27m4\[27m7\[27m8\[27m9\[27m-\[27m8\[27mb\[27ma\[27md\[27m-\[27m8\[27m2\[27m4\[27m2\[27mf\[27me\[27m8\[27m5\[27mb\[27md\[27m3\[27m3\[27m \[27m\[35m-\[27m\[35m-\[27m\[35mh\[27m\[35mo\[27m\[35ms\[27m\[35mt\[39m\[27m \[27m1\[27m2\[27m7\[27m.\[27m0\[27m.\[27m0\[27m.\[27m1\[27m:\[27m9\[27m3\[27m9\[27m2\[27m \[27m\[35m-\[27m\[35m-\[27m\[35mp\[27m\[35mr\[27m\[35mo\[27m\[35mt\[27m\[35mo\[27m\[35mc\[27m\[35mo\[27m\[35ml\[39m\[27m \[27mg\[27mm\[27mp\[27m \[27mt\[27ml\[27ms\[27m \[27m\[33m'\[27m\[33m-\[27m\[33m-\[27m\[33mx\[27m\[33mm\[27m\[33ml\[27m\[33m=\[27m\[33m<\[27m\[33mg\[27m\[33me\[27m\[33mt\[27m\[33m_\[27m\[33mr\[27m\[33me\[27m\[33mp\[27m\[33mo\[27m\[33mr\[27m\[33mt\[27m\[33m_\[27m\[33mf\[27m\[33mo\[27m\[33mr\[27m\[33mm\[27m\[33ma\[27m\[33mt\[27m\[33ms\[33m/\[27m\[33m>\[27m\[33m'\[39m\[?1l>\[?2004l\r\r
+usage: gvm-cli \[-h\] \[-c \[CONFIG\]\] \[--log \[{DEBUG,INFO,WARNING,ERROR,CRITICAL}\]\] \[--timeout TIMEOUT\] \[--gmp-username GMP_USERNAME\]\r
+               \[--gmp-password GMP_PASSWORD\] \[-V\] \[--protocol {GMP,OSP}\]\r
+               CONNECTION_TYPE ...\r
+gvm-cli: error: argument CONNECTION_TYPE: invalid choice: '127.0.0.1:9392' (choose from 'ssh', 'tls', 'socket')\r
+                                                                                                                                                        \r\r\]0;logan@2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2: ~/Desktop/project\r
+\r\[0m\[27m\[24m\[J\[32m┌──(\[1m\[32m\[34mlogan㉿2603-8080-2d01-a3a8-0a00-27ff-fe6b-a7a2\[0m\[34m\[32m)-\[\[1m\[32m\[39m~/Desktop/project\[0m\[32m\]\r
+└─\[1m\[32m\[34m\$\[0m\[34m\[39m \[K\[143C 2 \[31m\[1m\[31m⨯\[0m\[31m\[39m\[147D\[?1h=\[?2004h"
+send -- "a"
+expect -exact "\[4ma\[24m\[4ma\[24m\[38;2;153;153;153mutoexpect ssh -oHostKeyAlgorithms=+ssh-dss root@192.168.1.136 -y\[39m\[64D"
+send -- "p"
+expect -exact "\[4ma\[39m\[4mp\[24m\[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[63D\[38;2;153;153;153mt install ./code_1.66.2-1649664567_amd64 (1).deb\[39m\[48D"
+send -- "t"
+expect -exact "\[24m\[32ma\[24m\[32mp\[32mt\[39m"
+send -- "-"
+expect -exact "\[1m\[31ma\[1m\[31mp\[1m\[31mt\[1m\[31m-\[0m\[39m\[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[39m \[46D"
+send -- "e"
+expect -exact "\[1m\[31m-\[1m\[31me\[0m\[39m"
+send -- ""
+expect -exact "\[1m\[31m-\[0m\[39m\[0m\[39m "
+send -- "g"
+expect -exact "\[1m\[31m-\[1m\[31mg\[0m\[39m"
+send -- "e"
+expect -exact "\[1m\[31mg\[1m\[31me\[0m\[39m"
+send -- "t"
+expect -exact "\[0m\[32ma\[0m\[32mp\[0m\[32mt\[0m\[32m-\[0m\[32mg\[0m\[32me\[32mt\[39m"
+send -- " install"
+expect -exact " install "
+send -- ""
+exp

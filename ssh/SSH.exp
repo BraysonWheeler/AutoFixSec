@@ -25,7 +25,7 @@ foreach i $passwords {
         set connected true
         send -- "exit\r"
         spawn python /home/logan/Desktop/project/ssh/found.py
-        expect eof
+        expect eof 
         exit
     }  
 }

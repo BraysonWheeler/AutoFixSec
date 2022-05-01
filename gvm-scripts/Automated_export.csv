@@ -1,0 +1,164 @@
+IP,Hostname,Port,Port Protocol,CVSS,Severity,Solution Type,NVT Name,Summary,Specific Result,NVT OID,CVEs,Task ID,Task Name,Timestamp,Result ID,Impact,Solution,Affected Software/OS,Vulnerability Insight,Vulnerability Detection Method,Product Detection Result,BIDs,CERTs,Other References
+192.168.1.136,,,,0.0,Log,"","Apache HTTP Server Detection Consolidation","Consolidation of Apache HTTP Server detections.","Detected Apache HTTP Server
+
+Version:       2.2.14
+Location:      443/tcp
+CPE:           cpe:/a:apache:http_server:2.2.14
+
+Concluded from version/product identification result:
+Server: Apache/2.2.14 (Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL/0.9.8k Phusion_Passenger/4.0.38 mod_perl/2.0.4 Perl/v5.10.1
+
+Detected Apache HTTP Server
+
+Version:       2.2.14
+Location:      80/tcp
+CPE:           cpe:/a:apache:http_server:2.2.14
+
+Concluded from version/product identification result:
+Server: Apache/2.2.14 (Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL/0.9.8k Phusion_Passenger/4.0.38 mod_perl/2.0.4 Perl/v5.10.1
+",1.3.6.1.4.1.25623.1.0.117232,"",424d12b2-bf66-4b3d-b80a-4b928dc819e0,"Scan Suspect acutal Host 192.168.1.136",2022-04-24T06:09:17Z,d781577a-d7fd-4366-9df5-3aa17d66244d,"","","","","
+Details:
+Apache HTTP Server Detection Consolidation
+(OID: 1.3.6.1.4.1.25623.1.0.117232)
+Version used: 2021-02-25T13:36:35Z
+","","","",""
+192.168.1.136,,443,tcp,4.3,Medium,"VendorFix","Apache HTTP Server ETag Header Information Disclosure Weakness","A weakness has been discovered in the Apache HTTP Server
+  if configured to use the FileETag directive.","Information that was gathered:
+Inode: 286483
+Size: 28067
+
+",1.3.6.1.4.1.25623.1.0.103122,"CVE-2003-1418",424d12b2-bf66-4b3d-b80a-4b928dc819e0,"Scan Suspect acutal Host 192.168.1.136",2022-04-24T06:09:17Z,08131b76-925a-4ede-ab1e-61f389d34b11,"Exploitation of this issue may provide an attacker with
+  information that may be used to launch further attacks against a target network.","OpenBSD has released a patch that addresses this issue.
+  Inode numbers returned from the server are now encoded using a private hash to avoid the
+  release of sensitive information.
+
+  Novell has released TID10090670 to advise users to apply the available workaround of
+  disabling the directive in the configuration file for Apache releases on NetWare. Please
+  see the attached Technical Information Document for further details.","","","Due to the way in which Apache HTTP Server generates
+  ETag response headers, it may be possible for an attacker to obtain sensitive information
+  regarding server files. Specifically, ETag header fields returned to a client contain the
+  file's inode number.
+Details:
+Apache HTTP Server ETag Header Information Disclosure Weakness
+(OID: 1.3.6.1.4.1.25623.1.0.103122)
+Version used: 2022-04-12T08:46:17Z
+","","6939","DFN-CERT-2017-1821,DFN-CERT-2017-0925,DFN-CERT-2015-0495,CB-K17/1750,CB-K17/0896,CB-K15/0469",""
+192.168.1.136,,80,tcp,4.3,Medium,"VendorFix","Apache HTTP Server ETag Header Information Disclosure Weakness","A weakness has been discovered in the Apache HTTP Server
+  if configured to use the FileETag directive.","Information that was gathered:
+Inode: 286483
+Size: 28067
+
+",1.3.6.1.4.1.25623.1.0.103122,"CVE-2003-1418",424d12b2-bf66-4b3d-b80a-4b928dc819e0,"Scan Suspect acutal Host 192.168.1.136",2022-04-24T06:09:17Z,32815450-ae55-49ff-81b6-da30097780fc,"Exploitation of this issue may provide an attacker with
+  information that may be used to launch further attacks against a target network.","OpenBSD has released a patch that addresses this issue.
+  Inode numbers returned from the server are now encoded using a private hash to avoid the
+  release of sensitive information.
+
+  Novell has released TID10090670 to advise users to apply the available workaround of
+  disabling the directive in the configuration file for Apache releases on NetWare. Please
+  see the attached Technical Information Document for further details.","","","Due to the way in which Apache HTTP Server generates
+  ETag response headers, it may be possible for an attacker to obtain sensitive information
+  regarding server files. Specifically, ETag header fields returned to a client contain the
+  file's inode number.
+Details:
+Apache HTTP Server ETag Header Information Disclosure Weakness
+(OID: 1.3.6.1.4.1.25623.1.0.103122)
+Version used: 2022-04-12T08:46:17Z
+","","6939","DFN-CERT-2017-1821,DFN-CERT-2017-0925,DFN-CERT-2015-0495,CB-K17/1750,CB-K17/0896,CB-K15/0469",""
+192.168.1.136,,80,tcp,0.0,Log,"","Apache mod_perl Detection (HTTP)","HTTP based detection of Apache mod_perl.","Detected Apache mod_perl
+
+Version:       2.0.4
+Location:      80/tcp
+CPE:           cpe:/a:apache:mod_perl:2.0.4
+
+Concluded from version/product identification result:
+Server: Apache/2.2.14 (Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL/0.9.8k Phusion_Passenger/4.0.38 mod_perl/2.0.4 Perl/v5.10.1
+",1.3.6.1.4.1.25623.1.0.100129,"",424d12b2-bf66-4b3d-b80a-4b928dc819e0,"Scan Suspect acutal Host 192.168.1.136",2022-04-24T06:09:17Z,2c403aa9-8a63-447b-99dc-aedd005176f6,"","","","","
+Details:
+Apache mod_perl Detection (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.100129)
+Version used: 2021-07-12T14:00:54Z
+","","","",""
+192.168.1.136,,443,tcp,0.0,Log,"","Apache mod_perl Detection (HTTP)","HTTP based detection of Apache mod_perl.","Detected Apache mod_perl
+
+Version:       2.0.4
+Location:      443/tcp
+CPE:           cpe:/a:apache:mod_perl:2.0.4
+
+Concluded from version/product identification result:
+Server: Apache/2.2.14 (Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL/0.9.8k Phusion_Passenger/4.0.38 mod_perl/2.0.4 Perl/v5.10.1
+",1.3.6.1.4.1.25623.1.0.100129,"",424d12b2-bf66-4b3d-b80a-4b928dc819e0,"Scan Suspect acutal Host 192.168.1.136",2022-04-24T06:09:17Z,4515ffe9-34ac-4571-8b64-10c094616eb4,"","","","","
+Details:
+Apache mod_perl Detection (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.100129)
+Version used: 2021-07-12T14:00:54Z
+","","","",""
+192.168.1.136,,443,tcp,0.0,Log,"","Apache mod_perl Detection (HTTP)","HTTP based detection of Apache mod_perl.","Detected Apache mod_perl
+
+Version:       2.0.4
+Location:      443/tcp
+CPE:           cpe:/a:apache:mod_perl:2.0.4
+
+Concluded from version/product identification result:
+Server: Apache/2.2.14 (Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL/0.9.8k Phusion_Passenger/4.0.38 mod_perl/2.0.4 Perl/v5.10.1
+",1.3.6.1.4.1.25623.1.0.100129,"",424d12b2-bf66-4b3d-b80a-4b928dc819e0,"Scan Suspect acutal Host 192.168.1.136",2022-04-24T06:09:17Z,0c2077ab-5873-4de5-9d0c-bcff75b3b08a,"","","","","
+Details:
+Apache mod_perl Detection (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.100129)
+Version used: 2021-07-12T14:00:54Z
+","","","",""
+192.168.1.136,,80,tcp,0.0,Log,"","Apache mod_perl Detection (HTTP)","HTTP based detection of Apache mod_perl.","Detected Apache mod_perl
+
+Version:       2.0.4
+Location:      80/tcp
+CPE:           cpe:/a:apache:mod_perl:2.0.4
+
+Concluded from version/product identification result:
+Server: Apache/2.2.14 (Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL/0.9.8k Phusion_Passenger/4.0.38 mod_perl/2.0.4 Perl/v5.10.1
+",1.3.6.1.4.1.25623.1.0.100129,"",424d12b2-bf66-4b3d-b80a-4b928dc819e0,"Scan Suspect acutal Host 192.168.1.136",2022-04-24T06:09:17Z,1776ac67-46fe-4d9d-b43d-33dc402243b5,"","","","","
+Details:
+Apache mod_perl Detection (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.100129)
+Version used: 2021-07-12T14:00:54Z
+","","","",""
+192.168.1.136,,80,tcp,0.0,Log,"","Apache mod_python Detection (HTTP)","HTTP based detection of Apache mod_python.","Detected Apache mod_python
+
+Version:       3.3.1
+Location:      80/tcp
+CPE:           cpe:/a:apache:mod_python:3.3.1
+
+Concluded from version/product identification result:
+Server: Apache/2.2.14 (Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL/0.9.8k Phusion_Passenger/4.0.38 mod_perl/2.0.4 Perl/v5.10.1
+",1.3.6.1.4.1.25623.1.0.117543,"",424d12b2-bf66-4b3d-b80a-4b928dc819e0,"Scan Suspect acutal Host 192.168.1.136",2022-04-24T06:09:17Z,617619be-38dd-43d1-940b-18c83d0ce08c,"","","","","
+Details:
+Apache mod_python Detection (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.117543)
+Version used: 2021-07-12T14:00:54Z
+","","","",""
+192.168.1.136,,80,tcp,0.0,Log,"","Apache mod_python Detection (HTTP)","HTTP based detection of Apache mod_python.","Detected Apache mod_python
+
+Version:       3.3.1
+Location:      80/tcp
+CPE:           cpe:/a:apache:mod_python:3.3.1
+
+Concluded from version/product identification result:
+Server: Apache/2.2.14 (Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL/0.9.8k Phusion_Passenger/4.0.38 mod_perl/2.0.4 Perl/v5.10.1
+",1.3.6.1.4.1.25623.1.0.117543,"",424d12b2-bf66-4b3d-b80a-4b928dc819e0,"Scan Suspect acutal Host 192.168.1.136",2022-04-24T06:09:17Z,ee8aaad1-769a-470c-bf73-4c7316c7530f,"","","","","
+Details:
+Apache mod_python Detection (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.117543)
+Version used: 2021-07-12T14:00:54Z
+","","","",""
+192.168.1.136,,443,tcp,0.0,Log,"","Apache mod_python Detection (HTTP)","HTTP based detection of Apache mod_python.","Detected Apache mod_python
+
+Version:       3.3.1
+Location:      443/tcp
+CPE:           cpe:/a:apache:mod_python:3.3.1
+
+Concluded from version/product identification result:
+Server: Apache/2.2.14 (Ubuntu) mod_mono/2.4.3 PHP/5.3.2-1ubuntu4.30 with Suhosin-Patch proxy_html/3.0.1 mod_python/3.3.1 Python/2.6.5 mod_ssl/2.2.14 OpenSSL/0.9.8k Phusion_Passenger/4.0.38 mod_perl/2.0.4 Perl/v5.10.1
+",1.3.6.1.4.1.25623.1.0.117543,"",424d12b2-bf66-4b3d-b80a-4b928dc819e0,"Scan Suspect acutal Host 192.168.1.136",2022-04-24T06:09:17Z,ffa4b1b2-e16a-42ed-b071-f977594bb3bd,"","","","","
+Details:
+Apache mod_python Detection (HTTP)
+(OID: 1.3.6.1.4.1.25623.1.0.117543)
+Version used: 2021-07-12T14:00:54Z
+","","","",""

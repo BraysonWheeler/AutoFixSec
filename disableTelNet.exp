@@ -13,3 +13,9 @@ expect {
         send -- "owaspbwa\r"
     }
 }
+expect {
+    "#" {
+        send "ufw deny 23\r"
+    }
+}
+expect eof

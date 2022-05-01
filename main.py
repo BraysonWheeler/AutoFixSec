@@ -1,7 +1,8 @@
 import pandas as pd
+import os
 #import twitterapi #TODO Import files from other files
 
-df = pd.read_csv('./Automated_export.csv',encoding='latin-1')
+df = pd.read_csv('./telnet.csv',encoding='latin-1')
 
 
 lst = []
@@ -32,11 +33,17 @@ for index,row in df.iterrows():
     if(cve != cve):
         cve = 'None'
 
+    nvtName = row['NVT Name']
+    if(nvtName != nvtName):
+        nvtName = 'None'
 
-    data = [cvss,severity,solution_type,solution,affected,cve]
+
+    data = [cvss,severity,solution_type,solution,affected,cve, nvtName]
     lst.append(data)
 
-
+for i in lst:
+    if(i[6] == 'Telnet Unencrypted Cleartext Login'):
+        x = os.system('./disableTelNet.exp')
 #score = twitterapi.score('CVE-2022-22965')
-print(lst[15])
+print(lst[0])
 

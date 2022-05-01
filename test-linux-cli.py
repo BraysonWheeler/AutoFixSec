@@ -1,6 +1,6 @@
 import os
 import pexpect
-x = os.system('./ssh/disableTelNet.exp')
+x = os.system('./disableTelNet.exp')
 
 
 

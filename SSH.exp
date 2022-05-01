@@ -2,7 +2,7 @@
 
 #exp_internal 1 #Used for expect debugging
 set timeout 5
-set passwords [list test test dummydata test x dummydata test]
+set passwords [list owaspbwa test dummydata test x dummydata owaspbwa]
 set connected false
 set passwordUsed ""
 set idx 1

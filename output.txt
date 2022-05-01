@@ -1,0 +1,3 @@
+spawn ssh -oHostKeyAlgorithms=+ssh-dss root@192.168.1.136 -y
+root@192.168.1.136's password: 
+root@192.168.1.136's password: 

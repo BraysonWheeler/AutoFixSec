@@ -21,7 +21,23 @@ expect {
     "sftp>" {
         send -- "cd /etc\r";
         send -- "get inetd.conf /home/logan/Desktop/project/inetd.conf\r"
-        send -- "bye"
+        send -- "bye\r"
     }
 }
 expect eof
+exec python ./rlogin-edit.py
+
+spawn sftp -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.85 -y
+expect "assword:" {send -- "msfadmin\r"}
+expect {
+    "sftp>" {
+        send -- "cd /etc\r";
+        send -- "put inetd.conf\r"
+        send -- "bye\r"
+    }
+}
+expect eof
+spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.85 -y
+expect "assword:" {send -- "msfadmin\r"}
+expect "msfadmin@metasploitable:" {send -- "sudo reboot\r"}
+

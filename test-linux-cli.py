@@ -1,8 +1,6 @@
 import os
 import pexpect
-x = os.system('./disableTelNet.exp')
-
-
+x = os.system('/home/logan/Desktop/project/rlogin.exp')
 
 '''
 expect -exact "\rroot@192.168.1.136's password: "

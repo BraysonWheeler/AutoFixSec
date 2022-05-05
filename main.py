@@ -1,33 +1,8 @@
 import pandas as pd
-import twitterapi
-import gvmtools
+import os
+#import twitterapi #TODO Import files from other files
 
-import sys
-from gvm.connections import UnixSocketConnection
-from gvm.errors import GvmError
-from gvm.protocols.gmp import Gmp
-from gvm.transforms import EtreeCheckCommandTransform
-
-
-username = 'admin'
-password = '02169f70-676c-4789-8bad-8242fe85bd33'
-
-connection = UnixSocketConnection(path=None)
-transform = EtreeCheckCommandTransform()
-try:
-    with Gmp(connection=connection, transform=transform) as gmp:
-        gmp.authenticate(username, password)
-
-        tasks = gmp.get_tasks(filter_string='owasp')
-
-        for task in tasks.xpath('task'):
-            print(task.find('name').text)
-
-except GvmError as e:
-    print('An error occurred', e)
-
-
-df = pd.read_csv('./report.csv',encoding='latin-1')
+df = pd.read_csv('./telnet.csv',encoding='latin-1')
 
 
 lst = []
@@ -58,11 +33,17 @@ for index,row in df.iterrows():
     if(cve != cve):
         cve = 'None'
 
+    nvtName = row['NVT Name']
+    if(nvtName != nvtName):
+        nvtName = 'None'
 
-    data = [cvss,severity,solution_type,solution,affected,cve]
+
+    data = [cvss,severity,solution_type,solution,affected,cve, nvtName]
     lst.append(data)
 
-
+for i in lst:
+    if(i[6] == 'Telnet Unencrypted Cleartext Login'):
+        x = os.system('./disableTelNet.exp')
 #score = twitterapi.score('CVE-2022-22965')
-#print(score)
+print(lst[0])
 

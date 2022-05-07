@@ -15,6 +15,6 @@ Start with most up to date Kali Live Boot ISO https://www.kali.org/get-kali/#kal
 
 
 
-1. git clone {repo} <br />
-2. Import the follow python libaries:
+1.git clone {repo} <br />
+2.Import the follow python libaries:
     

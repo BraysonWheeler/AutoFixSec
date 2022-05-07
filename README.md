@@ -1,5 +1,4 @@
 # 3560-projects
-# 3560-projects
 Start with most up to date Kali Live Boot ISO https://www.kali.org/get-kali/#kali-live
 
 

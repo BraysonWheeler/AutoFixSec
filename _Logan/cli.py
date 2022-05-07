@@ -1,8 +1,10 @@
 import os
 import pexpect
-x = os.system('/home/logan/Desktop/project/rlogin.exp')
+def runscript():
+    x = os.system('./_Logan/_rlong/rlogin.exp')
 
 '''
+broken ass except code .
 expect -exact "\rroot@192.168.1.136's password: "
 send -- "asd\r"
 expect -exact "\rroot@192.168.1.136's password: "

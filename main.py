@@ -1,5 +1,13 @@
 import pandas as pd
 import os
+import sys
+#How Python handles file imports from other files
+sys.path.append('./_Logan')
+import cli
+cli.runscript()
+
+'''
+
 #import twitterapi #TODO Import files from other files
 #test
 df = pd.read_csv('./telnet.csv',encoding='latin-1')
@@ -48,3 +56,4 @@ for i in lst:
 #score = twitterapi.score('CVE-2022-22965')
 print(lst[0])
 
+'''

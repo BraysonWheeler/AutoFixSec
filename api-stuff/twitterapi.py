@@ -11,7 +11,8 @@ def score(cve_id):
         'Authorization' : 'Bearer AAAAAAAAAAAAAAAAAAAAAMtqbgEAAAAAKa1EB%2Br6mDVj2GrRsjx0u5wpywg%3DeeAJYlaNB9O3Vqk2197w7wROtogh1wHUI2sYlv8cuxahyRhiTP'
     }
 
-    response = requests.get('https://api.twitter.com/2/tweets/search/recent?query=CVE-2022-22965&tweet.fields=created_at&max_results=100', headers=headers).json()
+    response = requests.get('https://api.twitter.com/2/tweets/search/recent?query={}&tweet.fields=created_at&max_results=100'.format(cve_id), headers=headers).json()
+    print(response)
     meta = response['meta']
     pagination_token = meta['next_token']
     count = 0
@@ -41,3 +42,6 @@ def score(cve_id):
         return 'Medium'
     else:
         return 'Low'
+
+
+score('test')

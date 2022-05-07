@@ -2,7 +2,7 @@
 Start with most up to date Kali Live Boot ISO https://www.kali.org/get-kali/#kali-live
 
 
-<h1>Installing OpenVas in Kali</h1>
+
 1.sudo su <br />
 2.apt-get update && apt-get install<br />
 3.apt-get install openvas<br />
@@ -14,7 +14,7 @@ Start with most up to date Kali Live Boot ISO https://www.kali.org/get-kali/#kal
 8.geenbone-fee-sync --type CERT<br />
 
 
-<h1>Running Project</h1>
+
 1. git clone {repo} <br />
 2. Import the follow python libaries:
     

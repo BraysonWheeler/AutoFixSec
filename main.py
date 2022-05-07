@@ -3,11 +3,24 @@ import os
 import sys
 #How Python handles file imports from other files
 sys.path.append('./_Logan')
-import cli
-cli.runscript()
+sys.path.append('./_Logan/default_cred')
+sys.path.append('./api-stuff/twitterapi.py')
+import twitterapi
+import notfound
 
 '''
+Logan -> 
+Default cred
+CVE-1999-0501
+CVE-1999-0502
+CVE-1999-0507
+CVE-1999-0508
+rlogin->
+telnet->
+'''
+notfound.main()
 
+'''
 #import twitterapi #TODO Import files from other files
 #test
 df = pd.read_csv('./telnet.csv',encoding='latin-1')

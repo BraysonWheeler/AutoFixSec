@@ -11,7 +11,11 @@ Start with most up to date Kali Live Boot ISO https://www.kali.org/get-kali/#kal
 5.`Get libraries`<br />
 6.`gvm-check-setup`<br />
 7.`geenbone-fee-sync --type gvmd_data`<br />
-8.geenbone-fee-sync --type CERT`<br />
+8.`geenbone-fee-sync --type CERT`<br />
+[!] If Config's are still not synced try:
+    `sudo runuser -u _gvm -- greenbone-nvt-sync`
+    `sudo runuser -u _gvm -- greenbone-scapdata-sync`
+    `sudo runuser -u _gvm -- greenbone-certdata-sync`
 
 
 # Running Code

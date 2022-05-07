@@ -8,7 +8,7 @@ Start with most up to date Kali Live Boot ISO https://www.kali.org/get-kali/#kal
 3.`apt-get install openvas`<br />
 4.`gvm-setup`<br />
     [!] Setup will take 15-30 minutes<br />
-5.`Get libraries`<br />
+5.`sudo runuser -u _gvm -- gvmd --create-user=admin2 --new-password=12345`<br />
 6.`gvm-check-setup`<br />
 7.`geenbone-fee-sync --type gvmd_data`<br />
 8.`geenbone-fee-sync --type CERT`<br />

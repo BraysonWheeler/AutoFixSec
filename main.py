@@ -1,10 +1,11 @@
 import pandas as pd
 import os
 #import twitterapi #TODO Import files from other files
-
+#test
 df = pd.read_csv('./telnet.csv',encoding='latin-1')
 
-
+def main():
+    print(main)
 lst = []
 for index,row in df.iterrows():
     data=[]

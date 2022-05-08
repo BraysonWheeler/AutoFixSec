@@ -1,0 +1,13 @@
+#!/usr/bin/expect -f
+#exp_internal 1 #Used for expect debugging
+
+set port [lindex $argv]
+spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.181 -y
+expect "assword:" {send -- "msfadmin\r"}
+expect "msfadmin@metasploitable:" {send -- "sudo su\r"}
+expect "msfadmin:" {send -- "msfadmin\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "ufw allow $port\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "exit\r"}
+exit
+
+

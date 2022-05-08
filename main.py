@@ -1,10 +1,10 @@
 import pandas as pd
 import os
-import sys
 #How Python handles file imports from other files
 sys.path.append('./_Logan')
 sys.path.append('./_Logan/default_cred')
 sys.path.append('./api-stuff/twitterapi.py')
+sys.os.command()
 import twitterapi
 import notfound
 

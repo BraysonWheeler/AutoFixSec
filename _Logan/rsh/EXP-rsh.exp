@@ -19,12 +19,12 @@ expect "assword:" {send -- "msfadmin\r"}
 expect {
     "sftp>" {
         send -- "cd /etc\r";
-        send -- "get inetd.conf /home/logan/Desktop/3560-projects/_Logan/rlogin/inetd.conf\r"
+        send -- "get inetd.conf /home/logan/Desktop/3560-projects/_Logan/rsh/inetd.conf\r"
         send -- "bye\r"
     }
 }
 expect eof
-exec python _Logan/rlogin/rlogin-edit.py
+exec python _Logan/rsh/rsh-edit.py
 
 spawn sftp -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.181 -y
 expect "assword:" {send -- "msfadmin\r"}
@@ -40,6 +40,7 @@ spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.181 -y
 expect "assword:" {send -- "msfadmin\r"}
 expect "msfadmin@metasploitable:" {send -- "sudo su\r"}
 expect "msfadmin:" {send -- "msfadmin\r"}
-expect "root@metasploitable:/home/msfadmin# " {send -- "ufw delete allow 513\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "ufw delete allow 512\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "ufw delete allow 514\r"}
 expect eof
 

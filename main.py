@@ -7,11 +7,13 @@ import ufw_firewall
 #How Python handles file imports from other files
 sys.path.append('./_Logan')
 sys.path.append('./_Logan/default_cred')
+sys.path.append('./_Logan/rsh')
 sys.path.append('./_Logan/rlogin')
 sys.path.append('./api-stuff')
 sys.path.append('./gvm-scripts')
 
 #Imported py files outside of root directory
+import rsh
 import rlogin
 import default_cred
 import gvm_get_report
@@ -49,14 +51,14 @@ def configure_firewall():
 
 
 def main():
-    configure_firewall()
+
     gvm_get_report.get_report() #Gets report of scan generates report in folder with main
 
 
     df = pd.read_csv('./Automated_export.csv',encoding='latin-1') #Pulls report generated
 
-    new_password = new_password_function() #IF default credentials are found replace with this passoword
-
+    #new_password = new_password_function() #IF default credentials are found replace with this passoword
+    new_password = 'test123'
     lst = []
     for index,row in df.iterrows():
         data=[]
@@ -98,8 +100,8 @@ def main():
         print(i[6])
 
     print('\n')
-    ssh_ftp_default_credentials_found = False
 
+    ssh_ftp_default_credentials_found = False
     '''
     Had To be Removed Twitter's API has a limit for non enterprise accounts going through first vulnerability we ran out of space.
     print('Applying risk assesment')
@@ -108,11 +110,14 @@ def main():
             risk_score = twitterapi.score(i[5])
             print(risk_score)
     '''
-
+    #configure_firewall()
     for i in lst:
         if(i[6] == 'rlogin Passwordless Login'):
             os.system('./_Logan/rlogin/EXP-rlogin.exp')
 
+        if(i[6] == 'rsh Unencrypted Cleartext Login'):
+            os.system('./_Logan/rsh/EXP-rsh.exp')
+            
         if(i[6] == 'SSH Brute Force Logins With Default Credentials Reporting'
                     or i[6] == 'FTP Brute Force Logins Reporting'
                     and ssh_ftp_default_credentials_found == False):
@@ -125,7 +130,5 @@ def main():
 
 
     if ssh_ftp_default_credentials_found:
-        os.system('chmod +x /_Logan/default_cred/EXP-defaultcred.exp')
-        os.system('chmod +x /_Logan/default_cred/default_cred.py')
         default_cred.runscript(new_password)
 main()

@@ -22,7 +22,7 @@ def get_report():
 
 
         response = gmp.get_report(
-            report_id="cbbbec11-8144-404c-bdd7-b8a267440272", report_format_id=pdf_report_format_id, filter_string='apply_overrides=0 levels=html rows=100 min_qod=70 first=1 sort-reverse=severity'
+            report_id="127f533c-d9a5-471c-bae0-78768e7eacea", report_format_id=pdf_report_format_id, filter_string='apply_overrides=0 levels=html rows=100 min_qod=70 first=1 sort-reverse=severity'
         )
 
         report_element = response.find("report")
@@ -49,6 +49,6 @@ def get_report():
 
         pdf_path.write_bytes(binary_pdf)
 
-        print('Done. PDF created: ' + str(pdf_path))
+        print('[+]Done. PDF created: ' + str(pdf_path))
 
 get_report()

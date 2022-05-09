@@ -22,5 +22,6 @@ Start with most up to date Kali Live Boot ISO https://www.kali.org/get-kali/#kal
 
 # Running Code
 1.`git clone {repo}` <br />
-2.Import the follow python libaries:
-    
+2.Import the follow python libaries: <br />
+    `pip3 install python-gvm` <br />
+    `pip3 install

@@ -12,13 +12,13 @@ def score(cve_id):
     }
 
     response = requests.get('https://api.twitter.com/2/tweets/search/recent?query={}&tweet.fields=created_at&max_results=100'.format(cve_id), headers=headers).json()
-    print(response)
     meta = response['meta']
     pagination_token = meta['next_token']
     count = 0
     while(True):
 
         response_loop = requests.get('https://api.twitter.com/2/tweets/search/recent?query={}&tweet.fields=created_at&max_results=100&pagination_token={}'.format(cve_id,pagination_token), headers=headers).json()
+        
         meta_loop = response_loop['meta']
 
 

@@ -10,6 +10,8 @@ import lxml
 from pathlib import Path
 import sys
 from base64 import b64decode
+import os
+
 
 connection = UnixSocketConnection(path=None) #Path=None is deafult gvmd.sock location
 transform = EtreeTransform()

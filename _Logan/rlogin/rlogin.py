@@ -1,7 +1,7 @@
 import os
 import pexpect
 def runscript():
-    x = os.system('./_Logan/_rlong/rlogin.exp')
+    x = os.system('./_Logan/rlogin/EXP-rlogin.exp')
 
 '''
 broken ass except code .

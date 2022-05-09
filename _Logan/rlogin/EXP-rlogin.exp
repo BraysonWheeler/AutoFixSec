@@ -25,7 +25,7 @@ expect {
     }
 }
 expect eof
-exec python ./rlogin-edit.py
+exec python _Logan/rlogin/rlogin-edit.py
 
 spawn sftp -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.181 -y
 expect "assword:" {send -- "msfadmin\r"}

@@ -1,5 +1,5 @@
 import re
-ifile = open('inetd.conf', 'r')
+ifile = open('./_Logan/rlogin/inetd.conf', 'r')
 
 
 test = ifile.readlines()

@@ -2,18 +2,23 @@ import pandas as pd
 import sys
 import os
 import re
+import ufw_firewall
 
 #How Python handles file imports from other files
 sys.path.append('./_Logan')
 sys.path.append('./_Logan/default_cred')
+sys.path.append('./_Logan/rlogin')
 sys.path.append('./api-stuff')
 sys.path.append('./gvm-scripts')
 
+#Imported py files outside of root directory
+import rlogin
 import gvm_get_report
 
 def new_password_function():
     check = True
-    new_password = input("[+]If a default user account password is found what would you like to change it to? \n[+]Requirements: password of atleast 12 characters with 1 one uppercase and 1 numeral character")
+    new_password = "alskjdhasdkljhASDASD123123!!!"
+    #new_password = input("[+]If a default user account password is found what would you like to change it to? \n[+]Requirements: password of atleast 12 characters with 1 one uppercase and 1 numeral character")
     SpecialSym=['!','@','#','$','%','^','&','*','(',')','_','-','+','=','[','{',']','}','\\','|',':',';','\'','\"',',','<','.','>','?','/']
     if len(new_password) < 12:
         print('[!]length should be at least 6')
@@ -37,13 +42,19 @@ def new_password_function():
     
 
     
+def configure_firewall():
+    ufw_firewall.setup()
+
+    
+
 def main():
-    gvm_get_report.get_report() #Gets report of scan
+    configure_firewall()
+    gvm_get_report.get_report() #Gets report of scan generates report in folder with main
 
 
-    df = pd.read_csv('./Automated_export.csv',encoding='latin-1')
+    df = pd.read_csv('./Automated_export.csv',encoding='latin-1') #Pulls report generated
 
-    new_password_function()
+    new_password_function() #IF default credentials are found replace with this passoword
 
     lst = []
     for index,row in df.iterrows():
@@ -85,6 +96,7 @@ def main():
     for i in lst:
         print(i[6])
 
+    print('\n')
     default_credentials_fixed = False
 
     '''
@@ -98,12 +110,13 @@ def main():
 
     for i in lst:
         if(i[6] == 'rlogin Passwordless Login'):
-            print(i)
-            #x = os.system('do something')
+            os.system('./_Logan/rlogin/EXP-rlogin.exp')
+
         if(i[6] == 'SSH Brute Force Logins With Default Credentials Reporting'
                     or i[6] == 'FTP Brute Force Logins Reporting'
                     and default_credentials_fixed == False):
-                        print(i)
+                    print(i)
+                        
         if(i[6] == 'Telnet Unencrypted Cleartext Login'):
             print(i)
             #x = os.system('./disableTelNet.exp')

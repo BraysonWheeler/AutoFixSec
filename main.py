@@ -57,8 +57,7 @@ def main():
 
     df = pd.read_csv('./Automated_export.csv',encoding='latin-1') #Pulls report generated
 
-    #new_password = new_password_function() #IF default credentials are found replace with this passoword
-    new_password = 'test123'
+    new_password = new_password_function() #IF default credentials are found replace with this passoword
     lst = []
     for index,row in df.iterrows():
         data=[]
@@ -110,14 +109,14 @@ def main():
             risk_score = twitterapi.score(i[5])
             print(risk_score)
     '''
-    #configure_firewall()
+    configure_firewall()
     for i in lst:
         if(i[6] == 'rlogin Passwordless Login'):
             os.system('./_Logan/rlogin/EXP-rlogin.exp')
 
         if(i[6] == 'rsh Unencrypted Cleartext Login'):
             os.system('./_Logan/rsh/EXP-rsh.exp')
-            
+
         if(i[6] == 'SSH Brute Force Logins With Default Credentials Reporting'
                     or i[6] == 'FTP Brute Force Logins Reporting'
                     and ssh_ftp_default_credentials_found == False):

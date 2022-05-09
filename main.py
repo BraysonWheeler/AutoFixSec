@@ -13,6 +13,7 @@ sys.path.append('./gvm-scripts')
 
 #Imported py files outside of root directory
 import rlogin
+import default_cred
 import gvm_get_report
 
 def new_password_function():
@@ -45,7 +46,7 @@ def new_password_function():
 def configure_firewall():
     ufw_firewall.setup()
 
-    
+
 
 def main():
     configure_firewall()
@@ -54,7 +55,7 @@ def main():
 
     df = pd.read_csv('./Automated_export.csv',encoding='latin-1') #Pulls report generated
 
-    new_password_function() #IF default credentials are found replace with this passoword
+    new_password = new_password_function() #IF default credentials are found replace with this passoword
 
     lst = []
     for index,row in df.iterrows():
@@ -97,7 +98,7 @@ def main():
         print(i[6])
 
     print('\n')
-    default_credentials_fixed = False
+    ssh_ftp_default_credentials_found = False
 
     '''
     Had To be Removed Twitter's API has a limit for non enterprise accounts going through first vulnerability we ran out of space.
@@ -114,12 +115,17 @@ def main():
 
         if(i[6] == 'SSH Brute Force Logins With Default Credentials Reporting'
                     or i[6] == 'FTP Brute Force Logins Reporting'
-                    and default_credentials_fixed == False):
-                    print(i)
+                    and ssh_ftp_default_credentials_found == False):
+
+                        ssh_ftp_default_credentials_found = True
                         
         if(i[6] == 'Telnet Unencrypted Cleartext Login'):
             print(i)
             #x = os.system('./disableTelNet.exp')
 
 
+    if ssh_ftp_default_credentials_found:
+        os.system('chmod +x /_Logan/default_cred/EXP-defaultcred.exp')
+        os.system('chmod +x /_Logan/default_cred/default_cred.py')
+        default_cred.runscript(new_password)
 main()

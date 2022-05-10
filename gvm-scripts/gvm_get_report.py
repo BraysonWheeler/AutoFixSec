@@ -24,7 +24,7 @@ def get_report():
 
 
         response = gmp.get_report(
-            report_id="127f533c-d9a5-471c-bae0-78768e7eacea", report_format_id=pdf_report_format_id, filter_string='apply_overrides=0 levels=html rows=100 min_qod=70 first=1 sort-reverse=severity'
+            report_id="46a25e09-aee6-4dfb-949f-79701eaf3e7b", report_format_id=pdf_report_format_id, filter_string='apply_overrides=0 levels=html rows=100 min_qod=70 first=1 sort-reverse=severity'
         )
 
         report_element = response.find("report")

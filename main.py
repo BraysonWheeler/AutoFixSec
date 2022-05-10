@@ -57,7 +57,8 @@ def main():
 
     df = pd.read_csv('./Automated_export.csv',encoding='latin-1') #Pulls report generated
 
-    new_password = new_password_function() #IF default credentials are found replace with this passoword
+    #new_password = new_password_function() #IF default credentials are found replace with this passoword
+    new_password = 'asd123'
     lst = []
     for index,row in df.iterrows():
         data=[]

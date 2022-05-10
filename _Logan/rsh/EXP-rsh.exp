@@ -40,7 +40,7 @@ spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.181 -y
 expect "assword:" {send -- "msfadmin\r"}
 expect "msfadmin@metasploitable:" {send -- "sudo su\r"}
 expect "msfadmin:" {send -- "msfadmin\r"}
-expect "root@metasploitable:/home/msfadmin# " {send -- "ufw delete allow 512\r"}
-expect "root@metasploitable:/home/msfadmin# " {send -- "ufw delete allow 514\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "ufw delete allow 512/tcp\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "ufw delete allow 514/tcp\r"}
 expect eof
 

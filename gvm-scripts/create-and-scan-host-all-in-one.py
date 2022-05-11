@@ -17,7 +17,7 @@ with Gmp(connection, transform=transform) as gmp:
     gmp.authenticate('admin', '02169f70-676c-4789-8bad-8242fe85bd33')
     #CVE-1999-0497
     #Create target to scan
-    name = f"Suspect acutal Host33" 
+    name = f"Suspect acutal Host" 
     #port_list = "4a4717fe-57d2-11e1-9a26-406186ea4fc5" #Default port list ID provided by openvas (generated when installing)
     port_list = "730ef368-57e2-11e1-a90f-406186ea4fc5"
     #host_list holds the vulnerable machine we will scan

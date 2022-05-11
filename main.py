@@ -13,6 +13,7 @@ sys.path.append('./api-stuff')
 sys.path.append('./gvm-scripts')
 sys.path.append('./_Ime')
 sys.path.append('./_Ime/my_sql_default')
+sys.path.append('./_Ime/anonymous_ftp')
 
 #Imported py files outside of root directory
 import rsh
@@ -20,6 +21,7 @@ import rlogin
 import default_cred
 import gvm_get_report
 import my_sql_default
+import anonymous_ftp
 
 def new_password_function():
     check = True
@@ -125,7 +127,12 @@ def main():
                         ssh_ftp_default_credentials_found = True
 
         if(i[6] == 'MySQL / MariaDB weak password'):
-            my_sql_default.runscript(new_password)
+            os.system('chmod +x ./_Ime/my_sql_default/EXP-mysqldefault.exp')
+            os.system('./_Ime/my_sql_default/EXP-mysqldefault.exp {} {}'.format(new_password, ip_addr))
+
+        if(i[6] == 'Anonymous FTP Login Reporting'):
+            os.system('chmod +x ./_Ime/anonymous_ftp/EXP-anonymousftp.exp')
+            os.system('./_Ime/anonymous_ftp/EXP-anonymousftp.exp {}'.format(ip_addr))
                         
         if(i[6] == 'Telnet Unencrypted Cleartext Login'):
             os.system('chmod +x ./_Harper/telnet/telnetdisable.exp')

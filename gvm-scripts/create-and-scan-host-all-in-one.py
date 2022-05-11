@@ -12,17 +12,17 @@ import time
 connection = UnixSocketConnection(path=None) #Path=None is deafult gvmd.sock location
 transform = EtreeTransform()
 
-
-
+x = input('What is the ip of the vulnerable machine')
 with Gmp(connection, transform=transform) as gmp:
     gmp.authenticate('admin', '02169f70-676c-4789-8bad-8242fe85bd33')
     #CVE-1999-0497
     #Create target to scan
-    name = f"Suspect acutal Host3" 
+    name = f"Suspect acutal Host33" 
     #port_list = "4a4717fe-57d2-11e1-9a26-406186ea4fc5" #Default port list ID provided by openvas (generated when installing)
     port_list = "730ef368-57e2-11e1-a90f-406186ea4fc5"
     #host_list holds the vulnerable machine we will scan
-    host_list=["192.168.1.181"] #Must be a list of strings
+    host_list = [] #Must be a list of strings
+    host_list.append(x)
     
 
     response = gmp.create_target(name=name, hosts=host_list, port_list_id=port_list)
@@ -35,7 +35,7 @@ with Gmp(connection, transform=transform) as gmp:
     full_and_fast_scan_config_id = 'daba56c8-73ec-11df-a475-002264764cea'
     openvas_scanner_id = '08b69003-5fc2-4037-a479-93b440211c73'
 
-    name = "Scan Suspect Host"
+    name = "Scan Suspect Hosts"
     response2 = gmp.create_task(name=name, config_id=full_and_fast_scan_config_id, target_id=targete_id, scanner_id=openvas_scanner_id)
     print(etree.tostring(response2))
     task_id=response2.get('id')

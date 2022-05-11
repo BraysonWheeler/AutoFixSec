@@ -6,7 +6,9 @@ set connected false
 set passwordUsed ""
 set idx 1
 
-spawn ssh -oHostKeyAlgorithms=+ssh-dss root@10.0.2.15 -y
+set ipaddr [lindex $argv 0]
+
+eval spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@$ipaddr -y
 expect {
     "assword:" {
         send -- "msfadmin\r"
@@ -17,10 +19,6 @@ expect "msfadmin@metasploitable:" {send -- "sudo su\r"}
 expect "msfadmin:" {send -- "msfadmin\r"}
 expect "root@metasploitable:/home/msfadmin# " {send -- "ufw delete allow 23/tcp\r"}
 expect "root@metasploitable:/home/msfadmin# " {send -- "iptables -I INPUT -p tcp --dport 23 -j REJECT && ip6tables -I INPUT -p tcp --dport 23 -j REJECT\r"}
-
-expect {
-    "#" {
-        send "ufw delete allow 23/tcp\r"
-    }
-}
+expect "root@metasploitable:/home/msfadmin# " {send -- "exit\r"}
+expect "msfadmin:" {send -- "exit\r"}
 expect eof

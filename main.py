@@ -109,6 +109,7 @@ def main():
     configure_firewall(ip_addr) # Configures UFW Firewall on linux machine
     for i in lst:
         if(i[6] == 'rlogin Passwordless Login'):
+            os.system('chmod +x ./_Logan/rlogin/EXP-rlogin.exp')
             os.system('./_Logan/rlogin/EXP-rlogin.exp {}'.format(ip_addr))
 
         if(i[6] == 'rsh Unencrypted Cleartext Login'):
@@ -121,11 +122,13 @@ def main():
                         ssh_ftp_default_credentials_found = True
                         
         if(i[6] == 'Telnet Unencrypted Cleartext Login'):
-            print(i)
-            # you would call your mitigation like this x = os.system('./disableTelNet.exp')
+            os.system('chmod +x ./_Harper/telnet/telnetdisable.exp')
+            os.system('./_Harper/telnet/telnetdisable.exp {}'.format(ip_addr))
+        
 
 
     if ssh_ftp_default_credentials_found:
+        os.system('chmod +x ./_Logan/default_cred/EXP-defaultcred.exp')
         os.system('./_Logan/default_cred/EXP-defaultcred.exp {} {}'.format(new_password, ip_addr))
 main()
 

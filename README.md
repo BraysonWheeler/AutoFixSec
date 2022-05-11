@@ -1,6 +1,13 @@
-# 3560-projects
-Start with most up to date Kali Live Boot ISO https://www.kali.org/get-kali/#kali-live
+# Using the vdi provided in dropbox
+https://www.dropbox.com/s/fkncg2rgr52ie9y/Kalix2.vdi?dl=0
+Here is the virtual disk image of the machine I used to run the demo in our video. From the virtual disk image you can recreate my virtual machine. Will negate all future openvas configurations and dependency installs.
 
+
+
+# 3560-projects
+Start with most up to date Kali Live Boot ISO: https://www.kali.org/get-kali/#kali-live
+
+Metasploitable 2: https://sourceforge.net/projects/metasploitable/
 
 # Installing Openvas on KALI
 1.`sudo su` <br />
@@ -31,8 +38,7 @@ Start with most up to date Kali Live Boot ISO https://www.kali.org/get-kali/#kal
     `pip3 install lxml` <br />
     `pip3 install CronTab` <br />
 
-# Using the vdi provided in dropbox
-I've sent a dropbox email to the virtual disk image of the machine I used to run the demo in our video. From the virtual disk image you can recreate my virtual machine. Will negate all previous openvas configurations and dependency installs.
+
 
 # starting the project
 Before begining be sure to change the admin credentials in create-and-scan-host-all-in-one.py to your admin credentials. Unless you are using the VDI your admin credentials are the same

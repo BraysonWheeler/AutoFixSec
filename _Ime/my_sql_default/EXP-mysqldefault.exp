@@ -9,4 +9,6 @@ expect "root@metasploitable:/home/msfadmin# " {send -- "mysql -u root\r"}
 expect "mysql> " {send -- "UPDATE mysql.user SET Password=PASSWORD('$passwd') WHERE User='root';\r"}
 expect "mysql> " {send -- "FLUSH PRIVILEGES;\r"}
 expect "mysql> " {send -- "exit;\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "exit\r"}
+expect "msfadmin:" {send -- "exit\r"}
 expect eof

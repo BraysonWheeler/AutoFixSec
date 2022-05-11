@@ -7,7 +7,7 @@ set passwordUsed ""
 set idx 1
 
 set ipaddr [lindex $argv 0]
-eval spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@ipaddr -y
+eval spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@$ipaddr -y
 expect "assword:" {send -- "msfadmin\r"}
 expect "msfadmin@metasploitable:" {send -- "sudo su\r"}
 expect "msfadmin:" {send -- "msfadmin\r"}

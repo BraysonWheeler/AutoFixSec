@@ -1,6 +1,6 @@
-Starting Nmap 7.92 ( https://nmap.org ) at 2022-05-10 21:33 CDT
-Nmap scan report for 192.168.1.181
-Host is up (0.00040s latency).
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-05-11 12:47 CDT
+Nmap scan report for 192.168.1.70
+Host is up (0.00034s latency).
 Not shown: 65505 closed tcp ports (conn-refused)
 PORT      STATE SERVICE
 21/tcp    open  ftp
@@ -29,10 +29,10 @@ PORT      STATE SERVICE
 8009/tcp  open  ajp13
 8180/tcp  open  unknown
 8787/tcp  open  msgsrvr
-35128/tcp open  unknown
-47756/tcp open  unknown
-49074/tcp open  unknown
-54531/tcp open  unknown
-MAC Address: 08:00:27:9D:83:CE (Oracle VirtualBox virtual NIC)
+33571/tcp open  unknown
+38194/tcp open  unknown
+52204/tcp open  unknown
+58345/tcp open  unknown
+MAC Address: 08:00:27:EE:DB:E6 (Oracle VirtualBox virtual NIC)
 
-Nmap done: 1 IP address (1 host up) scanned in 3.52 seconds
+Nmap done: 1 IP address (1 host up) scanned in 4.00 seconds

@@ -25,9 +25,10 @@ import gvm_get_report
 import my_sql_default
 import anonymous_ftp
 
+#Creates new password for default credentials found in the account
 def new_password_function():
     check = True
-    #new_password = "alskjdhasdkljhASDASD123123!!!"
+    #follows standard passowrd policy
     new_password = input("[+]If a default user account password is found what would you like to change it to? \n[+]Requirements: password of atleast 12 characters with 1 one uppercase and 1 numeral character")
     SpecialSym=['!','@','#','$','%','^','&','*','(',')','_','-','+','=','[','{',']','}','\\','|',':',';','\'','\"',',','<','.','>','?','/']
     if len(new_password) < 12:
@@ -66,7 +67,6 @@ def main():
     df = pd.read_csv('./Automated_export.csv',encoding='latin-1') #Pulls report generated
 
     new_password = new_password_function() #IF default credentials are found replace with this passoword
-    #new_password = 'asd123'
     lst = []
     for index,row in df.iterrows():
         data=[]
@@ -115,6 +115,7 @@ def main():
 
     configure_firewall(ip_addr) # Configures UFW Firewall on linux machine
     for i in lst:
+        #if i[6] = nvtname
         if(i[6] == 'rlogin Passwordless Login'):
             os.system('chmod +x ./_Logan/rlogin/EXP-rlogin.exp')
             os.system('./_Logan/rlogin/EXP-rlogin.exp {}'.format(ip_addr))
@@ -144,13 +145,13 @@ def main():
             os.system('chmod +x ./_Harper/ftp2121disable/ftpucl.exp')
             os.system('./_Harper/ftp2121disable/ftpucl.exp {}'.format(ip_addr))
         
-        #if(i[6] == 'FTP Unencrypted Cleartext Login'):
-        #    os.system('chmod +x ./_Skandha/ftpucl.exp')
-        #    os.system('./_Skandha/ftp_lockdown.exp {}'.format(ip_addr))    
+        if(i[6] == 'FTP Unencrypted Cleartext Login'):
+            os.system('chmod +x ./_Skandha/ftpucl.exp')
+            os.system('./_Skandha/ftp_lockdown.exp {}'.format(ip_addr))    
             
-        #if(i[6] == 'Check if Mailserver answer to VRFY and EXPN requests'):
-        #    os.system('chmod +x ./_Skandha/ftpucl.exp')
-        #    os.system('./_Skandha/mail_vrfy_lockdown.exp {}'.format(ip_addr))    
+        if(i[6] == 'Check if Mailserver answer to VRFY and EXPN requests'):
+            os.system('chmod +x ./_Skandha/ftpucl.exp')
+            os.system('./_Skandha/mail_vrfy_lockdown.exp {}'.format(ip_addr))    
 
     if ssh_ftp_default_credentials_found:
         os.system('chmod +x ./_Logan/default_cred/EXP-defaultcred.exp')

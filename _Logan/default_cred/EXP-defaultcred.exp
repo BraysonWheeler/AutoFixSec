@@ -2,10 +2,14 @@
 
 set passwd [lindex $argv 0]
 set ipaddr [lindex $argv 1]
+#spawn ssh session
 eval spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@$ipaddr -y
+#if password comes after ssh send in msfadmin
 expect "assword:" {send -- "msfadmin\r"}
+#gain root priv
 expect "msfadmin@metasploitable:" {send -- "sudo su\r"}
 expect "msfadmin:" {send -- "msfadmin\r"}
+#change passwd for msfadmin
 expect "root@metasploitable:/home/msfadmin# " {send -- "passwd msfadmin\r"}
 expect "Enter new UNIX password: " {send -- "$passwd\r"}
 expect "Retype new UNIX password: " {send -- "$passwd\r"}

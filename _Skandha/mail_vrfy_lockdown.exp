@@ -1,7 +1,7 @@
 #!/usr/bin/expect -f
 
-set target_host 192.168.163.131
-set passwd [lindex $argv]
+
+set target_host [lindex $argv]
 spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@$target_host -y
 expect "assword:" {send -- "msfadmin\r"}
 expect "msfadmin@metasploitable:" {send -- "sudo su\r"}

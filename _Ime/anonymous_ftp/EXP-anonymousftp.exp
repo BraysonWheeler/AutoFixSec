@@ -12,4 +12,6 @@ expect "assword:" {send -- "msfadmin\r"}
 expect "msfadmin@metasploitable:" {send -- "sudo su\r"}
 expect "msfadmin:" {send -- "msfadmin\r"}
 expect "root@metasploitable:/home/msfadmin# " {send -- "sed -i "s/^anonymous_enable.*/anonymous_enable=NO/" /etc/vsftpd.config\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "exit\r"}
+expect "msfadmin:" {send -- "exit\r"}
 expect eof

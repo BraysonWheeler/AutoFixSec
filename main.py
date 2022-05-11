@@ -144,14 +144,13 @@ def main():
             os.system('chmod +x ./_Harper/ftp2121disable/ftpucl.exp')
             os.system('./_Harper/ftp2121disable/ftpucl.exp {}'.format(ip_addr))
         
-        #Adding my functionality
         #if(i[6] == 'FTP Unencrypted Cleartext Login'):
-        #    os.system('chmod +x ./_Harper/ftp2121disable/ftpucl.exp')
-        #    os.system('./_Harper/ftp2121disable/ftpucl.exp {}'.format(ip_addr))    
+        #    os.system('chmod +x ./_Skandha/ftpucl.exp')
+        #    os.system('./_Skandha/ftp_lockdown.exp {}'.format(ip_addr))    
             
-        #if(i[6] == 'FTP Unencrypted Cleartext Login'):
-        #    os.system('chmod +x ./_Harper/ftp2121disable/ftpucl.exp')
-        #    os.system('./_Harper/ftp2121disable/ftpucl.exp {}'.format(ip_addr))    
+        #if(i[6] == 'Check if Mailserver answer to VRFY and EXPN requests'):
+        #    os.system('chmod +x ./_Skandha/ftpucl.exp')
+        #    os.system('./_Skandha/mail_vrfy_lockdown.exp {}'.format(ip_addr))    
 
     if ssh_ftp_default_credentials_found:
         os.system('chmod +x ./_Logan/default_cred/EXP-defaultcred.exp')

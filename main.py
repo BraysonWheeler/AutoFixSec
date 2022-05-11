@@ -14,6 +14,8 @@ sys.path.append('./gvm-scripts')
 sys.path.append('./_Ime')
 sys.path.append('./_Ime/my_sql_default')
 sys.path.append('./_Ime/anonymous_ftp')
+#sys.path.append('./_Skandha/ftp_lockdown.exp')
+#sys.path.append('./_Skandha/mail_vrfy_lockdown')
 
 #Imported py files outside of root directory
 import rsh
@@ -141,6 +143,15 @@ def main():
         if(i[6] == 'FTP Unencrypted Cleartext Login'):
             os.system('chmod +x ./_Harper/ftp2121disable/ftpucl.exp')
             os.system('./_Harper/ftp2121disable/ftpucl.exp {}'.format(ip_addr))
+        
+        #Adding my functionality
+        #if(i[6] == 'FTP Unencrypted Cleartext Login'):
+        #    os.system('chmod +x ./_Harper/ftp2121disable/ftpucl.exp')
+        #    os.system('./_Harper/ftp2121disable/ftpucl.exp {}'.format(ip_addr))    
+            
+        #if(i[6] == 'FTP Unencrypted Cleartext Login'):
+        #    os.system('chmod +x ./_Harper/ftp2121disable/ftpucl.exp')
+        #    os.system('./_Harper/ftp2121disable/ftpucl.exp {}'.format(ip_addr))    
 
     if ssh_ftp_default_credentials_found:
         os.system('chmod +x ./_Logan/default_cred/EXP-defaultcred.exp')

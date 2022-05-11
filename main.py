@@ -11,12 +11,15 @@ sys.path.append('./_Logan/rsh')
 sys.path.append('./_Logan/rlogin')
 sys.path.append('./api-stuff')
 sys.path.append('./gvm-scripts')
+sys.path.append('./_Ime')
+sys.path.append('./_Ime/my_sql_default')
 
 #Imported py files outside of root directory
 import rsh
 import rlogin
 import default_cred
 import gvm_get_report
+import my_sql_default
 
 def new_password_function():
     check = True
@@ -120,6 +123,9 @@ def main():
                     and ssh_ftp_default_credentials_found == False):
 
                         ssh_ftp_default_credentials_found = True
+
+        if(i[6] == 'MySQL / MariaDB weak password'):
+            my_sql_default.runscript(new_password)
                         
         if(i[6] == 'Telnet Unencrypted Cleartext Login'):
             os.system('chmod +x ./_Harper/telnet/telnetdisable.exp')

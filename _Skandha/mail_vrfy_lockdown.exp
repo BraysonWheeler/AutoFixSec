@@ -1,0 +1,13 @@
+#!/usr/bin/expect -f
+
+set target_host 192.168.163.131
+set passwd [lindex $argv]
+spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@$target_host -y
+expect "assword:" {send -- "msfadmin\r"}
+expect "msfadmin@metasploitable:" {send -- "sudo su\r"}
+expect "msfadmin:" {send -- "msfadmin\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "echo 'disable_vrfy_command = yes' >> /etc/postfix/main.cf\r" }
+expect "root@metasploitable:/home/msfadmin# " {send -- "postfix reload\r" }
+expect "root@metasploitable:/home/msfadmin# " {send -- "exit\r"}
+expect "msfadmin@metasploitable:> " {send -- "exit\r"}
+expect eof

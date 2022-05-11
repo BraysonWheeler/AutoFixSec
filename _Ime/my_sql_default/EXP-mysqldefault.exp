@@ -1,0 +1,12 @@
+#!/usr/bin/expect -f
+
+set passwd [lindex $argv]
+spawn ssh -oHostKeyAlgorithms=+ssh-dss msfadmin@192.168.1.181 -y
+expect "assword:" {send -- "msfadmin\r"}
+expect "msfadmin@metasploitable:" {send -- "sudo su\r"}
+expect "msfadmin:" {send -- "msfadmin\r"}
+expect "root@metasploitable:/home/msfadmin# " {send -- "mysql -u root\r"}
+expect "mysql> " {send -- "UPDATE mysql.user SET Password=PASSWORD('$passwd') WHERE User='root';\r"}
+expect "mysql> " {send -- "FLUSH PRIVILEGES;\r"}
+expect "mysql> " {send -- "exit;\r"}
+expect eof

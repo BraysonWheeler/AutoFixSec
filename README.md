@@ -1,7 +1,7 @@
-Logan Wheeler <br />
-Harper Huff<br />
-Skandha Prakash<br />
-Ime Ekpo<br />
+Logan <br />
+Harper <br />
+Skandha <br />
+Ime <br />
 
 # Using the vdi provided in dropbox
 https://www.dropbox.com/s/fkncg2rgr52ie9y/Kalix2.vdi?dl=0 Here is the virtual disk image of the machine I used to run the demo in our video. From the virtual disk image you can recreate my virtual machine. Will negate all future openvas configurations and dependency installs.
@@ -10,7 +10,6 @@ Metasploitable download:https://sourceforge.net/projects/metasploitable/
 
 
 
-# 3560-projects
 Start with most up to date Kali Live Boot ISO: https://www.kali.org/get-kali/#kali-live
 
 Metasploitable 2: https://sourceforge.net/projects/metasploitable/

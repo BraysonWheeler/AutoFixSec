@@ -20,8 +20,8 @@ Metasploitable 2: https://sourceforge.net/projects/metasploitable/
     [!] Your admin password will be generated during the setup <br />
 5.`sudo runuser -u _gvm -- gvmd --create-user=admin2 --new-password=12345`<br />
 6.`gvm-check-setup`<br />
-7.`geenbone-fee-sync --type gvmd_data`<br />
-8.`geenbone-fee-sync --type CERT`<br />
+7.`greenbone-fee-sync --type gvmd_data`<br />
+8.`greenbone-fee-sync --type CERT`<br />
 [!] If Config's are still not synced try: <br />
     `sudo runuser -u _gvm -- greenbone-nvt-sync`<br />
     `sudo runuser -u _gvm -- greenbone-scapdata-sync`<br />

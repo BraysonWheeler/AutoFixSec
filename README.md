@@ -1,7 +1,3 @@
-Logan <br />
-Harper <br />
-Skandha <br />
-Ime <br />
 
 # Using the vdi provided in dropbox
 https://www.dropbox.com/s/fkncg2rgr52ie9y/Kalix2.vdi?dl=0 Here is the virtual disk image of the machine I used to run the demo in our video. From the virtual disk image you can recreate my virtual machine. Will negate all future openvas configurations and dependency installs.

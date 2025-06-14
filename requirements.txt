@@ -360,7 +360,7 @@ rekall-core==1.7.2rc1
 rekall-lib==1.7.1
 reportbug==11.4.1
 repoze.lru==0.7
-requests==2.27.1
+requests==2.32.4
 requests-file==1.5.1
 requests-ntlm==1.1.0
 requests-toolbelt==0.9.1

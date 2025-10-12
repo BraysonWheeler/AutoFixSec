@@ -343,7 +343,7 @@ python-magic==0.4.25
 python-pam==1.8.4
 python-pptx==0.6.18
 python-snappy==0.5.3
-python-socketio==5.0.3
+python-socketio==5.14.0
 PyTrie==0.4.0
 pytsk3==20200117
 pytz==2022.1
